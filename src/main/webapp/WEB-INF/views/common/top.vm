@@ -1,0 +1,11 @@
+<div class="header header-logged-out">
+	<div class="container clearfix">
+		<span class="header-logo-wordmark">
+			大学生职业能力评估测试
+		</span>
+	<div class="header-actions">
+			<a class="button primary" href="/join">注 册</a>
+		<a class="button signin" href="/login?return_to=%2Flogin">登 录</a>
+	</div>
+	</div>
+</div>

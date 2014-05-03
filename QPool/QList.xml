@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<questions>
+	<question id="1" type="1">
+		<title>今天星期几？</title>
+		<answers>
+			<answer>星期一</answer>
+			<answer>星期二</answer>
+			<answer>星期三</answer>
+		</answers>
+	</question>
+	<question id="2" type="1">
+		<title>你是什么星座？</title>
+		<answers>
+			<answer>狮子座</answer>
+			<answer>巨蟹座</answer>
+			<answer>双鱼座</answer>
+			<answer>双子座</answer>
+		</answers>
+	</question>
+	<question id="3" type="2">
+		<title>过程题，你知道什么是过程题吗？</title>
+		<answers>
+			<answer go="1">知道</answer>
+			<answer go="2">不知道</answer>
+			<answer go="end">结束</answer>
+		</answers>
+	</question>
+	<cq id="1">
+		<title>知道过程题，你是男的吗？</title>
+		<answers>
+			<answer go="3">是啊</answer>
+			<answer go="4">不是</answer>
+			<answer go="end">结束</answer>
+		</answers>
+	</cq>
+	<cq id="2">
+		<title>你喜欢吃冰激凌吗？</title>
+		<answers>
+			<answer go="1">知道</answer>
+			<answer go="2">不知道</answer>
+			<answer go="end">结束</answer>
+		</answers>
+	</cq>
+	<cq id="3">
+		<title>你喜欢吃辣椒吗？</title>
+		<answers>
+			<answer go="5">知道</answer>
+			<answer go="6">不知道</answer>
+			<answer go="end">结束</answer>
+		</answers>
+	</cq>
+	<cq id="4">
+		<title>周末一般都干嘛？</title>
+		<answers>
+			<answer go="end">逛街</answer>
+			<answer go="end">看电影</answer>
+			<answer go="end">结束</answer>
+		</answers>
+	</cq>
+	<cq id="5">
+		<title>明天早饭吃什么？</title>
+		<answers>
+			<answer go="end">知道</answer>
+			<answer go="end">不知道</answer>
+			<answer go="end">结束</answer>
+		</answers>
+	</cq>
+	<cq id="6">
+		<title>后天去哪里玩？</title>
+		<answers>
+			<answer go="end">知道</answer>
+			<answer go="end">不知道</answer>
+			<answer go="end">结束</answer>
+		</answers>
+	</cq>
+</questions>
