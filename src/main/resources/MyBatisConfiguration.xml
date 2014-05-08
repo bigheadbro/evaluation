@@ -3,7 +3,7 @@
 <configuration>
 
 	<typeAliases>
-		<typeAlias alias="BuyerEntity" type="com.psylife.entity.BuyerEntity" />
+
 	</typeAliases>
 
 	<mappers>

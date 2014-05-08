@@ -1,4 +1,4 @@
-package com.banzhuan.entity;
+package com.psylife.entity;
 import java.io.Serializable;
 
 public class ${entity.entityName} implements Serializable {

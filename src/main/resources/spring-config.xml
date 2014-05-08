@@ -87,11 +87,6 @@
 		</property>
 	</bean>
 
-	<!-- 上传拦截，如最大上传值及最小上传值 -->
-	<bean id="multipartResolver"
-		class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
-	</bean>
-
 	<bean id="messageSource"
 		class="org.springframework.context.support.ResourceBundleMessageSource">
 		<property name="basenames">

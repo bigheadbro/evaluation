@@ -1,24 +1,18 @@
 #set($layout = "/layout/user_detail_layout.vm")
-<div class="site clearfix">
-	<div id="site-container" class="context-loader-container">
-		<div class="auth-form" id="login">
-			<form accept-charset="UTF-8" action="" method="post">
-				<div class="auth-form-header">
-					<h1>登录</h1>
-				</div>
-				<div class="auth-form-body">
-					<label for="login_field">
-						用户名
-					</label>
-					<input autocapitalize="off" autocorrect="off" autofocus="autofocus" class="input-block" id="login_field" name="login" tabindex="1" type="text">
-
-					<label for="password">
-						密码 <a href="">(忘记密码)</a>
-					</label>
-					<input class="input-block" id="password" name="password" tabindex="2" type="password">
-					<input class="button" name="commit" tabindex="3" type="submit" value="登 录">
-				</div>
-			</form>
+<div class="main-content-container">
+	<div class="main-body">
+		<h1 class="welcome">欢迎参加职业测评</h1>
+		<ul class="steps clearfix">
+			<li class="step"><img src="img/red-point.png" /><p>Step1.<br/>完善资料</p></li>
+			<li class="process"><img src="img/grey-point.png" /></li>
+			<li class="step"><img src="img/red-point.png" /><p>Step2.<br/>评测</p></li>
+			<li class="process"><img src="img/grey-point.png" /></li>
+			<li class="step"><img src="img/red-point.png" /><p>Step3.<br/>完成</p></li>
+		</ul>
+		<div id="profile">
+			<a href="">进入完善资料</a>
 		</div>
+		<div class="bottom"></div>
 	</div>
+	
 </div>

@@ -124,7 +124,7 @@ public class GenerateEntityUtil {
 			// 获取模板引擎
 			VelocityEngine ve = new VelocityEngine();
 			// 模板文件所在的路径
-			String path = "src/main/java/com/banzhuan/util";
+			String path = "src/main/java/com/psylife/util";
 			// 设置参数
 			ve.setProperty(Velocity.FILE_RESOURCE_LOADER_PATH, path);
 			// 处理中文问题
@@ -141,7 +141,7 @@ public class GenerateEntityUtil {
 				// 把数据填入上下文
 				root.put("entity", entity);
 				// 输出
-			    Writer sw = new PrintWriter(new FileOutputStream(new File("src/main/java/com/banzhuan/entity/"+entity.getEntityName()+".java")));
+			    Writer sw = new PrintWriter(new FileOutputStream(new File("src/main/java/com/psylife/entity/"+entity.getEntityName()+".java")));
 				template.merge(root, sw);
 			    sw.flush();
 			} catch (Exception e) {
