@@ -1,0 +1,583 @@
+#set($layout = "/layout/user_detail_layout.vm")
+<script>
+$(document).ready(function(){
+	$( "#datepicker" ).datepicker({
+      changeMonth: true,
+      changeYear: true,
+	  yearRange: "1980:2000",
+	  dateFormat: "yy-mm-dd"
+    });
+    $('input').iCheck({
+		checkboxClass: 'icheckbox_square-green',
+    	radioClass: 'iradio_square-green',
+    	increaseArea: '20%' // optional
+    });
+	$(".next").click(function(){
+		$("#form_q").submit();
+	});
+});
+</script>
+<div class="main-content-container">
+	<div class="main-body">
+		<div class="profile-wrap">
+			<div class="head">
+				<h1>Step1. 完善资料<span>(均为必填)</span></h1>
+			</div>
+			<div class="part">
+				<ul class="part-content clearfix">
+					<li class="title">
+						个人信息
+					</li>
+					<li class="content">
+						<ul class="item clearfix">
+							<li class="left">
+								姓名
+							</li>
+							<li class="right">
+								桂超群
+							</li>
+						</ul>
+						<ul class="item clearfix">
+							<li class="left">
+								性别
+							</li>
+							<li class="right">
+								男
+							</li>
+						</ul>
+						<ul class="item clearfix">
+							<li class="left">
+								生日
+							</li>
+							<li class="right">
+								<input type="text" id="datepicker" />
+							</li>
+						</ul>
+						<ul class="item clearfix">
+							<li class="left">
+								户籍
+							</li>
+							<li class="right">
+								<input type="text" />
+							</li>
+						</ul>
+						<ul class="item clearfix">
+							<li class="left">
+								学校
+							</li>
+							<li class="right">
+								同济大学
+							</li>
+						</ul>
+						<ul class="item clearfix">
+							<li class="left">
+								专业
+							</li>
+							<li class="right">
+								<input type="text" />
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="part">
+				<ul class="part-content clearfix">
+					<li class="title">
+						求职偏好
+					</li>
+					<li class="content">
+						<ul class="item clearfix">
+							<li class="left">
+								感兴趣的行业
+							</li>
+							<li>
+								<input type="text" />
+							</li>
+							<li class="right">
+								(最多选择五项)
+							</li>
+						</ul>
+						<ul class="item clearfix">
+							<li class="left">
+								想从事的岗位
+							</li>
+							<li>
+								<input type="text" />
+							</li>
+							<li class="right">
+								(最多选择三项)
+							</li>
+						</ul>
+						<div class="sep"></div>
+						<p class="dim">在你求职过程中，以下因素的重要程度：<span>(1 = 最不重要，7 = 最重要)</span></p>
+						<ul class="item clearfix">
+							<li class="left">
+								薪水
+							</li>
+							<li>
+								<div class="dim7">
+								<input type="radio" name="salary" id="salary1" number="1">
+								<label for="salary1">1</label>
+								<input type="radio" name="salary" id="salary2" number="2">
+								<label for="salary2">2</label>
+								<input type="radio" name="salary" id="salary3" number="3">
+								<label for="salary3">3</label>
+								<input type="radio" name="salary" id="salary4" number="4">
+								<label for="salary4">4</label>
+								<input type="radio" name="salary" id="salary5" number="5">
+								<label for="salary5">5</label>
+								<input type="radio" name="salary" id="salary6" number="6">
+								<label for="salary6">6</label>
+								<input type="radio" name="salary" id="salary7" number="7">
+								<label for="salary7">7</label>
+								</div>
+							</li>
+						</ul>
+						<ul class="item clearfix">
+							<li class="left">
+								福利
+							</li>
+							<li>
+								<div class="dim7">
+								<input type="radio" name="welfare" id="welfare1" number="1">
+								<label for="welfare1">1</label>
+								<input type="radio" name="welfare" id="welfare2" number="2">
+								<label for="welfare2">2</label>
+								<input type="radio" name="welfare" id="welfare3" number="3">
+								<label for="welfare3">3</label>
+								<input type="radio" name="welfare" id="welfare4" number="4">
+								<label for="welfare4">4</label>
+								<input type="radio" name="welfare" id="welfare5" number="5">
+								<label for="welfare5">5</label>
+								<input type="radio" name="welfare" id="welfare6" number="6">
+								<label for="welfare6">6</label>
+								<input type="radio" name="welfare" id="welfare7" number="7">
+								<label for="welfare7">7</label>
+								</div>
+							</li>
+						</ul>
+						<ul class="item clearfix">
+							<li class="left">
+								休假
+							</li>
+							<li>
+								<div class="dim7">
+								<input type="radio" name="vacation" id="vacation1" number="1">
+								<label for="vacation1">1</label>
+								<input type="radio" name="vacation" id="vacation2" number="2">
+								<label for="vacation2">2</label>
+								<input type="radio" name="vacation" id="vacation3" number="3">
+								<label for="vacation3">3</label>
+								<input type="radio" name="vacation" id="vacation4" number="4">
+								<label for="vacation4">4</label>
+								<input type="radio" name="vacation" id="vacation5" number="5">
+								<label for="vacation5">5</label>
+								<input type="radio" name="vacation" id="vacation6" number="6">
+								<label for="vacation6">6</label>
+								<input type="radio" name="vacation" id="vacation7" number="7">
+								<label for="vacation7">7</label>
+								</div>
+							</li>
+						</ul>
+						<ul class="item clearfix">
+							<li class="left">
+								工作自由度
+							</li>
+							<li>
+								<div class="dim7">
+								<input type="radio" name="freedom" id="freedom1" number="1">
+								<label for="freedom1">1</label>
+								<input type="radio" name="freedom" id="freedom2" number="2">
+								<label for="freedom2">2</label>
+								<input type="radio" name="freedom" id="freedom3" number="3">
+								<label for="freedom3">3</label>
+								<input type="radio" name="freedom" id="freedom4" number="4">
+								<label for="freedom4">4</label>
+								<input type="radio" name="freedom" id="freedom5" number="5">
+								<label for="freedom5">5</label>
+								<input type="radio" name="freedom" id="freedom6" number="6">
+								<label for="freedom6">6</label>
+								<input type="radio" name="freedom" id="freedom7" number="7">
+								<label for="freedom7">7</label>
+								</div>
+							</li>
+						</ul>
+						<ul class="item clearfix">
+							<li class="left">
+								工作负荷大小
+							</li>
+							<li>
+								<div class="dim7">
+								<input type="radio" name="burden" id="burden1" number="1">
+								<label for="burden1">1</label>
+								<input type="radio" name="burden" id="burden2" number="2">
+								<label for="burden2">2</label>
+								<input type="radio" name="burden" id="burden3" number="3">
+								<label for="burden3">3</label>
+								<input type="radio" name="burden" id="burden4" number="4">
+								<label for="burden4">4</label>
+								<input type="radio" name="burden" id="burden5" number="5">
+								<label for="burden5">5</label>
+								<input type="radio" name="burden" id="burden6" number="6">
+								<label for="burden6">6</label>
+								<input type="radio" name="burden" id="burden7" number="7">
+								<label for="burden7">7</label>
+								</div>
+							</li>
+						</ul>
+						<ul class="item clearfix">
+							<li class="left">
+								职业发展性
+							</li>
+							<li>
+								<div class="dim7">
+								<input type="radio" name="development" id="development1" number="1">
+								<label for="development1">1</label>
+								<input type="radio" name="development" id="development2" number="2">
+								<label for="development2">2</label>
+								<input type="radio" name="development" id="development3" number="3">
+								<label for="development3">3</label>
+								<input type="radio" name="development" id="development4" number="4">
+								<label for="development4">4</label>
+								<input type="radio" name="development" id="development5" number="5">
+								<label for="development5">5</label>
+								<input type="radio" name="development" id="development6" number="6">
+								<label for="development6">6</label>
+								<input type="radio" name="development" id="development7" number="7">
+								<label for="development7">7</label>
+								</div>
+							</li>
+						</ul>
+						<ul class="item clearfix">
+							<li class="left">
+								培训机会
+							</li>
+							<li>
+								<div class="dim7">
+								<input type="radio" name="training" id="training1" number="1">
+								<label for="training1">1</label>
+								<input type="radio" name="training" id="training2" number="2">
+								<label for="training2">2</label>
+								<input type="radio" name="training" id="training3" number="3">
+								<label for="training3">3</label>
+								<input type="radio" name="training" id="training4" number="4">
+								<label for="training4">4</label>
+								<input type="radio" name="training" id="training5" number="5">
+								<label for="training5">5</label>
+								<input type="radio" name="training" id="training6" number="6">
+								<label for="training6">6</label>
+								<input type="radio" name="training" id="training7" number="7">
+								<label for="training7">7</label>
+								</div>
+							</li>
+						</ul>
+						<ul class="item clearfix">
+							<li class="left">
+								出差平率
+							</li>
+							<li>
+								<div class="dim7">
+								<input type="radio" name="wtrip" id="wtrip1" number="1">
+								<label for="wtrip1">1</label>
+								<input type="radio" name="wtrip" id="wtrip2" number="2">
+								<label for="wtrip2">2</label>
+								<input type="radio" name="wtrip" id="wtrip3" number="3">
+								<label for="wtrip3">3</label>
+								<input type="radio" name="wtrip" id="wtrip4" number="4">
+								<label for="wtrip4">4</label>
+								<input type="radio" name="wtrip" id="wtrip5" number="5">
+								<label for="wtrip5">5</label>
+								<input type="radio" name="wtrip" id="wtrip6" number="6">
+								<label for="wtrip6">6</label>
+								<input type="radio" name="wtrip" id="wtrip7" number="7">
+								<label for="wtrip7">7</label>
+								</div>
+							</li>
+						</ul>
+						<ul class="item clearfix">
+							<li class="left">
+								人际氛围
+							</li>
+							<li>
+								<div class="dim7">
+								<input type="radio" name="atmosphere" id="atmosphere1" number="1">
+								<label for="atmosphere1">1</label>
+								<input type="radio" name="atmosphere" id="atmosphere2" number="2">
+								<label for="atmosphere2">2</label>
+								<input type="radio" name="atmosphere" id="atmosphere3" number="3">
+								<label for="atmosphere3">3</label>
+								<input type="radio" name="atmosphere" id="atmosphere4" number="4">
+								<label for="atmosphere4">4</label>
+								<input type="radio" name="atmosphere" id="atmosphere5" number="5">
+								<label for="atmosphere5">5</label>
+								<input type="radio" name="atmosphere" id="atmosphere6" number="6">
+								<label for="atmosphere6">6</label>
+								<input type="radio" name="atmosphere" id="atmosphere7" number="7">
+								<label for="atmosphere7">7</label>
+								</div>
+							</li>
+						</ul>
+						<ul class="item clearfix">
+							<li class="left">
+								品牌影响力
+							</li>
+							<li>
+								<div class="dim7">
+								<input type="radio" name="brand" id="brand1" number="1">
+								<label for="brand1">1</label>
+								<input type="radio" name="brand" id="brand2" number="2">
+								<label for="brand2">2</label>
+								<input type="radio" name="brand" id="brand3" number="3">
+								<label for="brand3">3</label>
+								<input type="radio" name="brand" id="brand4" number="4">
+								<label for="brand4">4</label>
+								<input type="radio" name="brand" id="brand5" number="5">
+								<label for="brand5">5</label>
+								<input type="radio" name="brand" id="brand6" number="6">
+								<label for="brand6">6</label>
+								<input type="radio" name="brand" id="brand7" number="7">
+								<label for="brand7">7</label>
+								</div>
+							</li>
+						</ul>
+						<ul class="item clearfix">
+							<li class="left">
+								离家距离
+							</li>
+							<li>
+								<div class="dim7">
+								<input type="radio" name="distance" id="distance1" number="1">
+								<label for="distance1">1</label>
+								<input type="radio" name="distance" id="distance2" number="2">
+								<label for="distance2">2</label>
+								<input type="radio" name="distance" id="distance3" number="3">
+								<label for="distance3">3</label>
+								<input type="radio" name="distance" id="distance4" number="4">
+								<label for="distance4">4</label>
+								<input type="radio" name="distance" id="distance5" number="5">
+								<label for="distance5">5</label>
+								<input type="radio" name="distance" id="distance6" number="6">
+								<label for="distance6">6</label>
+								<input type="radio" name="distance" id="distance7" number="7">
+								<label for="distance7">7</label>
+								</div>
+							</li>
+						</ul>
+						<div class="sep"></div>
+						<ul class="item clearfix">
+							<li class="left">
+								最低可接受薪水
+							</li>
+							<li>
+								<input type="text" />
+							</li>
+							<li class="right">
+								(税后，人民币元)
+							</li>
+						</ul>
+						<ul class="item clearfix">
+							<li class="left">
+								期望薪水
+							</li>
+							<li>
+								<input type="text" />
+							</li>
+							<li class="right">
+								(税后，人民币元)
+							</li>
+						</ul>
+						<div class="sep"></div>
+						<p class="dim">你对以下工作单位的向往程度：<span>(1 = 最不向往，7 = 最向往)</span></p>
+						<ul class="item clearfix">
+							<li class="left">
+								国有企业
+							</li>
+							<li>
+								<div class="dim7">
+								<input type="radio" name="stateown" id="stateown1" number="1">
+								<label for="stateown1">1</label>
+								<input type="radio" name="stateown" id="stateown2" number="2">
+								<label for="stateown2">2</label>
+								<input type="radio" name="stateown" id="stateown3" number="3">
+								<label for="stateown3">3</label>
+								<input type="radio" name="stateown" id="stateown4" number="4">
+								<label for="stateown4">4</label>
+								<input type="radio" name="stateown" id="stateown5" number="5">
+								<label for="stateown5">5</label>
+								<input type="radio" name="stateown" id="stateown6" number="6">
+								<label for="stateown6">6</label>
+								<input type="radio" name="stateown" id="stateown7" number="7">
+								<label for="stateown7">7</label>
+								</div>
+							</li>
+						</ul>
+						<ul class="item clearfix">
+							<li class="left">
+								事业单位
+							</li>
+							<li>
+								<div class="dim7">
+								<input type="radio" name="institution" id="institution1" number="1">
+								<label for="institution1">1</label>
+								<input type="radio" name="institution" id="institution2" number="2">
+								<label for="institution2">2</label>
+								<input type="radio" name="institution" id="institution3" number="3">
+								<label for="institution3">3</label>
+								<input type="radio" name="institution" id="institution4" number="4">
+								<label for="institution4">4</label>
+								<input type="radio" name="institution" id="institution5" number="5">
+								<label for="institution5">5</label>
+								<input type="radio" name="institution" id="institution6" number="6">
+								<label for="institution6">6</label>
+								<input type="radio" name="institution" id="institution7" number="7">
+								<label for="institution7">7</label>
+								</div>
+							</li>
+						</ul>
+						<ul class="item clearfix">
+							<li class="left">
+								行政机关
+							</li>
+							<li>
+								<div class="dim7">
+								<input type="radio" name="administration" id="administration1" number="1">
+								<label for="administration1">1</label>
+								<input type="radio" name="administration" id="administration2" number="2">
+								<label for="administration2">2</label>
+								<input type="radio" name="administration" id="administration3" number="3">
+								<label for="administration3">3</label>
+								<input type="radio" name="administration" id="administration4" number="4">
+								<label for="administration4">4</label>
+								<input type="radio" name="administration" id="administration5" number="5">
+								<label for="administration5">5</label>
+								<input type="radio" name="administration" id="administration6" number="6">
+								<label for="administration6">6</label>
+								<input type="radio" name="administration" id="administration7" number="7">
+								<label for="administration7">7</label>
+								</div>
+							</li>
+						</ul>
+						<ul class="item clearfix">
+							<li class="left">
+								外资企业
+							</li>
+							<li>
+								<div class="dim7">
+								<input type="radio" name="foreign" id="foreign1" number="1">
+								<label for="foreign1">1</label>
+								<input type="radio" name="foreign" id="foreign2" number="2">
+								<label for="foreign2">2</label>
+								<input type="radio" name="foreign" id="foreign3" number="3">
+								<label for="foreign3">3</label>
+								<input type="radio" name="foreign" id="foreign4" number="4">
+								<label for="foreign4">4</label>
+								<input type="radio" name="foreign" id="foreign5" number="5">
+								<label for="foreign5">5</label>
+								<input type="radio" name="foreign" id="foreign6" number="6">
+								<label for="foreign6">6</label>
+								<input type="radio" name="foreign" id="foreign7" number="7">
+								<label for="foreign7">7</label>
+								</div>
+							</li>
+						</ul>
+						<ul class="item clearfix">
+							<li class="left">
+								民营企业
+							</li>
+							<li>
+								<div class="dim7">
+								<input type="radio" name="private" id="private1" number="1">
+								<label for="private1">1</label>
+								<input type="radio" name="private" id="private2" number="2">
+								<label for="private2">2</label>
+								<input type="radio" name="private" id="private3" number="3">
+								<label for="private3">3</label>
+								<input type="radio" name="private" id="private4" number="4">
+								<label for="private4">4</label>
+								<input type="radio" name="private" id="private5" number="5">
+								<label for="private5">5</label>
+								<input type="radio" name="private" id="private6" number="6">
+								<label for="private6">6</label>
+								<input type="radio" name="private" id="private7" number="7">
+								<label for="private7">7</label>
+								</div>
+							</li>
+						</ul>
+						<ul class="item clearfix">
+							<li class="left">
+								创业团队
+							</li>
+							<li>
+								<div class="dim7">
+								<input type="radio" name="startup" id="startup1" number="1">
+								<label for="startup1">1</label>
+								<input type="radio" name="startup" id="startup2" number="2">
+								<label for="startup2">2</label>
+								<input type="radio" name="startup" id="startup3" number="3">
+								<label for="startup3">3</label>
+								<input type="radio" name="startup" id="startup4" number="4">
+								<label for="startup4">4</label>
+								<input type="radio" name="startup" id="startup5" number="5">
+								<label for="startup5">5</label>
+								<input type="radio" name="startup" id="startup6" number="6">
+								<label for="startup6">6</label>
+								<input type="radio" name="startup" id="startup7" number="7">
+								<label for="startup7">7</label>
+								</div>
+							</li>
+						</ul>
+						<ul class="item clearfix">
+							<li class="left">
+								非政府组织
+							</li>
+							<li>
+								<div class="dim7">
+								<input type="radio" name="ngo" id="ngo1" number="1">
+								<label for="ngo1">1</label>
+								<input type="radio" name="ngo" id="ngo2" number="2">
+								<label for="ngo2">2</label>
+								<input type="radio" name="ngo" id="ngo3" number="3">
+								<label for="ngo3">3</label>
+								<input type="radio" name="ngo" id="ngo4" number="4">
+								<label for="ngo4">4</label>
+								<input type="radio" name="ngo" id="ngo5" number="5">
+								<label for="ngo5">5</label>
+								<input type="radio" name="ngo" id="ngo6" number="6">
+								<label for="ngo6">6</label>
+								<input type="radio" name="ngo" id="ngo7" number="7">
+								<label for="ngo7">7</label>
+								</div>
+							</li>
+						</ul>
+						<ul class="item clearfix">
+							<li class="left">
+								公益组织
+							</li>
+							<li>
+								<div class="dim7">
+								<input type="radio" name="commonweal" id="commonweal1" number="1">
+								<label for="commonweal1">1</label>
+								<input type="radio" name="commonweal" id="commonweal2" number="2">
+								<label for="commonweal2">2</label>
+								<input type="radio" name="commonweal" id="commonweal3" number="3">
+								<label for="commonweal3">3</label>
+								<input type="radio" name="commonweal" id="commonweal4" number="4">
+								<label for="commonweal4">4</label>
+								<input type="radio" name="commonweal" id="commonweal5" number="5">
+								<label for="commonweal5">5</label>
+								<input type="radio" name="commonweal" id="commonweal6" number="6">
+								<label for="commonweal6">6</label>
+								<input type="radio" name="commonweal" id="commonweal7" number="7">
+								<label for="commonweal7">7</label>
+								</div>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="profile-op clearfix">
+    			<a class="next">完成进入测评</a>
+    		</div>
+		</div>
+	</div>
+</div>

@@ -7,13 +7,9 @@ $(document).ready(function(){
     	increaseArea: '20%' // optional
     });
     $('input').on('ifChecked', function(event){
-		alert($(this).attr("number"));
-		$("#choice").val($(this).attr("id"));
      	$('input').iCheck('disable');
-    });
-	$(".next").click(function(){
 		$("#form_q").submit();
-	});
+    });
 });
 </script>
 <div class="main-content-container">
@@ -21,13 +17,13 @@ $(document).ready(function(){
 		<div class="test-wrap">
 			<div class="test clearfix">
     			<ul>
-    				<li><em><span>●</span>1</em></li>
-    				<li><em><span>●</span>2</em></li>
-    				<li><em><span>●</span>3</em></li>
-    				<li><em><span>●</span>4</em></li>
-    				<li><em><span>●</span>5</em></li>
-    				<li><em><span>●</span>6</em></li>
-    				<li><em><span>●</span>7</em></li>
+    				<li class="done"><em><span>●</span>1</em></li>
+    				<li class="done"><em><span>●</span>2</em></li>
+    				<li class="done"><em><span>●</span>3</em></li>
+    				<li class="done"><em><span>●</span>4</em></li>
+    				<li class="done"><em><span>●</span>5</em></li>
+    				<li class="done"><em><span>●</span>6</em></li>
+    				<li class="done"><em><span>●</span>7</em></li>
     				<li><em><span>●</span>8</em></li>
     				<li><em><span>●</span>9</em></li>
     				<li><em><span>●</span>10</em></li>
@@ -47,48 +43,40 @@ $(document).ready(function(){
 			</div>
 		</div>
 		<div class="question">
-			<form id="form_q" method="post">
+			<form id="form_q" method="post" >
 			<input type="hidden" name="do_submit" value="true"/>
 			#springBind("form.questionid")
 			<input type="hidden" name="${status.expression}" value="$!{status.value}" id="qid" />
-			#springBind("form.choice")
-			<input type="hidden" name="${status.expression}" value="$!{status.value}" id="choice"/>
 			#if($!util.isMale($account.getGender()))
-			<div class="q-head clearfix">
-				<h1 class="number">1.</h1>
-				<h1 class="title">你和同事王勇两人加班到晚上九点多，然后一起离开了办公室，你们是办公室里留到最后的两个人。在你回家的路上，你看到王勇发了这样一条朋友圈：（“今天又是最后一个离开办公室，热爱工作，Fighting！”一张办公室图，然后下面有多个人点赞，其中一个是两人的领导，一个是公司美女前台，两个同组同事）。你最有可能做的是</h1>
-			</div>
+			<h1>8. 你刚进入职场，如果有以下四个人可能成为你的直接领导，你的满意度分别如何？（五点量表）</h1>
 			<ul>
 				<li>
-					<input type="radio" name="iCheck" id="1">
-					<label for="1">A、不回应</label>
+					<input type="radio" name="iCheck" id="answer1">
+					<label for="answer1">A、不回应</label>
 				</li>
 				<li>
-					<input type="radio" name="iCheck" id="2">
-					<label for="2">B、点一个赞</label>
+					<input type="radio" name="iCheck" id="answer2">
+					<label for="answer2">B、点一个赞</label>
 				</li>
 				<li>
-					<input type="radio" name="iCheck" id="3">
-					<label for="3">C、回复“今天楼下车不多，我也刚叫到”</label>
+					<input type="radio" name="iCheck" id="answer3">
+					<label for="answer3">C、回复“今天楼下车不多，我也刚叫到”</label>
 				</li>
 				<li>
-					<input type="radio" name="iCheck" id="4">
-					<label for="4">D、回复“我不是和你一起走的吗？”</label>
+					<input type="radio" name="iCheck" id="answer4">
+					<label for="answer4">D、回复“我不是和你一起走的吗？”</label>
 				</li>
 				<li>
-					<input type="radio" name="iCheck" id="5">
-					<label for="5">E、点一个赞，同时自己发一条朋友圈，说明自己刚下班</label>
+					<input type="radio" name="iCheck" id="answer5">
+					<label for="answer5">E、点一个赞，同时自己发一条朋友圈，说明自己刚下班</label>
 				</li>
 				<li>
-					<input type="radio" name="iCheck" id="6">
-					<label for="6">F、不点赞，同时自己发一条朋友圈，说明自己刚下班</label>
+					<input type="radio" name="iCheck" id="answer6">
+					<label for="answer6">F、不点赞，同时自己发一条朋友圈，说明自己刚下班</label>
 				</li>
 			</ul>
 			#else
-			<div class="q-head clearfix">
-				<h1 class="number">1.</h1>
-				<h1 class="title">你和同事李艳两人加班到晚上九点多，然后一起离开了办公室，你们是办公室里留到最后的两个人。在你回家的路上，你看到李艳发了这样一条朋友圈：（“今天又是最后一个离开办公室，热爱工作，Fighting！”一张办公室图，然后下面有多个人点赞，其中一个是两人的领导，一个是公司另一部门的帅哥经理，两个同组同事）。你最有可能做的是：</h1>
-			</div>
+			<h1>8. 你和同事李艳两人加班到晚上九点多，然后一起离开了办公室，你们是办公室里留到最后的两个人。在你回家的路上，你看到李艳发了这样一条朋友圈：（“今天又是最后一个离开办公室，热爱工作，Fighting！”一张办公室图，然后下面有多个人点赞，其中一个是两人的领导，一个是公司另一部门的帅哥经理，两个同组同事）。你最有可能做的是：</h1>
 			<ul>
 				<li>
 					<input type="radio" name="iCheck" id="answer1">
@@ -119,7 +107,7 @@ $(document).ready(function(){
 			</form>
 		</div>
 		<div class="operation clearfix">
-			<a class="next">下一题</a>
+			<a class="next"></a>
 		</div>
 	</div>
 </div>

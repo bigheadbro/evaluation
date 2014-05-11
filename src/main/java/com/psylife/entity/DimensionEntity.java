@@ -2,24 +2,22 @@ package com.psylife.entity;
 
 import java.io.Serializable;
 
-public class QuestionEntity implements Serializable {
+public class DimensionEntity implements Serializable {
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 7630137768813639287L;
 	//
 	private int id;
-
-	//
-	private int userId;
 	//
 	private int qid;
+	private String title;
 	//
 	private int number;
+	private String subtitle;
 	//
 	private int choice;
-	//
-	private int time;
+	private String answer;
 	//
 	private int loyalty;
 	//
@@ -53,29 +51,6 @@ public class QuestionEntity implements Serializable {
 	}
 
 	/**
-	 * @param id
-	 *            the id to set
-	 */
-	public void setId(int id) {
-		this.id = id;
-	}
-
-	/**
-	 * @return the userId
-	 */
-	public int getUserId() {
-		return userId;
-	}
-
-	/**
-	 * @param userId
-	 *            the userId to set
-	 */
-	public void setUserId(int userId) {
-		this.userId = userId;
-	}
-
-	/**
 	 * @return the qid
 	 */
 	public int getQid() {
@@ -103,21 +78,6 @@ public class QuestionEntity implements Serializable {
 	 */
 	public void setNumber(int number) {
 		this.number = number;
-	}
-
-	/**
-	 * @return the time
-	 */
-	public int getTime() {
-		return time;
-	}
-
-	/**
-	 * @param time
-	 *            the time to set
-	 */
-	public void setTime(int time) {
-		this.time = time;
 	}
 
 	/**
@@ -312,5 +272,47 @@ public class QuestionEntity implements Serializable {
 	 */
 	public void setChoice(int choice) {
 		this.choice = choice;
+	}
+
+	/**
+	 * @return the title
+	 */
+	public String getTitle() {
+		return title;
+	}
+
+	/**
+	 * @param title the title to set
+	 */
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+	/**
+	 * @return the subtitle
+	 */
+	public String getSubtitle() {
+		return subtitle;
+	}
+
+	/**
+	 * @param subtitle the subtitle to set
+	 */
+	public void setSubtitle(String subtitle) {
+		this.subtitle = subtitle;
+	}
+
+	/**
+	 * @return the answer
+	 */
+	public String getAnswer() {
+		return answer;
+	}
+
+	/**
+	 * @param answer the answer to set
+	 */
+	public void setAnswer(String answer) {
+		this.answer = answer;
 	}
 }

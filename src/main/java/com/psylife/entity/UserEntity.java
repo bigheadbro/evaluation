@@ -9,32 +9,15 @@ public class UserEntity implements Serializable {
 	private static final long serialVersionUID = -344076978051360475L;
 	//
 	private int id;
-	// QQ connect 昵称
-	private String nick;
-	// QQ connect 唯一ID
-	private String qqConnectId;
 	// 用户名字
-	private String username;
-	// 登录密码
-	private String password;
-	// 电子邮箱
-	private String email;
-	// logo
-	private String logo;
+	private String name;
+	private int gender;
+	private String birth;
+	private String domicile;
+	private String school;
+	private String major;
+	
 
-	private String companyName;
-	private String companyAddress;
-	private String companyPhone;
-	private String contactName;
-	private String contactPhone;
-	private String contactQq;
-	// 注册时间
-	private String regTime;
-	// 记录创建时间
-	private String gmtCreate;
-	// 记录修改时间(最近登录时间)
-	private String gmtModified;
-		
 	/**
 	 * @return the id
 	 */
@@ -51,229 +34,87 @@ public class UserEntity implements Serializable {
 	}
 
 	/**
-	 * @return the nick
+	 * @return the name
 	 */
-	public String getNick() {
-		return nick;
+	public String getName() {
+		return name;
 	}
 
 	/**
-	 * @param nick
-	 *            the nick to set
+	 * @param name the name to set
 	 */
-	public void setNick(String nick) {
-		this.nick = nick;
+	public void setName(String name) {
+		this.name = name;
 	}
 
 	/**
-	 * @return the qqConnectId
+	 * @return the gender
 	 */
-	public String getQqConnectId() {
-		return qqConnectId;
+	public int getGender() {
+		return gender;
 	}
 
 	/**
-	 * @param qqConnectId
-	 *            the qqConnectId to set
+	 * @param gender the gender to set
 	 */
-	public void setQqConnectId(String qqConnectId) {
-		this.qqConnectId = qqConnectId;
+	public void setGender(int gender) {
+		this.gender = gender;
 	}
 
 	/**
-	 * @return the username
+	 * @return the birth
 	 */
-	public String getUsername() {
-		return username;
+	public String getBirth() {
+		return birth;
 	}
 
 	/**
-	 * @param username
-	 *            the username to set
+	 * @param birth the birth to set
 	 */
-	public void setUsername(String username) {
-		this.username = username;
+	public void setBirth(String birth) {
+		this.birth = birth;
 	}
 
 	/**
-	 * @return the password
+	 * @return the domicile
 	 */
-	public String getPassword() {
-		return password;
+	public String getDomicile() {
+		return domicile;
 	}
 
 	/**
-	 * @param password
-	 *            the password to set
+	 * @param domicile the domicile to set
 	 */
-	public void setPassword(String password) {
-		this.password = password;
+	public void setDomicile(String domicile) {
+		this.domicile = domicile;
 	}
 
 	/**
-	 * @return the email
+	 * @return the school
 	 */
-	public String getEmail() {
-		return email;
+	public String getSchool() {
+		return school;
 	}
 
 	/**
-	 * @param email
-	 *            the email to set
+	 * @param school the school to set
 	 */
-	public void setEmail(String email) {
-		this.email = email;
+	public void setSchool(String school) {
+		this.school = school;
 	}
 
 	/**
-	 * @return the logo
+	 * @return the major
 	 */
-	public String getLogo() {
-		return logo;
+	public String getMajor() {
+		return major;
 	}
 
 	/**
-	 * @param logo the logo to set
+	 * @param major the major to set
 	 */
-	public void setLogo(String logo) {
-		this.logo = logo;
+	public void setMajor(String major) {
+		this.major = major;
 	}
-
-	/**
-	 * @return the companyName
-	 */
-	public String getCompanyName() {
-		return companyName;
-	}
-
-	/**
-	 * @param companyName the companyName to set
-	 */
-	public void setCompanyName(String companyName) {
-		this.companyName = companyName;
-	}
-
-	/**
-	 * @return the companyAddress
-	 */
-	public String getCompanyAddress() {
-		return companyAddress;
-	}
-
-	/**
-	 * @param companyAddress the companyAddress to set
-	 */
-	public void setCompanyAddress(String companyAddress) {
-		this.companyAddress = companyAddress;
-	}
-
-	/**
-	 * @return the companyPhone
-	 */
-	public String getCompanyPhone() {
-		return companyPhone;
-	}
-
-	/**
-	 * @param companyPhone the companyPhone to set
-	 */
-	public void setCompanyPhone(String companyPhone) {
-		this.companyPhone = companyPhone;
-	}
-
-	/**
-	 * @return the contactName
-	 */
-	public String getContactName() {
-		return contactName;
-	}
-
-	/**
-	 * @param contactName the contactName to set
-	 */
-	public void setContactName(String contactName) {
-		this.contactName = contactName;
-	}
-
-	/**
-	 * @return the contactPhone
-	 */
-	public String getContactPhone() {
-		return contactPhone;
-	}
-
-	/**
-	 * @param contactPhone the contactPhone to set
-	 */
-	public void setContactPhone(String contactPhone) {
-		this.contactPhone = contactPhone;
-	}
-
-	/**
-	 * @return the contactQq
-	 */
-	public String getContactQq() {
-		return contactQq;
-	}
-
-	/**
-	 * @param contactQq the contactQq to set
-	 */
-	public void setContactQq(String contactQq) {
-		this.contactQq = contactQq;
-	}
-	
-	/**
-	 * @return the regTime
-	 */
-	public String getRegTime() {
-		return regTime;
-	}
-
-	/**
-	 * @param regTime
-	 *            the regTime to set
-	 */
-	public void setRegTime(String regTime) {
-		this.regTime = regTime;
-	}
-
-	/**
-	 * @return the gmtCreate
-	 */
-	public String getGmtCreate() {
-		return gmtCreate;
-	}
-
-	/**
-	 * @param gmtCreate
-	 *            the gmtCreate to set
-	 */
-	public void setGmtCreate(String gmtCreate) {
-		this.gmtCreate = gmtCreate;
-	}
-
-	/**
-	 * @return the gmtModified
-	 */
-	public String getGmtModified() {
-		return gmtModified;
-	}
-
-	/**
-	 * @param gmtModified
-	 *            the gmtModified to set
-	 */
-	public void setGmtModified(String gmtModified) {
-		this.gmtModified = gmtModified;
-	}
-
-	/**
-	 * @return the serialversionuid
-	 */
-	public static long getSerialversionuid() {
-		return serialVersionUID;
-	}
-
 	
 }

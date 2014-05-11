@@ -27,6 +27,7 @@
     <data key="bar">this is bar.</data>
     <toolbox scope="application">
         <tool key="stringUtil" class="com.psylife.util.StringUtil"/>
+        <tool key="util" class="com.psylife.util.Util"/>
         <tool key="stringEscapeUtils" class="org.apache.commons.lang.StringEscapeUtils"/>
     </toolbox>
 </tools>
