@@ -35,7 +35,7 @@ CREATE TABLE `t_user` (
   `ngo` int(11) NOT NULL,
   `commonweal` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8$$
+) ENGINE=InnoDB DEFAULT CHARSET=utf8
 
 
 

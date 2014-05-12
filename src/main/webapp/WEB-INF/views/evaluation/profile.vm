@@ -12,12 +12,6 @@ $(document).ready(function(){
     	radioClass: 'iradio_square-green',
     	increaseArea: '20%' // optional
     });
-		$('input').on('ifChecked', function(event){
-				$("#"+$(this).attr("name")).val($(this).attr("number"));
-    });
-	$(".next").click(function(){
-		$("#form_profile").submit();
-	});
 });
 </script>
 <div class="main-content-container">
@@ -56,7 +50,7 @@ $(document).ready(function(){
 								生日
 							</li>
 							<li class="right">
-								<input type="text" name="${status.expression}"   id="datepicker" />
+								<input type="text" name="${status.expression}"  readonly="readonly" id="datepicker" />
 							</li>
 						</ul>
 						#springBind("form.user.domicile")
@@ -82,7 +76,7 @@ $(document).ready(function(){
 								专业
 							</li>
 							<li class="right">
-								<input type="text" name="${status.expression}"   />
+								<input type="text" name="${status.expression}" id="major"  />
 							</li>
 						</ul>
 					</li>
@@ -99,8 +93,8 @@ $(document).ready(function(){
 							<li class="left">
 								感兴趣的行业
 							</li>
-							<li>
-								<input type="text" name="${status.expression}"   />
+							<li class="middle">
+								<input type="text" name="${status.expression}" id="industry" />
 							</li>
 							<li class="right">
 								(最多选择五项)
@@ -111,8 +105,8 @@ $(document).ready(function(){
 							<li class="left">
 								想从事的岗位
 							</li>
-							<li>
-								<input type="text" name="${status.expression}"   />
+							<li class="middle">
+								<input type="text" name="${status.expression}" id="position" />
 							</li>
 							<li class="right">
 								(最多选择三项)
@@ -632,3 +626,64 @@ $(document).ready(function(){
 		</div>
 	</div>
 </div>
+#parse("/common/major.vm")
+#parse("/common/industry.vm")
+<script>
+function hidemajor() {
+	$(".major-win").hide();
+	$("#pagemask-major").hide();
+}
+function showmajor() {
+	$("#pagemask-major").css("width", $(document).width());
+	$("#pagemask-major").css("height", $(document).height());
+	$("#pagemask-major").show();
+	$(".major-win").css("top",
+			$(window).height() / 2 + $(document).scrollTop() - 220);
+	$(".major-win").css("left", $(document).width() / 2 - 300);
+	$(".major-win").show();
+}
+function hideindustry() {
+	$(".industry-win").hide();
+	$("#pagemask-industry").hide();
+}
+function showindustry() {
+	$("#pagemask-industry").css("width", $(document).width());
+	$("#pagemask-industry").css("height", $(document).height());
+	$("#pagemask-industry").show();
+	$(".industry-win").css("top",
+			$(window).height() / 2 + $(document).scrollTop() - 220);
+	$(".industry-win").css("left", $(document).width() / 2 - 300);
+	$(".industry-win").show();
+}
+$(document).ready(function(){
+	$('input').on('ifChecked', function(event){
+		$("#"+$(this).attr("name")).val($(this).attr("number"));
+    });
+	$(".next").click(function(){
+		$("#form_profile").submit();
+	});
+	
+	$("#major").click(function(){
+		showmajor();
+	});
+	$(".major-win .detail a").click(function(){
+		$("#major").val($(this).text());
+		hidemajor();
+	});
+	$(".close-major").click(function(){
+		hidemajor();
+	});
+	
+	$("#industry").click(function(){
+		showindustry();
+	});
+	$(".industry-win .detail a").click(function(){
+		$("#industry").val($(this).text());
+		hideindustry();
+	});
+	$(".close-industry").click(function(){
+		hideindustry();
+	});
+});
+</script>
+	
