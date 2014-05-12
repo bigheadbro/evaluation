@@ -9,6 +9,7 @@ public class UserEntity implements Serializable {
 	private static final long serialVersionUID = -344076978051360475L;
 	//
 	private int id;
+	private String cardno;
 	// 用户名字
 	private String name;
 	private int gender;
@@ -34,7 +35,7 @@ public class UserEntity implements Serializable {
 	private int stateown;
 	private int institution;
 	private int administration;
-	private int foreign;
+	private int foreig;
 	private int privat;
 	private int startup;
 	private int ngo;
@@ -393,20 +394,6 @@ public class UserEntity implements Serializable {
 	}
 
 	/**
-	 * @return the foreign
-	 */
-	public int getForeign() {
-		return foreign;
-	}
-
-	/**
-	 * @param foreign the foreign to set
-	 */
-	public void setForeign(int foreign) {
-		this.foreign = foreign;
-	}
-
-	/**
 	 * @return the privat
 	 */
 	public int getPrivat() {
@@ -460,6 +447,22 @@ public class UserEntity implements Serializable {
 	 */
 	public void setCommonweal(int commonweal) {
 		this.commonweal = commonweal;
+	}
+
+	public String getCardno() {
+		return cardno;
+	}
+
+	public void setCardno(String cardno) {
+		this.cardno = cardno;
+	}
+
+	public int getForeig() {
+		return foreig;
+	}
+
+	public void setForeig(int foreig) {
+		this.foreig = foreig;
 	}
 	
 }

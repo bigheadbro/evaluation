@@ -21,7 +21,9 @@ import com.psylife.common.Account;
 import com.psylife.common.Result;
 import com.psylife.entity.DimensionEntity;
 import com.psylife.entity.QuestionEntity;
+import com.psylife.entity.UserEntity;
 import com.psylife.form.QuestionForm;
+import com.psylife.form.UserForm;
 
 @Controller
 @RequestMapping("/")
@@ -40,19 +42,36 @@ public class CommonController extends BaseController{
 		Result result = new Result();
 		Account account = new Account();
 		//获取爱才网信息
+		account.setCardno("1234");
 		account.setGender(1);
+		account.setUserName("guichaoqun");
+		account.setSchool("tongji");
+		
 		request.getSession().setAttribute("account", account);
 		return mv;
 	}
 	
 	@RequestMapping(value="/profile")
-	public ModelAndView profile(final HttpServletRequest request,final HttpServletResponse response)
+	public ModelAndView profile(final HttpServletRequest request,final HttpServletResponse response, 
+			@ModelAttribute("account")Account account, @ModelAttribute("form")UserForm form)
 	{
 		ModelAndView mv = new ModelAndView("/evaluation/profile");
-		
-		Result result1 = new Result();
-		
-		return mv;
+		if(isDoSubmit(request))
+		{
+			Result result1 = new Result();
+			UserEntity user = form.getUser();
+			user.setCardno(account.getCardno());
+			user.setGender(account.getGender());
+			user.setName(account.getUserName());
+			user.setSchool(account.getSchool());
+
+			commonService.insertUser(user);
+			return new ModelAndView(new RedirectView("/evaluation/q1"));
+		}
+		else
+		{
+			return mv;
+		}
 	}
 	
 	@RequestMapping(value="/q1")
@@ -69,8 +88,6 @@ public class CommonController extends BaseController{
 		}
 		else
 		{
-			Result result = new Result();
-			
 			return mv;
 		}
 	}

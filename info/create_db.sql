@@ -1,5 +1,44 @@
 delimiter $$
 
+delimiter $$
+
+CREATE TABLE `t_user` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(45) NOT NULL,
+  `cardno` varchar(50) NOT NULL,
+  `birth` varchar(45) NOT NULL,
+  `gender` int(11) NOT NULL,
+  `domicile` varchar(45) NOT NULL,
+  `school` varchar(45) NOT NULL,
+  `major` varchar(45) NOT NULL,
+  `industry` varchar(145) NOT NULL,
+  `position` varchar(45) NOT NULL,
+  `salary` int(11) NOT NULL,
+  `welfare` int(11) NOT NULL,
+  `vacation` int(11) NOT NULL,
+  `freedom` int(11) NOT NULL,
+  `burden` int(11) NOT NULL,
+  `development` int(11) NOT NULL,
+  `training` int(11) NOT NULL,
+  `wtrip` int(11) NOT NULL,
+  `atmosphere` int(11) NOT NULL,
+  `brand` int(11) NOT NULL,
+  `distance` int(11) NOT NULL,
+  `lowSalary` int(11) NOT NULL,
+  `expectedSalary` int(11) NOT NULL,
+  `stateown` int(11) NOT NULL,
+  `institution` int(11) NOT NULL,
+  `administration` int(11) NOT NULL,
+  `foreig` int(11) NOT NULL,
+  `privat` int(11) NOT NULL,
+  `startup` int(11) NOT NULL,
+  `ngo` int(11) NOT NULL,
+  `commonweal` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8$$
+
+
+
 CREATE TABLE `t_dimension` (
   `qid` int(11) NOT NULL,
   `number` int(11) DEFAULT '0',

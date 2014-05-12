@@ -7,8 +7,10 @@ import org.springframework.stereotype.Service;
 
 import com.psylife.dao.DimensionDAO;
 import com.psylife.dao.QuestionDAO;
+import com.psylife.dao.UserDAO;
 import com.psylife.entity.DimensionEntity;
 import com.psylife.entity.QuestionEntity;
+import com.psylife.entity.UserEntity;
 
 
 /**
@@ -25,6 +27,10 @@ public class CommonService {
 	@Qualifier("questionDAO")
 	private QuestionDAO questionDAO;
 	
+	@Autowired
+	@Qualifier("userDAO")
+	private UserDAO userDAO;
+	
 	public DimensionEntity getDim(int qid, int choice)
 	{
 		DimensionEntity dim = new DimensionEntity();
@@ -37,5 +43,11 @@ public class CommonService {
 	{
 		return questionDAO.insertQuestionEntity(ques);
 	}
+	
+	public int insertUser(UserEntity user)
+	{
+		return userDAO.insertUserEntity(user);
+	}
+	
 
 }

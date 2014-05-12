@@ -9,10 +9,12 @@ public class Account implements Serializable{
 	 */
 	private static final long serialVersionUID = 5522426479916132746L;
 	private boolean isLogin;
+	private String cardno;
 	private String userName;
 	private String password;
 	private int userId;
 	private int gender;
+	private String school;
 	private int totalTime;
 	//回答到第几题，避免修改之前问题
 	private int state;
@@ -76,5 +78,17 @@ public class Account implements Serializable{
 	 */
 	public void setTotalTime(int totalTime) {
 		this.totalTime = totalTime;
+	}
+	public String getSchool() {
+		return school;
+	}
+	public void setSchool(String school) {
+		this.school = school;
+	}
+	public String getCardno() {
+		return cardno;
+	}
+	public void setCardno(String cardno) {
+		this.cardno = cardno;
 	}
 }
