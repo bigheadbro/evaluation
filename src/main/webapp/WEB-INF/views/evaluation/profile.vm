@@ -691,10 +691,7 @@ $(document).ready(function(){
 	$("#industry").click(function(){
 		showindustry();
 	});
-	$(".industry-win .detail a").click(function(){
-		$("#industry").val($(this).text());
-		hideindustry();
-	});
+
 	$(".close-industry").click(function(){
 		hideindustry();
 	});
@@ -702,6 +699,8 @@ $(document).ready(function(){
 	$("#position").click(function(){
 		showposition();
 	});
+
+
 
 	$(".close-position").click(function(){
 		hideposition();
