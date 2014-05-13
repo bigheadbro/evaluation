@@ -111,9 +111,25 @@
     </div>
 </div>
 <script>
-	$(function(){
-			$(".position-win .detail a").click(function(){
-    		$(".position-win .selected span").append("<a>" + $(this).text() + "</a>");
-    	});
-	});
+    var cntPos = 0;
+	  $(function(){
+			  $(".position-win .detail a").click(function(){
+						if(cntPos == 3)
+					  {
+							alert("最多选择3个职位");
+							last;
+					  }
+    				$(".position-win .selected span").append("<a>" + $(this).text() + "</a>");
+						cntPos++;
+    	  });
+				$(".position-win .selected span").on("click", "a", function(){
+  					$(this).remove();
+  					cntPos--;
+  			});
+			
+  			$(".close-position").click(function(){
+  					$("#position").val($(".position-win .selected span").text());
+      			hideposition();
+      	});
+	  });
 </script>

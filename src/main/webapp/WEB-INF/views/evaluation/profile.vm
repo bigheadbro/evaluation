@@ -691,16 +691,10 @@ $(document).ready(function(){
 	$("#industry").click(function(){
 		showindustry();
 	});
-
-	$(".close-industry").click(function(){
-		hideindustry();
-	});
 	
 	$("#position").click(function(){
 		showposition();
 	});
-
-
 
 	$(".close-position").click(function(){
 		hideposition();
