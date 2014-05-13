@@ -7,13 +7,13 @@ $(document).ready(function(){
     	increaseArea: '20%' // optional
     });
     $('input').on('ifChecked', function(event){
-		alert($(this).attr("number"));
 		$("#choice").val($(this).attr("id"));
      	$('input').iCheck('disable');
     });
-	$(".next").click(function(){
+	$('input').on('ifChecked', function(event){
+     	$('input').iCheck('disable');
 		$("#form_q").submit();
-	});
+    });
 });
 </script>
 <div class="main-content-container">
@@ -117,9 +117,6 @@ $(document).ready(function(){
 			</ul>
 			#end
 			</form>
-		</div>
-		<div class="operation clearfix">
-			<a class="next">下一题</a>
 		</div>
 	</div>
 </div>

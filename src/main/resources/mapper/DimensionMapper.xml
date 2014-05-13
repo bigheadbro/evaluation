@@ -42,7 +42,7 @@
 	<select id="queryDimensionByQid" parameterType="DimensionEntity"
 		resultMap="DimensionResultMap">
 	<![CDATA[
-		SELECT * from t_dimension t WHERE t.qid = 1 and t.choice = 1
+		SELECT * from t_dimension t WHERE t.qid = #{qid} and t.choice = #{choice}
 	]]>
 	</select>
 </mapper>

@@ -7,7 +7,7 @@ $(document).ready(function(){
 	  yearRange: "1980:2000",
 	  dateFormat: "yy-mm-dd"
     });
-    $('input').iCheck({
+	$('input').iCheck({
 		checkboxClass: 'icheckbox_square-green',
     	radioClass: 'iradio_square-green',
     	increaseArea: '20%' // optional
@@ -33,7 +33,7 @@ $(document).ready(function(){
 								姓名
 							</li>
 							<li class="right">
-								桂超群
+								${account.userName}
 							</li>
 						</ul>
 						<ul class="item clearfix">
@@ -41,7 +41,11 @@ $(document).ready(function(){
 								性别
 							</li>
 							<li class="right">
-								男
+								#if(${account.gender} == 0)
+									女
+								#else
+									男
+								#end
 							</li>
 						</ul>
 						#springBind("form.user.birth")
@@ -67,7 +71,7 @@ $(document).ready(function(){
 								学校
 							</li>
 							<li class="right">
-								同济大学
+								${account.school}
 							</li>
 						</ul>
 						#springBind("form.user.major")
@@ -121,7 +125,7 @@ $(document).ready(function(){
 							<li>
 								<div class="dim7">
 								#springBind("form.user.salary")
-								<input type="hidden" name="${status.expression}" id="salary" />
+								<input type="hidden" name="${status.expression}"   id="salary" />
 								<input type="radio" name="salary" id="salary1" number="1">
 								<label for="salary1">1</label>
 								<input type="radio" name="salary" id="salary2" number="2">
@@ -146,7 +150,7 @@ $(document).ready(function(){
 							<li>
 								<div class="dim7">
 								#springBind("form.user.welfare")
-								<input type="hidden"  name="${status.expression}" id="welfare" />
+								<input type="hidden"  name="${status.expression}"   id="welfare" />
 								<input type="radio" name="welfare" id="welfare1" number="1">
 								<label for="welfare1">1</label>
 								<input type="radio" name="welfare" id="welfare2" number="2">
@@ -171,7 +175,7 @@ $(document).ready(function(){
 							<li>
 								<div class="dim7">
 								#springBind("form.user.vacation")
-								<input type="hidden" name="${status.expression}"  id="vacation" />
+								<input type="hidden" name="${status.expression}"    id="vacation" />
 								<input type="radio" name="vacation" id="vacation1" number="1">
 								<label for="vacation1">1</label>
 								<input type="radio" name="vacation" id="vacation2" number="2">
@@ -196,7 +200,7 @@ $(document).ready(function(){
 							<li>
 								<div class="dim7">
 								#springBind("form.user.freedom")
-								<input type="hidden"  name="${status.expression}" id="freedom" />
+								<input type="hidden"  name="${status.expression}"   id="freedom" />
 								<input type="radio" name="freedom" id="freedom1" number="1">
 								<label for="freedom1">1</label>
 								<input type="radio" name="freedom" id="freedom2" number="2">
@@ -221,7 +225,7 @@ $(document).ready(function(){
 							<li>
 								<div class="dim7">
 								#springBind("form.user.burden")
-								<input type="hidden"  name="${status.expression}" id="burden" />
+								<input type="hidden"  name="${status.expression}"   id="burden" />
 								<input type="radio" name="burden" id="burden1" number="1">
 								<label for="burden1">1</label>
 								<input type="radio" name="burden" id="burden2" number="2">
@@ -246,7 +250,7 @@ $(document).ready(function(){
 							<li>
 								<div class="dim7">
 								#springBind("form.user.development")
-								<input type="hidden" name="${status.expression}"  id="development" />
+								<input type="hidden" name="${status.expression}"    id="development" />
 								<input type="radio" name="development" id="development1" number="1">
 								<label for="development1">1</label>
 								<input type="radio" name="development" id="development2" number="2">
@@ -271,7 +275,7 @@ $(document).ready(function(){
 							<li>
 								<div class="dim7">
 								#springBind("form.user.training")
-								<input type="hidden" name="${status.expression}"  id="training" />
+								<input type="hidden" name="${status.expression}"    id="training" />
 								<input type="radio" name="training" id="training1" number="1">
 								<label for="training1">1</label>
 								<input type="radio" name="training" id="training2" number="2">
@@ -296,7 +300,7 @@ $(document).ready(function(){
 							<li>
 								<div class="dim7">
 								#springBind("form.user.wtrip")
-								<input type="hidden" name="${status.expression}"  id="wtrip"/>
+								<input type="hidden" name="${status.expression}"    id="wtrip"/>
 								<input type="radio" name="wtrip" id="wtrip1" number="1">
 								<label for="wtrip1">1</label>
 								<input type="radio" name="wtrip" id="wtrip2" number="2">
@@ -321,7 +325,7 @@ $(document).ready(function(){
 							<li>
 								<div class="dim7">
 								#springBind("form.user.atmosphere")
-								<input type="hidden" name="${status.expression}"  id="atmosphere" />
+								<input type="hidden" name="${status.expression}"    id="atmosphere" />
 								<input type="radio" name="atmosphere" id="atmosphere1" number="1">
 								<label for="atmosphere1">1</label>
 								<input type="radio" name="atmosphere" id="atmosphere2" number="2">
@@ -346,7 +350,7 @@ $(document).ready(function(){
 							<li>
 								<div class="dim7">
 								#springBind("form.user.brand")
-								<input type="hidden" name="${status.expression}"  id="brand" />
+								<input type="hidden" name="${status.expression}"    id="brand" />
 								<input type="radio" name="brand" id="brand1" number="1">
 								<label for="brand1">1</label>
 								<input type="radio" name="brand" id="brand2" number="2">
@@ -371,7 +375,7 @@ $(document).ready(function(){
 							<li>
 								<div class="dim7">
 								#springBind("form.user.distance")
-								<input type="hidden"   name="${status.expression}" id="distance" />
+								<input type="hidden"   name="${status.expression}"   id="distance" />
 								<input type="radio" name="distance" id="distance1" number="1">
 								<label for="distance1">1</label>
 								<input type="radio" name="distance" id="distance2" number="2">
@@ -396,7 +400,7 @@ $(document).ready(function(){
 							</li>
 							<li>
 								#springBind("form.user.lowSalary")
-								<input type="text" name="${status.expression}"   />
+								<input type="text" name="${status.expression}" />
 							</li>
 							<li class="right">
 								(税后，人民币元)
@@ -408,7 +412,7 @@ $(document).ready(function(){
 							</li>
 							<li>
 								#springBind("form.user.expectedSalary")
-								<input type="text" name="${status.expression}"   />
+								<input type="text" name="${status.expression}"  />
 							</li>
 							<li class="right">
 								(税后，人民币元)
@@ -423,7 +427,7 @@ $(document).ready(function(){
 							<li>
 								<div class="dim7">
 								#springBind("form.user.stateown")
-								<input type="hidden"  name="${status.expression}"  id="stateown" />
+								<input type="hidden"  name="${status.expression}"    id="stateown" />
 								<input type="radio" name="stateown" id="stateown1" number="1">
 								<label for="stateown1">1</label>
 								<input type="radio" name="stateown" id="stateown2" number="2">
@@ -448,7 +452,7 @@ $(document).ready(function(){
 							<li>
 								<div class="dim7">
 								#springBind("form.user.institution")
-								<input type="hidden"  name="${status.expression}"  id="institution" />
+								<input type="hidden"  name="${status.expression}"    id="institution" />
 								<input type="radio" name="institution" id="institution1" number="1">
 								<label for="institution1">1</label>
 								<input type="radio" name="institution" id="institution2" number="2">
@@ -473,7 +477,7 @@ $(document).ready(function(){
 							<li>
 								<div class="dim7">
 								#springBind("form.user.administration")
-								<input type="hidden"  name="${status.expression}"  id="administration" />
+								<input type="hidden"  name="${status.expression}"    id="administration" />
 								<input type="radio" name="administration" id="administration1" number="1">
 								<label for="administration1">1</label>
 								<input type="radio" name="administration" id="administration2" number="2">
@@ -498,7 +502,7 @@ $(document).ready(function(){
 							<li>
 								<div class="dim7">
 								#springBind("form.user.foreig")
-								<input type="hidden" name="${status.expression}"   id="foreig" />
+								<input type="hidden" name="${status.expression}"     id="foreig" />
 								<input type="radio" name="foreig" id="foreig1" number="1">
 								<label for="foreig1">1</label>
 								<input type="radio" name="foreig" id="foreig2" number="2">
@@ -523,7 +527,7 @@ $(document).ready(function(){
 							<li>
 								<div class="dim7">
 								#springBind("form.user.privat")
-								<input type="hidden"  name="${status.expression}"  id="privat" />
+								<input type="hidden"  name="${status.expression}"    id="privat" />
 								<input type="radio" name="privat" id="private1" number="1">
 								<label for="private1">1</label>
 								<input type="radio" name="privat" id="private2" number="2">
@@ -548,7 +552,7 @@ $(document).ready(function(){
 							<li>
 								<div class="dim7">
 								#springBind("form.user.startup")
-								<input type="hidden"  name="${status.expression}"  id="startup" />
+								<input type="hidden"  name="${status.expression}"    id="startup" />
 								<input type="radio" name="startup" id="startup1" number="1">
 								<label for="startup1">1</label>
 								<input type="radio" name="startup" id="startup2" number="2">
@@ -573,7 +577,7 @@ $(document).ready(function(){
 							<li>
 								<div class="dim7">
 								#springBind("form.user.ngo")
-								<input type="hidden"  name="${status.expression}"  id="ngo" />
+								<input type="hidden"  name="${status.expression}"    id="ngo" />
 								<input type="radio" name="ngo" id="ngo1" number="1">
 								<label for="ngo1">1</label>
 								<input type="radio" name="ngo" id="ngo2" number="2">
@@ -598,7 +602,7 @@ $(document).ready(function(){
 							<li>
 								<div class="dim7">
 								#springBind("form.user.commonweal")
-								<input type="hidden"  name="${status.expression}"  id="commonweal" />
+								<input type="hidden"  name="${status.expression}"    id="commonweal" />
 								<input type="radio" name="commonweal" id="commonweal1" number="1">
 								<label for="commonweal1">1</label>
 								<input type="radio" name="commonweal" id="commonweal2" number="2">

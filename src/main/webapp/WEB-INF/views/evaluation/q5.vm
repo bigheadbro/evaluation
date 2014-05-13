@@ -54,37 +54,38 @@ $(document).ready(function(){
 			#springBind("form.choice")
 			<input type="hidden" name="${status.expression}" value="$!{status.value}" id="choice"/>
 			<div class="q-head clearfix">
-				<h1 class="number">2.</h1>
-				<h1 class="title">现在是下午四点，你正在写一份部门经理昨天要求你今晚必须完成的报告，如果不出意外，再有三个小时的时间就能完成。此时，公司的总经理来找你，要求你晚上一起去参加一个饭局。饭局的地点离你家比较远，而且肯定是要替总经理喝不少酒的。之前你还从来没有机会跟总经理参加过公司活动。这时，你的做法是：</h1>
+				<h1 class="number">5.</h1>
+				<h1 class="title">你正在跟进一个项目，写好了一份项目方案，呈交给领导审阅。领导从来没有接触过该项目，也从来没有和你有过业务方面的交流，但他看了之后对方案进行了批评，提出了多条修改意见。你内心认为他提出的意见并不符合客户的实际需求。
+					但另一方面，他确实是个经验丰富的方案指定专家，有大量成功案例。这时，你会：</h1>
 			</div>
 			<ul>
 				<li>
 					<input type="radio" name="iCheck" id="1">
-					<label for="1">A、答应总经理的要求参加饭局，不提要完成报告的事，回家后加班加点完成</label>
+					<label for="1">A、完全听从他的建议，逐条修改</label>
 				</li>
 				<li>
 					<input type="radio" name="iCheck" id="2">
-					<label for="2">B、答应总经理的要求参加饭局，然后去向部门经理说明情况，请他定夺是否安排其他人完成报告</label>
+					<label for="2">B、当面接受意见，象征性地作些修改，再交给他</label>
 				</li>
 				<li>
 					<input type="radio" name="iCheck" id="3">
-					<label for="3">C、答应总经理的要求参加饭局。然后找一个可靠的同事帮自己完成报告</label>
+					<label for="3">C、当面接受意见，理清自己的想法，再次找他沟通，希望能改变他</label>
 				</li>
 				<li>
 					<input type="radio" name="iCheck" id="4">
-					<label for="4">D、向总经理提出要完成报告的事，请总经理定夺自己去饭局还是完成报告</label>
+					<label for="4">D、当面接受意见，按他的意见修改，但也把自己的思考整理出来告诉他</label>
 				</li>
 				<li>
 					<input type="radio" name="iCheck" id="5">
-					<label for="5">E、向总经理提出要完成报告的事，说明自己想去，但需要请示一下部门经理</label>
+					<label for="5">E、找其他业务精熟的同事讨教，倾听第三方意见后再做判断</label>
 				</li>
 				<li>
 					<input type="radio" name="iCheck" id="6">
-					<label for="6">F、婉拒总经理的要求，说明自己需要认真完成报告</label>
+					<label for="6">F、不接受意见，相信自己的判断，不做修改</label>
 				</li>
 				<li>
 					<input type="radio" name="iCheck" id="7">
-					<label for="7">G、婉拒总经理的要求，说明自己需要认真完成报告</label>
+					<label for="7">G、不接受意见，写一份陈述自己观点的说明，据理力争</label>
 				</li>
 			</ul>
 			</form>

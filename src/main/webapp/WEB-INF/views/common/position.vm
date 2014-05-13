@@ -3,10 +3,10 @@
     <div class="position-win-content">
         <h2>
             <a class="close-position">[确认]</a>
-				请选择行业类别（您最多能选择3项）
+				请选择职位（您最多能选择3项）
 		</h2>
-		<div class="selected">
-			已选行业：<span></span>
+		<div class="selected clearfix">
+			<h5>已选行业：</h5><span></span>
 		</div>
 		<div class="grey">
 			<ul class="position-wrap clearfix">
@@ -15,7 +15,7 @@
 				</li>
 				<li class="detail">
 					<a>计算机软件</a><a>计算机硬件</a><a>互联网/电子商务/网游</a>
-					<a>通信/电信/网络通信/电信/网络设备设备</a><a>IT-品管、技术支持及其它	</a><a>通信技术开发及应用</a>
+					<a>IT-gua<a>IT-品管、技术支持及其它	</a><a>通信技术开发及应用</a>
 					<a>电子/电器/半导体/仪器仪表</a>
 				</li>
 			</ul>
@@ -111,25 +111,25 @@
     </div>
 </div>
 <script>
-    var cntPos = 0;
-	  $(function(){
-			  $(".position-win .detail a").click(function(){
-						if(cntPos == 3)
-					  {
-							alert("最多选择3个职位");
-							last;
-					  }
-    				$(".position-win .selected span").append("<a>" + $(this).text() + "</a>");
-						cntPos++;
-    	  });
-				$(".position-win .selected span").on("click", "a", function(){
-  					$(this).remove();
-  					cntPos--;
-  			});
+	var cntPos = 0;
+	$(function(){
+		$(".position-win .detail a").click(function(){
+    		if(cntPos == 3)
+    		{
+    			alert("最多选择3个职位");
+    			last;
+    		}
+			$(".position-win .selected span").append("<a>" + $(this).text() + "</a>");
+    		cntPos++;
+    	});
+		$(".position-win .selected span").on("click", "a", function(){
+  			$(this).remove();
+  			cntPos--;
+  		});
 			
-  			$(".close-position").click(function(){
-  					$("#position").val($(".position-win .selected span").text());
-      			hideposition();
+  		$(".close-position").click(function(){
+  			$("#position").val($(".position-win .selected span").text());
+      		hideposition();
       	});
-	  });
+	});
 </script>

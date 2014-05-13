@@ -5,8 +5,8 @@
             <a class="close-industry">[确认]</a>
 				请选择行业类别（您最多能选择5项）
 		</h2>
-		<div class="selected">
-			已选行业：<span></span>
+		<div class="selected clearfix">
+			<h5>已选行业：</h5><span></span>
 		</div>
 		<div class="grey">
 			<ul class="industry-wrap clearfix">
@@ -15,8 +15,8 @@
 				</li>
 				<li class="detail">
 					<a>计算机软件</a><a>计算机硬件</a><a>互联网/电子商务/网游</a>
-					<a>通信/电信/网络通信/电信/网络设备设备</a><a>IT-品管、技术支持及其它	</a><a>通信技术开发及应用</a>
-					<a>电子/电器/半导体/仪器仪表</a>
+					<a>通信/电信/网络</a><a>通信/电信/网络设备设备</a><a>IT-品管、技术支持及其它</a>
+					<a>通信技术开发及应用</a><a>电子/电器/半导体/仪器仪表</a>
 				</li>
 			</ul>
 		</div>
@@ -120,25 +120,25 @@
     </div>
 </div>
 <script>
-  var cntInd = 0;
+    var cntInd = 0;
 	$(function(){
-			$(".industry-win .detail a").click(function(){
-			    if(cntInd == 5)
-					{
-							alert("最多选择5个行业");
-							last;
-					}
-    		  $(".industry-win .selected span").append("<a>" + $(this).text() + "</a>");
-				  cntInd++;
+		$(".industry-win .detail a").click(function(){
+    		if(cntInd == 5)
+    		{
+    			alert("最多选择5个行业");
+    			last;
+    		}
+        	$(".industry-win .selected span").append("<a>" + $(this).text() + "</a>");
+    		cntInd++;
+        });
+    	$(".industry-win .selected span").on("click", "a", function(){
+    		$(this).remove();
+			cntInd--;
     	});
-			$(".industry-win .selected span").on("click", "a", function(){
-					$(this).remove();
-					
-			});
-			
-			$(".close-industry").click(function(){
-					$("#industry").val($(".industry-win .selected span").text());
-    			hideindustry();
-    	});
+    			
+    	$(".close-industry").click(function(){
+    		$("#industry").val($(".industry-win .selected span").text());
+        	hideindustry();
+        });
 	});
 </script>

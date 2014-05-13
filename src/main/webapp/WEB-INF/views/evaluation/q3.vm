@@ -22,7 +22,7 @@ $(document).ready(function(){
 			<div class="test clearfix">
     			<ul>
     				<li class="done"><em><span>●</span>1</em></li>
-    				<li><em><span>●</span>2</em></li>
+    				<li class="done"><em><span>●</span>2</em></li>
     				<li><em><span>●</span>3</em></li>
     				<li><em><span>●</span>4</em></li>
     				<li><em><span>●</span>5</em></li>
@@ -54,41 +54,28 @@ $(document).ready(function(){
 			#springBind("form.choice")
 			<input type="hidden" name="${status.expression}" value="$!{status.value}" id="choice"/>
 			<div class="q-head clearfix">
-				<h1 class="number">2.</h1>
-				<h1 class="title">现在是下午四点，你正在写一份部门经理昨天要求你今晚必须完成的报告，如果不出意外，再有三个小时的时间就能完成。此时，公司的总经理来找你，要求你晚上一起去参加一个饭局。饭局的地点离你家比较远，而且肯定是要替总经理喝不少酒的。之前你还从来没有机会跟总经理参加过公司活动。这时，你的做法是：</h1>
+				<h1 class="number">3.</h1>
+				<h1 class="title">你正在向客户介绍自己公司生产的两种型号的货物。客户对A型产品更感兴趣，有意购买。A型产品价格更高，这意味着出售A型产品能使公司获利更大，你的当期业绩目标也可以完成（如果售出B产品的话无法完成），而且公司今年度的战略目标就是全力以赴扩大A产品的市场份额。但是以你对客户需求的了解，他们的需求更适合购买B型的产品。而且对方公司的财力并非十分雄厚，购买A产品对他们来说风险较大。这时，你会：/h1>
 			</div>
 			<ul>
 				<li>
 					<input type="radio" name="iCheck" id="1">
-					<label for="1">A、答应总经理的要求参加饭局，不提要完成报告的事，回家后加班加点完成</label>
+					<label for="1">A、坚决促成客户购买A商品</label>
 				</li>
 				<li>
 					<input type="radio" name="iCheck" id="2">
-					<label for="2">B、答应总经理的要求参加饭局，然后去向部门经理说明情况，请他定夺是否安排其他人完成报告</label>
+					<label for="2">B、促成客户购买A商品，适当让利</label>
 				</li>
 				<li>
 					<input type="radio" name="iCheck" id="3">
-					<label for="3">C、答应总经理的要求参加饭局。然后找一个可靠的同事帮自己完成报告</label>
+					<label for="3">C、帮助客户仔细分析利弊，劝导客户购买B商品</label>
 				</li>
 				<li>
 					<input type="radio" name="iCheck" id="4">
-					<label for="4">D、向总经理提出要完成报告的事，请总经理定夺自己去饭局还是完成报告</label>
-				</li>
-				<li>
-					<input type="radio" name="iCheck" id="5">
-					<label for="5">E、向总经理提出要完成报告的事，说明自己想去，但需要请示一下部门经理</label>
-				</li>
-				<li>
-					<input type="radio" name="iCheck" id="6">
-					<label for="6">F、婉拒总经理的要求，说明自己需要认真完成报告</label>
-				</li>
-				<li>
-					<input type="radio" name="iCheck" id="7">
-					<label for="7">G、婉拒总经理的要求，说明自己需要认真完成报告</label>
+					<label for="4">D、客观陈述A，B两项产品的优缺点以及适用程度，让客户自行选择</label>
 				</li>
 			</ul>
 			</form>
 		</div>
-
 	</div>
 </div>

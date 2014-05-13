@@ -54,7 +54,7 @@
    	  <!---->
 		<id property="administration" column="administration" />
    	  <!---->
-		<id property="foreign" column="foreign" />
+		<id property="foreig" column="foreig" />
    	  <!---->
 		<id property="privat" column="privat" />
    	  <!---->
@@ -103,7 +103,7 @@
 		,stateown
 		,institution
 		,administration
-		,foreign
+		,foreig
 		,privat
 		,startup
 		,ngo
@@ -136,7 +136,7 @@
 		,#{stateown}
 		,#{institution}
 		,#{administration}
-		,#{foreign}
+		,#{foreig}
 		,#{privat}
 		,#{startup}
 		,#{ngo}

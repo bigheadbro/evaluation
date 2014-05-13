@@ -54,37 +54,30 @@ $(document).ready(function(){
 			#springBind("form.choice")
 			<input type="hidden" name="${status.expression}" value="$!{status.value}" id="choice"/>
 			<div class="q-head clearfix">
-				<h1 class="number">2.</h1>
-				<h1 class="title">现在是下午四点，你正在写一份部门经理昨天要求你今晚必须完成的报告，如果不出意外，再有三个小时的时间就能完成。此时，公司的总经理来找你，要求你晚上一起去参加一个饭局。饭局的地点离你家比较远，而且肯定是要替总经理喝不少酒的。之前你还从来没有机会跟总经理参加过公司活动。这时，你的做法是：</h1>
+				<h1 class="number">4.</h1>
+				<h1 class="title">你所在的企业被人举报违规排放污染物，正在被环境监管部门调查。据你所知，你的企业确实存在违规排放的问题，而且你也有充分的证据证明这一点。一旦证实这一情况，
+					企业将面临巨额罚单，可能会直接导致较100-200名员工的裁员或全体人员减薪。但如果继续违规排放，当地村民（约2000人）的健康可能受到威胁。但这种威胁是否真的存在，尚未得到科学检验的证实。这时你被监管部门约谈，询问你是否知道公司违规排放的问题，你最有可能的回答是：</h1>
 			</div>
 			<ul>
 				<li>
 					<input type="radio" name="iCheck" id="1">
-					<label for="1">A、答应总经理的要求参加饭局，不提要完成报告的事，回家后加班加点完成</label>
+					<label for="1">A、承认，并积极提供证据</label>
 				</li>
 				<li>
 					<input type="radio" name="iCheck" id="2">
-					<label for="2">B、答应总经理的要求参加饭局，然后去向部门经理说明情况，请他定夺是否安排其他人完成报告</label>
+					<label for="2">B、承认，但强调排放的危害并不明确</label>
 				</li>
 				<li>
 					<input type="radio" name="iCheck" id="3">
-					<label for="3">C、答应总经理的要求参加饭局。然后找一个可靠的同事帮自己完成报告</label>
+					<label for="3">C、部分承认，对违规情节淡化处理</label>
 				</li>
 				<li>
 					<input type="radio" name="iCheck" id="4">
-					<label for="4">D、向总经理提出要完成报告的事，请总经理定夺自己去饭局还是完成报告</label>
+					<label for="4">D、说自己不知道，请询问其他人员</label>
 				</li>
 				<li>
 					<input type="radio" name="iCheck" id="5">
-					<label for="5">E、向总经理提出要完成报告的事，说明自己想去，但需要请示一下部门经理</label>
-				</li>
-				<li>
-					<input type="radio" name="iCheck" id="6">
-					<label for="6">F、婉拒总经理的要求，说明自己需要认真完成报告</label>
-				</li>
-				<li>
-					<input type="radio" name="iCheck" id="7">
-					<label for="7">G、婉拒总经理的要求，说明自己需要认真完成报告</label>
+					<label for="5">E、否认公司有相关行为</label>
 				</li>
 			</ul>
 			</form>
