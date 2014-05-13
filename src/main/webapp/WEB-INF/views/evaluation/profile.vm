@@ -681,7 +681,6 @@ $(document).ready(function(){
 	$(".close-industry").click(function(){
 		hideindustry();
 <<<<<<< master
-<<<<<<< master
 	});
 	
 	$("#position").click(function(){
@@ -690,8 +689,6 @@ $(document).ready(function(){
 
 	$(".close-position").click(function(){
 		hideposition();
-=======
->>>>>>> 34ae4c2 5.13@company
 	});
 });
 </script>
