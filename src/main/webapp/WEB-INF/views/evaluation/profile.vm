@@ -628,6 +628,7 @@ $(document).ready(function(){
 </div>
 #parse("/common/major.vm")
 #parse("/common/industry.vm")
+#parse("/common/position.vm")
 <script>
 function hidemajor() {
 	$(".major-win").hide();
@@ -654,6 +655,19 @@ function showindustry() {
 			$(window).height() / 2 + $(document).scrollTop() - 220);
 	$(".industry-win").css("left", $(document).width() / 2 - 300);
 	$(".industry-win").show();
+}
+function hideposition() {
+	$(".position-win").hide();
+	$("#pagemask-position").hide();
+}
+function showposition() {
+	$("#pagemask-position").css("width", $(document).width());
+	$("#pagemask-position").css("height", $(document).height());
+	$("#pagemask-position").show();
+	$(".position-win").css("top",
+			$(window).height() / 2 + $(document).scrollTop() - 220);
+	$(".position-win").css("left", $(document).width() / 2 - 300);
+	$(".position-win").show();
 }
 $(document).ready(function(){
 	$('input').on('ifChecked', function(event){
@@ -683,6 +697,14 @@ $(document).ready(function(){
 	});
 	$(".close-industry").click(function(){
 		hideindustry();
+	});
+	
+	$("#position").click(function(){
+		showposition();
+	});
+
+	$(".close-position").click(function(){
+		hideposition();
 	});
 });
 </script>

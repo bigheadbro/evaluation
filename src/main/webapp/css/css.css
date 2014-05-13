@@ -136,7 +136,31 @@ ul.industry-wrap li.detail{width: 640px;}
 ul.industry-wrap li.detail a{width: 210px;display: inline-block;}
 ul.industry-wrap li.detail a:hover{background-color:#0099cb;color:white;}
 
-#pagemask-major, #pagemask-industry{
+/*选择职位*/
+.position-win{display:none;position:absolute;top:50px;right:400px;z-index:10002;width:820px;padding: 5px;border-radius: 5px;background:url(../img/transGray.png);font-size:13px;}
+.position-win-content{background-color:white;padding-bottom:5px;}
+.position-win h2{background-color:#0099cb;color:white;font-size:14px;padding:3px 10px;margin-bottom: 5px;}
+.position-win h2 a{float:right;}
+.position-win .content{margin: 10px 30px;}
+.position-win .content .answer-container h5{position:relative;font-size:14px;color:#707070}
+.addimg-s{position:absolute;right:0;background: url(../img/addimg-s.png) no-repeat 0 0;float: right;height: 20px;width: 20px;display: block;}
+.answer-wrap{overflow-y: auto;margin-top: 5px;margin-bottom:15px;max-height: 250px;padding: 8px 10px;border: 1px solid #ccc;border-radius: 3px;box-shadow: 0 0 4px 0 rgba(0,0,0,.1) inset;-webkit-transition: min-height .25s ease-out;background: #fff;}
+.position-container h4{font-size:14px;color:#707070;}
+.position-container h4 span{margin-left: 10px;font-size:10px;color:#0088b5;}
+.position-container .bargin{width: 520px;height: 165px;resize: none;}
+.position-container label{margin-top:15px;font-size:14px;color:#707070;}
+.position-op{margin:20px 0 20px 0;font-size:16px;}
+.position-op .publish{background-color:#d73434;color:white;border-radius:4px;display: block;float: left;width: 100px;text-align: center;padding: 10px;margin-right:10px;}
+.position-op .savedraft{background-color:#dd5a5a;color:white;border-radius:4px;display: block;float: left;width: 100px;text-align: center;padding: 10px;}
+.grey{background-color:#d2d2d2}
+.white{background-color:white;}
+ul.position-wrap li{float:left;}
+ul.position-wrap li.category{width:180px;color:#0099cb;vertical-align:middle;}
+ul.position-wrap li.detail{width: 640px;}
+ul.position-wrap li.detail a{width: 210px;display: inline-block;}
+ul.position-wrap li.detail a:hover{background-color:#0099cb;color:white;}
+
+#pagemask-major, #pagemask-industry, #pagemask-position{
 position: absolute;
 display: none;
 top: 0;
