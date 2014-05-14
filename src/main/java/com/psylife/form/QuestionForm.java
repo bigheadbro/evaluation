@@ -16,6 +16,8 @@ public class QuestionForm implements Serializable {
 	private int male;
 	
 	private int time;
+	
+	private int number;
 
 	/**
 	 * @return the qustionid
@@ -71,6 +73,14 @@ public class QuestionForm implements Serializable {
 	 */
 	public void setTime(int time) {
 		this.time = time;
+	}
+
+	public int getNumber() {
+		return number;
+	}
+
+	public void setNumber(int number) {
+		this.number = number;
 	}
 
 

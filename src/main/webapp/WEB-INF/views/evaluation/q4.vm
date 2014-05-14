@@ -22,8 +22,8 @@ $(document).ready(function(){
 			<div class="test clearfix">
     			<ul>
     				<li class="done"><em><span>●</span>1</em></li>
-    				<li><em><span>●</span>2</em></li>
-    				<li><em><span>●</span>3</em></li>
+    				<li class="done"><em><span>●</span>2</em></li>
+    				<li class="done"><em><span>●</span>3</em></li>
     				<li><em><span>●</span>4</em></li>
     				<li><em><span>●</span>5</em></li>
     				<li><em><span>●</span>6</em></li>
@@ -53,6 +53,8 @@ $(document).ready(function(){
 			<input type="hidden" name="${status.expression}" value="$!{status.value}" id="qid" />
 			#springBind("form.choice")
 			<input type="hidden" name="${status.expression}" value="$!{status.value}" id="choice"/>
+			#springBind("form.time")
+			<input type="hidden" name="${status.expression}" value="$!{status.value}" id="time"/>
 			<div class="q-head clearfix">
 				<h1 class="number">4.</h1>
 				<h1 class="title">你所在的企业被人举报违规排放污染物，正在被环境监管部门调查。据你所知，你的企业确实存在违规排放的问题，而且你也有充分的证据证明这一点。一旦证实这一情况，

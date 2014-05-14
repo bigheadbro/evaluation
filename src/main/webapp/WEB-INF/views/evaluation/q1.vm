@@ -12,6 +12,7 @@ $(document).ready(function(){
     });
 	$('input').on('ifChecked', function(event){
      	$('input').iCheck('disable');
+			$("#time").val(s);
 		$("#form_q").submit();
     });
 });
@@ -53,6 +54,8 @@ $(document).ready(function(){
 			<input type="hidden" name="${status.expression}" value="$!{status.value}" id="qid" />
 			#springBind("form.choice")
 			<input type="hidden" name="${status.expression}" value="$!{status.value}" id="choice"/>
+			#springBind("form.time")
+			<input type="hidden" name="${status.expression}" value="$!{status.value}" id="time"/>
 			#if($!util.isMale($account.getGender()))
 			<div class="q-head clearfix">
 				<h1 class="number">1.</h1>

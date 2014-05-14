@@ -12,6 +12,8 @@ import java.util.UUID;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import com.sun.org.apache.xerces.internal.impl.dv.util.Base64;
+
 import sun.misc.BASE64Decoder;
 import sun.misc.BASE64Encoder;
 
@@ -111,8 +113,8 @@ public class StringUtil {
 	 * @return
 	 * @throws Exception
 	 */
-	public static byte[] decryptBASE64(String key) throws Exception {
-	    return (new BASE64Decoder()).decodeBuffer(key);
+	public static String decryptBASE64(String key) throws Exception {
+	    return new String((new BASE64Decoder()).decodeBuffer(key));
 	}
 	
 	/**
@@ -122,19 +124,7 @@ public class StringUtil {
 	 * @throws Exception
 	 */
 	public static String encrypt(String str){
-		MessageDigest md = null;
-	    String ret = null;
-	    try
-	    {
-	        md = MessageDigest.getInstance("MD5");
-	        byte[] digest = md.digest(str.getBytes());
-	        ret = byte2hex(digest);
-	    }
-	    catch (Exception e)
-	    {
-	        e.printStackTrace();
-	    }
-	    return ret;
+		return (new BASE64Encoder()).encode(str.getBytes());
 	}
 	
 	/**
@@ -507,11 +497,6 @@ public class StringUtil {
 		return diffTimeYear(dateStr, "yyyy-MM-dd HH:mm:ss");
 	}
 	
-	public static void main(String[] args)
-	{
-		System.out.print(isIlegal("daoshifu"));
-	}
-	
 	public static boolean isProperImageFile(String type)
 	{
 		if(isEqual(type,".jpg") || isEqual(type , ".jpeg") || isEqual(type , ".gif") || isEqual(type , ".png"))
@@ -731,4 +716,12 @@ public class StringUtil {
 		String.valueOf(a);
 	}
 	
+	public static void main(String[] args) throws Exception
+	{
+		System.out.println(encrypt("2011520001"));
+		String str = new String(decryptBASE64("MjAxMTUyMDAwMQ="));
+		System.out.println(str);
+	}
 }
+
+		

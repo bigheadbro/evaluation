@@ -1,0 +1,170 @@
+#set($layout = "/layout/user_detail_layout.vm")
+<script>
+$(document).ready(function(){
+    $('input').iCheck({
+		checkboxClass: 'icheckbox_square-green',
+    	radioClass: 'iradio_square-green',
+    	increaseArea: '20%' // optional
+    });
+
+		$(".next").click(function(){
+				$("#form_q1").submit();
+				$("#form_q2").submit();
+				$("#form_q3").submit();
+				$("#form_q4").submit();
+		});
+});
+</script>
+<div class="main-content-container">
+	<div class="main-body">
+		<div class="test-wrap">
+			<div class="test clearfix">
+    			<ul>
+    				<li class="done"><em><span>●</span>1</em></li>
+    				<li class="done"><em><span>●</span>2</em></li>
+    				<li class="done"><em><span>●</span>3</em></li>
+    				<li class="done"><em><span>●</span>4</em></li>
+    				<li class="done"><em><span>●</span>5</em></li>
+    				<li class="done"><em><span>●</span>6</em></li>
+    				<li class="done"><em><span>●</span>7</em></li>
+    				<li class="done"><em><span>●</span>8</em></li>
+    				<li class="done"><em><span>●</span>9</em></li>
+    				<li class="done"><em><span>●</span>10</em></li>
+    				<li><em><span>●</span>11</em></li>
+    				<li><em><span>●</span>12</em></li>
+    				<li><em><span>●</span>13</em></li>
+    				<li><em><span>●</span>14</em></li>
+    				<li><em><span>●</span>15</em></li>
+    				<li><em><span>●</span>16</em></li>
+    			</ul>
+    			<div class="time-cost clearfix">
+    				<ul>
+    					<li class="pic"><img src="img/time.png" /></li>
+    					<li><h4 id="showtime">00:00</h4></li>
+    				</ul>
+    			</div>
+			</div>
+		</div>
+		<div class="question">
+			<div class="q-head clearfix">
+				<h1 class="number">11.</h1>
+				<h1 class="title">以下哪一种情况作为同事开会迟到的理由，你认为是可以原谅的？ </h1>
+			</div>
+			<form id="form_q1" method="post" >
+			<input type="hidden" name="do_submit" value="true"/>
+			#springBind("form.questionid")
+			<input type="hidden" name="${status.expression}" value="$!{status.value}" id="qid" />
+			#springBind("form.number")
+			<input type="hidden" name="${status.expression}" value="1" id="number" />
+			#springBind("form.time")
+			<input type="hidden" name="${status.expression}" value="$!{status.value}" id="time"/>
+			<ul>
+				<li>
+					A、接到一个客户的紧急咨询电话
+				</li>
+				<li>
+						#springBind("form.choice")
+						<input type="hidden" name="${status.expression}" value="$!{status.value}" id="a"/>
+						<input type="radio" name="a" id="a1" number="1">
+						<label for="a1">1</label>
+						<input type="radio" name="a" id="a2" number="2">
+						<label for="a2">2</label>
+						<input type="radio" name="a" id="a3" number="3">
+						<label for="a3">3</label>
+						<input type="radio" name="a" id="a4" number="4">
+						<label for="a4">4</label>
+						<input type="radio" name="a" id="a5" number="5">
+						<label for="a5">5</label>
+				</li>
+			</ul>
+			</form>
+			<form id="form_q2" method="post" >
+			<input type="hidden" name="do_submit" value="true"/>
+			#springBind("form.questionid")
+			<input type="hidden" name="${status.expression}" value="$!{status.value}" id="qid" />
+			#springBind("form.number")
+			<input type="hidden" name="${status.expression}" value="2" id="number" />
+			#springBind("form.time")
+			<input type="hidden" name="${status.expression}" value="$!{status.value}" id="time"/>
+			<ul>
+				<li>
+					B、发现开会要用的PPT中有数据错误，临时花时间进行了修改
+				</li>
+				<li>
+						#springBind("form.choice")
+						<input type="hidden"  name="${status.expression}" id="b" />
+						<input type="radio" name="b" id="b1" number="1">
+						<label for="b1">1</label>
+						<input type="radio" name="b" id="b2" number="2">
+						<label for="b2">2</label>
+						<input type="radio" name="b" id="b3" number="3">
+						<label for="b3">3</label>
+						<input type="radio" name="b" id="b4" number="4">
+						<label for="b4">4</label>
+						<input type="radio" name="b" id="b5" number="5">
+						<label for="b5">5</label>
+				</li>
+			</ul>
+			</form>
+			<form id="form_q3" method="post" >
+			<input type="hidden" name="do_submit" value="true"/>
+			#springBind("form.questionid")
+			<input type="hidden" name="${status.expression}" value="$!{status.value}" id="qid" />
+			#springBind("form.number")
+			<input type="hidden" name="${status.expression}" value="3" id="number" />
+			#springBind("form.time")
+			<input type="hidden" name="${status.expression}" value="$!{status.value}" id="time"/>
+			<ul>
+				<li>
+					C、被领导叫去布置任务
+				</li>
+				<li>
+						#springBind("form.choice")
+						<input type="hidden"  name="${status.expression}" id="c" />
+						<input type="radio" name="c" id="c1" number="1">
+						<label for="c1">1</label>
+						<input type="radio" name="c" id="c2" number="2">
+						<label for="c2">2</label>
+						<input type="radio" name="c" id="c3" number="3">
+						<label for="c3">3</label>
+						<input type="radio" name="c" id="c4" number="4">
+						<label for="c4">4</label>
+						<input type="radio" name="c" id="c5" number="5">
+						<label for="c5">5</label>
+				</li>
+			</ul>
+			</form>
+			<form id="form_q4" method="post" >
+			<input type="hidden" name="do_submit" value="true"/>
+			#springBind("form.questionid")
+			<input type="hidden" name="${status.expression}" value="$!{status.value}" id="qid" />
+			#springBind("form.number")
+			<input type="hidden" name="${status.expression}" value="4" id="number" />
+			#springBind("form.time")
+			<input type="hidden" name="${status.expression}" value="$!{status.value}" id="time"/>
+			<ul>
+				<li>
+					D、家里发生了重大事故
+				</li>
+				<li>
+						#springBind("form.choice")
+						<input type="hidden"  name="${status.expression}" id="d" />
+						<input type="radio" name="d" id="d1" number="1">
+						<label for="d1">1</label>
+						<input type="radio" name="d" id="d2" number="2">
+						<label for="d2">2</label>
+						<input type="radio" name="d" id="d3" number="3">
+						<label for="d3">3</label>
+						<input type="radio" name="d" id="d4" number="4">
+						<label for="d4">4</label>
+						<input type="radio" name="d" id="d5" number="5">
+						<label for="d5">5</label>
+				</li>
+			</ul>
+			</form>
+		</div>
+		<div class="operation clearfix">
+			<a class="next"></a>
+		</div>
+	</div>
+</div>

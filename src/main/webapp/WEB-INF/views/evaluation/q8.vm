@@ -6,10 +6,13 @@ $(document).ready(function(){
     	radioClass: 'iradio_square-green',
     	increaseArea: '20%' // optional
     });
-    $('input').on('ifChecked', function(event){
-     	$('input').iCheck('disable');
-		$("#form_q").submit();
-    });
+
+		$(".next").click(function(){
+				$("#form_q1").submit();
+				$("#form_q2").submit();
+				$("#form_q3").submit();
+				$("#form_q4").submit();
+		});
 });
 </script>
 <div class="main-content-container">
@@ -43,66 +46,240 @@ $(document).ready(function(){
 			</div>
 		</div>
 		<div class="question">
-			<form id="form_q" method="post" >
+			#if($!util.isMale($account.getGender()))
+			<div class="q-head clearfix">
+				<h1 class="number">8.</h1>
+				<h1 class="title">你刚进入职场，如果有以下四个人可能成为你的直接领导，你的满意度分别如何？（五点量表）</h1>
+			</div>
+			<form id="form_q1" method="post" >
 			<input type="hidden" name="do_submit" value="true"/>
 			#springBind("form.questionid")
 			<input type="hidden" name="${status.expression}" value="$!{status.value}" id="qid" />
-			#if($!util.isMale($account.getGender()))
-			<h1>8. 你刚进入职场，如果有以下四个人可能成为你的直接领导，你的满意度分别如何？（五点量表）</h1>
+			#springBind("form.number")
+			<input type="hidden" name="${status.expression}" value="1" id="number" />
+			#springBind("form.time")
+			<input type="hidden" name="${status.expression}" value="$!{status.value}" id="time"/>
 			<ul>
 				<li>
-					<input type="radio" name="iCheck" id="answer1">
-					<label for="answer1">A、不回应</label>
+					A、男，52岁，业务经验丰富，能力很强，但临近退休，工作积极性不高，不愿自己动手，喜欢指使别人去做事
 				</li>
 				<li>
-					<input type="radio" name="iCheck" id="answer2">
-					<label for="answer2">B、点一个赞</label>
-				</li>
-				<li>
-					<input type="radio" name="iCheck" id="answer3">
-					<label for="answer3">C、回复“今天楼下车不多，我也刚叫到”</label>
-				</li>
-				<li>
-					<input type="radio" name="iCheck" id="answer4">
-					<label for="answer4">D、回复“我不是和你一起走的吗？”</label>
-				</li>
-				<li>
-					<input type="radio" name="iCheck" id="answer5">
-					<label for="answer5">E、点一个赞，同时自己发一条朋友圈，说明自己刚下班</label>
-				</li>
-				<li>
-					<input type="radio" name="iCheck" id="answer6">
-					<label for="answer6">F、不点赞，同时自己发一条朋友圈，说明自己刚下班</label>
+						#springBind("form.choice")
+						<input type="hidden"  name="${status.expression}" id="a"/>
+						<input type="radio" name="a" id="a1" number="1">
+						<label for="a1">1</label>
+						<input type="radio" name="a" id="a2" number="2">
+						<label for="a2">2</label>
+						<input type="radio" name="a" id="a3" number="3">
+						<label for="a3">3</label>
+						<input type="radio" name="a" id="a4" number="4">
+						<label for="a4">4</label>
+						<input type="radio" name="a" id="a5" number="5">
+						<label for="a5">5</label>
 				</li>
 			</ul>
+			</form>
+			<form id="form_q2" method="post" >
+			<input type="hidden" name="do_submit" value="true"/>
+			#springBind("form.questionid")
+			<input type="hidden" name="${status.expression}" value="$!{status.value}" id="qid" />
+			#springBind("form.number")
+			<input type="hidden" name="${status.expression}" value="2" id="number" />
+			#springBind("form.time")
+			<input type="hidden" name="${status.expression}" value="$!{status.value}" id="time"/>
+			<ul>
+				<li>
+					B、男，35岁，思路清晰，雷厉风行，作风强势，业绩最出色，经常需要加班。喜欢批评人，喜欢夸耀自己的功劳
+				</li>
+				<li>
+						#springBind("form.choice")
+						<input type="hidden"  name="${status.expression}" id="b"/>
+						<input type="radio" name="b" id="b1" number="1">
+						<label for="b1">1</label>
+						<input type="radio" name="b" id="b2" number="2">
+						<label for="b2">2</label>
+						<input type="radio" name="b" id="b3" number="3">
+						<label for="b3">3</label>
+						<input type="radio" name="b" id="b4" number="4">
+						<label for="b4">4</label>
+						<input type="radio" name="b" id="b5" number="5">
+						<label for="b5">5</label>
+				</li>
+			</ul>
+			</form>
+			<form id="form_q3" method="post" >
+			<input type="hidden" name="do_submit" value="true"/>
+			#springBind("form.questionid")
+			<input type="hidden" name="${status.expression}" value="$!{status.value}" id="qid" />
+			#springBind("form.number")
+			<input type="hidden" name="${status.expression}" value="3" id="number" />
+			#springBind("form.time")
+			<input type="hidden" name="${status.expression}" value="$!{status.value}" id="time"/>
+			<ul>
+				<li>
+					C、男，42岁，为人温和，人缘好，深受领导信任，对手下要求不高，业务水平一般，擅长用人，能够提供许多培训资源
+				</li>
+				<li>
+						#springBind("form.choice")
+						<input type="hidden"  name="${status.expression}" id="c" />
+						<input type="radio" name="c" id="c1" number="1">
+						<label for="c1">1</label>
+						<input type="radio" name="c" id="c2" number="2">
+						<label for="c2">2</label>
+						<input type="radio" name="c" id="c3" number="3">
+						<label for="c3">3</label>
+						<input type="radio" name="c" id="c4" number="4">
+						<label for="c4">4</label>
+						<input type="radio" name="c" id="c5" number="5">
+						<label for="c5">5</label>
+				</li>
+			</ul>
+			</form>
+			<form id="form_q4" method="post" >
+			<input type="hidden" name="do_submit" value="true"/>
+			#springBind("form.questionid")
+			<input type="hidden" name="${status.expression}" value="$!{status.value}" id="qid" />
+			#springBind("form.number")
+			<input type="hidden" name="${status.expression}" value="4" id="number" />
+			#springBind("form.time")
+			<input type="hidden" name="${status.expression}" value="$!{status.value}" id="time"/>
+			<ul>
+				<li>
+					D、男，29岁，名牌大学毕业研究生，入职三年，多次被领导表扬，探索能力强，但是比较骄傲，不太听取意见，喜欢单兵作战
+				</li>
+				<li>
+						#springBind("form.user.burden")
+						<input type="hidden"  name="${status.expression}" id="d" />
+						<input type="radio" name="burden" id="d1" number="1">
+						<label for="d1">1</label>
+						<input type="radio" name="burden" id="d2" number="2">
+						<label for="d2">2</label>
+						<input type="radio" name="burden" id="d3" number="3">
+						<label for="d3">3</label>
+						<input type="radio" name="burden" id="d4" number="4">
+						<label for="d4">4</label>
+						<input type="radio" name="burden" id="d5" number="5">
+						<label for="d5">5</label>
+				</li>
+			</ul>
+			</form>
 			#else
-			<h1>8. 你和同事李艳两人加班到晚上九点多，然后一起离开了办公室，你们是办公室里留到最后的两个人。在你回家的路上，你看到李艳发了这样一条朋友圈：（“今天又是最后一个离开办公室，热爱工作，Fighting！”一张办公室图，然后下面有多个人点赞，其中一个是两人的领导，一个是公司另一部门的帅哥经理，两个同组同事）。你最有可能做的是：</h1>
+			<div class="q-head clearfix">
+				<h1 class="number">8.</h1>
+				<h1 class="title">你刚进入职场，如果由以下四个人可能成为你的直接领导，你的满意度分别如何？（五点量表）</h1>
+			</div>
+			<form id="form_q1" method="post" >
+			<input type="hidden" name="do_submit" value="true"/>
+			#springBind("form.questionid")
+			<input type="hidden" name="${status.expression}" value="$!{status.value}" id="qid" />
+			#springBind("form.number")
+			<input type="hidden" name="${status.expression}" value="1" id="number" />
+			#springBind("form.time")
+			<input type="hidden" name="${status.expression}" value="$!{status.value}" id="time"/>
 			<ul>
 				<li>
-					<input type="radio" name="iCheck" id="answer1">
-					<label for="answer1">A、不回应</label>
+					A、女，52岁，业务经验丰富，能力很强，但临近退休，工作积极性不高，不愿自己动手，喜欢指使比人去做事
 				</li>
 				<li>
-					<input type="radio" name="iCheck" id="answer2">
-					<label for="answer2">B、点一个赞</label>
-				</li>
-				<li>
-					<input type="radio" name="iCheck" id="answer3">
-					<label for="answer3">C、回复“我也刚乘上车，注意安全！”</label>
-				</li>
-				<li>
-					<input type="radio" name="iCheck" id="answer4">
-					<label for="answer4">D、回复“我不是和你一起走的吗？”</label>
-				</li>
-				<li>
-					<input type="radio" name="iCheck" id="answer5">
-					<label for="answer5">E、点一个赞，同时自己发一条朋友圈，说明自己刚下班</label>
-				</li>
-				<li>
-					<input type="radio" name="iCheck" id="answer6">
-					<label for="answer6">F、不点赞，同时自己发一条朋友圈，说明自己刚下班</label>
+						#springBind("form.choice")
+						<input type="hidden"  name="${status.expression}" id="a" />
+						<input type="radio" name="a" id="a1" number="1">
+						<label for="a1">1</label>
+						<input type="radio" name="a" id="a2" number="2">
+						<label for="a2">2</label>
+						<input type="radio" name="a" id="a3" number="3">
+						<label for="a3">3</label>
+						<input type="radio" name="a" id="a4" number="4">
+						<label for="a4">4</label>
+						<input type="radio" name="a" id="a5" number="5">
+						<label for="a5">5</label>
 				</li>
 			</ul>
+			</form>
+			<form id="form_q2" method="post" >
+			<input type="hidden" name="do_submit" value="true"/>
+			#springBind("form.questionid")
+			<input type="hidden" name="${status.expression}" value="$!{status.value}" id="qid" />
+			#springBind("form.number")
+			<input type="hidden" name="${status.expression}" value="2" id="number" />
+			#springBind("form.time")
+			<input type="hidden" name="${status.expression}" value="$!{status.value}" id="time"/>
+			<ul>
+				<li>
+					B、女，35岁，思路清晰，雷厉风行，作风强势，业绩最出色，经常需要加班。喜欢批评人，喜欢夸耀自己的功劳
+				</li>
+				<li>
+						#springBind("form.user.burden")
+						<input type="hidden"  name="${status.expression}" id="b" />
+						<input type="radio" name="b" id="b1" number="1">
+						<label for="b1">1</label>
+						<input type="radio" name="b" id="b2" number="2">
+						<label for="b2">2</label>
+						<input type="radio" name="b" id="b3" number="3">
+						<label for="b3">3</label>
+						<input type="radio" name="b" id="b4" number="4">
+						<label for="b4">4</label>
+						<input type="radio" name="b" id="b5" number="5">
+						<label for="b5">5</label>
+				</li>
+			</ul>
+			</form>
+			<form id="form_q3" method="post" >
+			<input type="hidden" name="do_submit" value="true"/>
+			#springBind("form.questionid")
+			<input type="hidden" name="${status.expression}" value="$!{status.value}" id="qid" />
+			#springBind("form.number")
+			<input type="hidden" name="${status.expression}" value="3" id="number" />
+			#springBind("form.time")
+			<input type="hidden" name="${status.expression}" value="$!{status.value}" id="time"/>
+			<ul>
+				<li>
+					C、女，42岁，组长，为人温和，人缘好，深受领导信任，业务水平一般，擅长用人，能够提供许多培训资源
+				</li>
+				<li>
+						#springBind("form.user.burden")
+						<input type="hidden"  name="${status.expression}" id="c" />
+						<input type="radio" name="c" id="c1" number="1">
+						<label for="c1">1</label>
+						<input type="radio" name="c" id="c2" number="2">
+						<label for="c2">2</label>
+						<input type="radio" name="c" id="c3" number="3">
+						<label for="c3">3</label>
+						<input type="radio" name="c" id="c4" number="4">
+						<label for="c4">4</label>
+						<input type="radio" name="c" id="c5" number="5">
+						<label for="c5">5</label>
+				</li>
+			</ul>
+			</form>
+			<form id="form_q4" method="post" >
+			<input type="hidden" name="do_submit" value="true"/>
+			#springBind("form.questionid")
+			<input type="hidden" name="${status.expression}" value="$!{status.value}" id="qid" />
+			#springBind("form.number")
+			<input type="hidden" name="${status.expression}" value="4" id="number" />
+			#springBind("form.time")
+			<input type="hidden" name="${status.expression}" value="$!{status.value}" id="time"/>
+			<ul>
+				<li>
+					D、女，29岁，名牌大学毕业研究生，入职三年，多次被领导表扬，探索能力强，但是比较骄傲，不太听取意见
+				</li>
+				<li>
+						#springBind("form.user.burden")
+						<input type="hidden"  name="${status.expression}" id="d" />
+						<input type="radio" name="d" id="d1" number="1">
+						<label for="d1">1</label>
+						<input type="radio" name="d" id="d2" number="2">
+						<label for="d2">2</label>
+						<input type="radio" name="d" id="d3" number="3">
+						<label for="d3">3</label>
+						<input type="radio" name="d" id="d4" number="4">
+						<label for="d4">4</label>
+						<input type="radio" name="d" id="d5" number="5">
+						<label for="d5">5</label>
+				</li>
+			</ul>
+			</form>
 			#end
 			</form>
 		</div>
