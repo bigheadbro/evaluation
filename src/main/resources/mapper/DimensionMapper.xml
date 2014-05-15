@@ -41,9 +41,12 @@
 
 	<select id="queryDimensionByQid" parameterType="DimensionEntity"
 		resultMap="DimensionResultMap">
-	<![CDATA[
-		SELECT * from t_dimension t WHERE t.qid = #{qid} and t.choice = #{choice}
-	]]>
+		SELECT * from t_dimension
+		<where>
+			<if test="qid != 0">AND qid=#{qid}</if>
+		    <if test="choice != 0">AND choice=#{choice}</if>
+		    <if test="number != 0">AND number=#{number}</if>
+	    </where> 
 	</select>
 </mapper>
 	

@@ -1,6 +1,8 @@
 package com.psylife.dao;
 
-import com.psylife.entity.QuestionEntity;;
+import java.util.List;
+
+import com.psylife.entity.QuestionEntity;
 
 public interface QuestionDAO {
 	/**
@@ -9,4 +11,7 @@ public interface QuestionDAO {
 	 * @return
 	 */
 	public int insertQuestionEntity(QuestionEntity question);
+	
+	//插入维度题
+	public int insertQuestionList(List<QuestionEntity> list);
 }

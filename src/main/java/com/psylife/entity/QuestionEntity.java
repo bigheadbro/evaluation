@@ -21,29 +21,29 @@ public class QuestionEntity implements Serializable {
 	//
 	private int time;
 	//
-	private int loyalty;
+	private double loyalty;
 	//
-	private int positive;
+	private double positive;
 	//
-	private int responsibility;
+	private double responsibility;
 	//
-	private int morality;
+	private double morality;
 	//
-	private int thinking;
+	private double thinking;
 	//
-	private int plan;
+	private double plan;
 	//
-	private int innovation;
+	private double innovation;
 	//
-	private int teamwork;
+	private double teamwork;
 	//
-	private int communication;
+	private double communication;
 	//
-	private int strain;
+	private double strain;
 	//
-	private int details;
+	private double details;
 	//
-	private int potential;
+	private double potential;
 
 	/**
 	 * @return the id
@@ -123,7 +123,7 @@ public class QuestionEntity implements Serializable {
 	/**
 	 * @return the loyalty
 	 */
-	public int getLoyalty() {
+	public double getLoyalty() {
 		return loyalty;
 	}
 
@@ -131,14 +131,14 @@ public class QuestionEntity implements Serializable {
 	 * @param loyalty
 	 *            the loyalty to set
 	 */
-	public void setLoyalty(int loyalty) {
+	public void setLoyalty(double loyalty) {
 		this.loyalty = loyalty;
 	}
 
 	/**
 	 * @return the positive
 	 */
-	public int getPositive() {
+	public double getPositive() {
 		return positive;
 	}
 
@@ -146,14 +146,14 @@ public class QuestionEntity implements Serializable {
 	 * @param positive
 	 *            the positive to set
 	 */
-	public void setPositive(int positive) {
+	public void setPositive(double positive) {
 		this.positive = positive;
 	}
 
 	/**
 	 * @return the responsibility
 	 */
-	public int getResponsibility() {
+	public double getResponsibility() {
 		return responsibility;
 	}
 
@@ -161,14 +161,14 @@ public class QuestionEntity implements Serializable {
 	 * @param responsibility
 	 *            the responsibility to set
 	 */
-	public void setResponsibility(int responsibility) {
+	public void setResponsibility(double responsibility) {
 		this.responsibility = responsibility;
 	}
 
 	/**
 	 * @return the morality
 	 */
-	public int getMorality() {
+	public double getMorality() {
 		return morality;
 	}
 
@@ -176,14 +176,14 @@ public class QuestionEntity implements Serializable {
 	 * @param morality
 	 *            the morality to set
 	 */
-	public void setMorality(int morality) {
+	public void setMorality(double morality) {
 		this.morality = morality;
 	}
 
 	/**
 	 * @return the thinking
 	 */
-	public int getThinking() {
+	public double getThinking() {
 		return thinking;
 	}
 
@@ -191,14 +191,14 @@ public class QuestionEntity implements Serializable {
 	 * @param thinking
 	 *            the thinking to set
 	 */
-	public void setThinking(int thinking) {
+	public void setThinking(double thinking) {
 		this.thinking = thinking;
 	}
 
 	/**
 	 * @return the plan
 	 */
-	public int getPlan() {
+	public double getPlan() {
 		return plan;
 	}
 
@@ -206,14 +206,14 @@ public class QuestionEntity implements Serializable {
 	 * @param plan
 	 *            the plan to set
 	 */
-	public void setPlan(int plan) {
+	public void setPlan(double plan) {
 		this.plan = plan;
 	}
 
 	/**
 	 * @return the innovation
 	 */
-	public int getInnovation() {
+	public double getInnovation() {
 		return innovation;
 	}
 
@@ -221,14 +221,14 @@ public class QuestionEntity implements Serializable {
 	 * @param innovation
 	 *            the innovation to set
 	 */
-	public void setInnovation(int innovation) {
+	public void setInnovation(double innovation) {
 		this.innovation = innovation;
 	}
 
 	/**
 	 * @return the teamwork
 	 */
-	public int getTeamwork() {
+	public double getTeamwork() {
 		return teamwork;
 	}
 
@@ -236,14 +236,14 @@ public class QuestionEntity implements Serializable {
 	 * @param teamwork
 	 *            the teamwork to set
 	 */
-	public void setTeamwork(int teamwork) {
+	public void setTeamwork(double teamwork) {
 		this.teamwork = teamwork;
 	}
 
 	/**
 	 * @return the communication
 	 */
-	public int getCommunication() {
+	public double getCommunication() {
 		return communication;
 	}
 
@@ -251,14 +251,14 @@ public class QuestionEntity implements Serializable {
 	 * @param communication
 	 *            the communication to set
 	 */
-	public void setCommunication(int communication) {
+	public void setCommunication(double communication) {
 		this.communication = communication;
 	}
 
 	/**
 	 * @return the strain
 	 */
-	public int getStrain() {
+	public double getStrain() {
 		return strain;
 	}
 
@@ -266,14 +266,14 @@ public class QuestionEntity implements Serializable {
 	 * @param strain
 	 *            the strain to set
 	 */
-	public void setStrain(int strain) {
+	public void setStrain(double strain) {
 		this.strain = strain;
 	}
 
 	/**
 	 * @return the details
 	 */
-	public int getDetails() {
+	public double getDetails() {
 		return details;
 	}
 
@@ -281,14 +281,14 @@ public class QuestionEntity implements Serializable {
 	 * @param details
 	 *            the details to set
 	 */
-	public void setDetails(int details) {
+	public void setDetails(double details) {
 		this.details = details;
 	}
 
 	/**
 	 * @return the potential
 	 */
-	public int getPotential() {
+	public double getPotential() {
 		return potential;
 	}
 
@@ -296,7 +296,7 @@ public class QuestionEntity implements Serializable {
 	 * @param potential
 	 *            the potential to set
 	 */
-	public void setPotential(int potential) {
+	public void setPotential(double potential) {
 		this.potential = potential;
 	}
 

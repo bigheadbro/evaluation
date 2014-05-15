@@ -61,7 +61,7 @@ $(document).ready(function(){
 				<h1 class="number">1.</h1>
 				<h1 class="title">你和同事王勇两人加班到晚上九点多，然后一起离开了办公室，你们是办公室里留到最后的两个人。在你回家的路上，你看到王勇发了这样一条朋友圈：（“今天又是最后一个离开办公室，热爱工作，Fighting！”一张办公室图，然后下面有多个人点赞，其中一个是两人的领导，一个是公司美女前台，两个同组同事）。你最有可能做的是</h1>
 			</div>
-			<ul>
+			<ul class="single">
 				<li>
 					<input type="radio" name="iCheck" id="1">
 					<label for="1">A、不回应</label>

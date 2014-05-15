@@ -8,7 +8,6 @@ $(document).ready(function(){
     });
     $('input').on('ifChecked', function(event){
      	$('input').iCheck('disable');
-		$("#form_q").submit();
     });
 });
 </script>
@@ -86,7 +85,7 @@ $(document).ready(function(){
 			#springBind("form.time")
 			<input type="hidden" name="${status.expression}" value="$!{status.value}" id="time"/>
 			<div class="q-head clearfix">
-				<h1 class="number"></h1>
+				<h1 class="number">&nbsp;</h1>
 				<h1 class="title">你看到了实际的场地，位置非常理想，人流比你现在的展位要大得多。你判断这确实是一个更好的布展位置。而且你发现来考察场地的其他公司代表非常多。这时，你会</h1>
 			</div>
 			<ul>

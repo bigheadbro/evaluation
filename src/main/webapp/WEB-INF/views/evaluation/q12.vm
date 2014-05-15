@@ -6,13 +6,14 @@ $(document).ready(function(){
     	radioClass: 'iradio_square-green',
     	increaseArea: '20%' // optional
     });
+	
+	$('input').on('ifChecked', function(event){
+		$("#"+$(this).attr("name")).val($(this).attr("number"));
+    });
 
-		$(".next").click(function(){
-				$("#form_q1").submit();
-				$("#form_q2").submit();
-				$("#form_q3").submit();
-				$("#form_q4").submit();
-		});
+	$(".next").click(function(){
+		$("#form_q1").submit();
+	});
 });
 </script>
 <div class="main-content-container">
@@ -58,107 +59,86 @@ $(document).ready(function(){
 			<input type="hidden" name="${status.expression}" value="1" id="number" />
 			#springBind("form.time")
 			<input type="hidden" name="${status.expression}" value="$!{status.value}" id="time"/>
-			<ul>
+			<ul class="dimension">
 				<li>
 					A、接到一个客户的紧急咨询电话
 				</li>
 				<li>
-						#springBind("form.choice")
-						<input type="hidden" name="${status.expression}" value="$!{status.value}" id="a"/>
-						<input type="radio" name="a" id="a1" number="1">
-						<label for="a1">1</label>
-						<input type="radio" name="a" id="a2" number="2">
-						<label for="a2">2</label>
-						<input type="radio" name="a" id="a3" number="3">
-						<label for="a3">3</label>
-						<input type="radio" name="a" id="a4" number="4">
-						<label for="a4">4</label>
-						<input type="radio" name="a" id="a5" number="5">
-						<label for="a5">5</label>
+					#springBind("form.choice")
+					<input type="hidden" name="${status.expression}" value="$!{status.value}" id="a"/>
+					<input type="radio" name="a" id="a1" number="1">
+					<label for="a1">1</label>
+					<input type="radio" name="a" id="a2" number="2">
+					<label for="a2">2</label>
+					<input type="radio" name="a" id="a3" number="3">
+					<label for="a3">3</label>
+					<input type="radio" name="a" id="a4" number="4">
+					<label for="a4">4</label>
+					<input type="radio" name="a" id="a5" number="5">
+					<label for="a5">5</label>
 				</li>
 			</ul>
-			</form>
-			<form id="form_q2" method="post" >
-			<input type="hidden" name="do_submit" value="true"/>
-			#springBind("form.questionid")
-			<input type="hidden" name="${status.expression}" value="$!{status.value}" id="qid" />
-			#springBind("form.number")
-			<input type="hidden" name="${status.expression}" value="2" id="number" />
-			#springBind("form.time")
-			<input type="hidden" name="${status.expression}" value="$!{status.value}" id="time"/>
-			<ul>
+			#springBind("form.number2")
+			<input type="hidden" name="${status.expression}" value="2" id="number2" />
+			<ul class="dimension">
 				<li>
 					B、发现开会要用的PPT中有数据错误，临时花时间进行了修改
 				</li>
 				<li>
-						#springBind("form.choice")
-						<input type="hidden"  name="${status.expression}" id="b" />
-						<input type="radio" name="b" id="b1" number="1">
-						<label for="b1">1</label>
-						<input type="radio" name="b" id="b2" number="2">
-						<label for="b2">2</label>
-						<input type="radio" name="b" id="b3" number="3">
-						<label for="b3">3</label>
-						<input type="radio" name="b" id="b4" number="4">
-						<label for="b4">4</label>
-						<input type="radio" name="b" id="b5" number="5">
-						<label for="b5">5</label>
+					#springBind("form.choice2")
+					<input type="hidden"  name="${status.expression}" id="b" />
+					<input type="radio" name="b" id="b1" number="1">
+					<label for="b1">1</label>
+					<input type="radio" name="b" id="b2" number="2">
+					<label for="b2">2</label>
+					<input type="radio" name="b" id="b3" number="3">
+					<label for="b3">3</label>
+					<input type="radio" name="b" id="b4" number="4">
+					<label for="b4">4</label>
+					<input type="radio" name="b" id="b5" number="5">
+					<label for="b5">5</label>
 				</li>
 			</ul>
-			</form>
-			<form id="form_q3" method="post" >
-			<input type="hidden" name="do_submit" value="true"/>
-			#springBind("form.questionid")
-			<input type="hidden" name="${status.expression}" value="$!{status.value}" id="qid" />
-			#springBind("form.number")
-			<input type="hidden" name="${status.expression}" value="3" id="number" />
-			#springBind("form.time")
-			<input type="hidden" name="${status.expression}" value="$!{status.value}" id="time"/>
-			<ul>
+			#springBind("form.number3")
+			<input type="hidden" name="${status.expression}" value="3" id="number3" />
+			<ul class="dimension">
 				<li>
 					C、家里可能有安全隐患，回去检查
 				</li>
 				<li>
-						#springBind("form.choice")
-						<input type="hidden"  name="${status.expression}" id="c" />
-						<input type="radio" name="c" id="c1" number="1">
-						<label for="c1">1</label>
-						<input type="radio" name="c" id="c2" number="2">
-						<label for="c2">2</label>
-						<input type="radio" name="c" id="c3" number="3">
-						<label for="c3">3</label>
-						<input type="radio" name="c" id="c4" number="4">
-						<label for="c4">4</label>
-						<input type="radio" name="c" id="c5" number="5">
-						<label for="c5">5</label>
+					#springBind("form.choice3")
+					<input type="hidden"  name="${status.expression}" id="c" />
+					<input type="radio" name="c" id="c1" number="1">
+					<label for="c1">1</label>
+					<input type="radio" name="c" id="c2" number="2">
+					<label for="c2">2</label>
+					<input type="radio" name="c" id="c3" number="3">
+					<label for="c3">3</label>
+					<input type="radio" name="c" id="c4" number="4">
+					<label for="c4">4</label>
+					<input type="radio" name="c" id="c5" number="5">
+					<label for="c5">5</label>
 				</li>
 			</ul>
-			</form>
-			<form id="form_q4" method="post" >
-			<input type="hidden" name="do_submit" value="true"/>
-			#springBind("form.questionid")
-			<input type="hidden" name="${status.expression}" value="$!{status.value}" id="qid" />
-			#springBind("form.number")
-			<input type="hidden" name="${status.expression}" value="4" id="number" />
-			#springBind("form.time")
-			<input type="hidden" name="${status.expression}" value="$!{status.value}" id="time"/>
-			<ul>
+			#springBind("form.number4")
+			<input type="hidden" name="${status.expression}" value="4" id="number4" />
+			<ul class="dimension">
 				<li>
 					D、突然对手头正在进行的项目有了一个新的思路，要写下来
 				</li>
 				<li>
-						#springBind("form.choice")
-						<input type="hidden"  name="${status.expression}" id="d" />
-						<input type="radio" name="d" id="d1" number="1">
-						<label for="d1">1</label>
-						<input type="radio" name="d" id="d2" number="2">
-						<label for="d2">2</label>
-						<input type="radio" name="d" id="d3" number="3">
-						<label for="d3">3</label>
-						<input type="radio" name="d" id="d4" number="4">
-						<label for="d4">4</label>
-						<input type="radio" name="d" id="d5" number="5">
-						<label for="d5">5</label>
+					#springBind("form.choice4")
+    				<input type="hidden"  name="${status.expression}" id="d" />
+    				<input type="radio" name="d" id="d1" number="1">
+    				<label for="d1">1</label>
+    				<input type="radio" name="d" id="d2" number="2">
+    				<label for="d2">2</label>
+    				<input type="radio" name="d" id="d3" number="3">
+    				<label for="d3">3</label>
+    				<input type="radio" name="d" id="d4" number="4">
+    				<label for="d4">4</label>
+    				<input type="radio" name="d" id="d5" number="5">
+    				<label for="d5">5</label>
 				</li>
 			</ul>
 			</form>

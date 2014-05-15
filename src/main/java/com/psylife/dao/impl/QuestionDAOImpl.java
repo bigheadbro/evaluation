@@ -1,5 +1,7 @@
 package com.psylife.dao.impl;
 
+import java.util.List;
+
 import org.mybatis.spring.support.SqlSessionDaoSupport;
 import org.springframework.stereotype.Repository;
 
@@ -15,4 +17,9 @@ public class QuestionDAOImpl extends SqlSessionDaoSupport implements QuestionDAO
 		return question.getId();
 	}
 
+	@Override
+	public int insertQuestionList(List<QuestionEntity> list)
+	{
+		return this.getSqlSession().insert("insertQuestionList", list);
+	}
 }

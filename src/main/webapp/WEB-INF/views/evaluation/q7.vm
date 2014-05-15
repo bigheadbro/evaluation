@@ -59,7 +59,7 @@ $(document).ready(function(){
 				<h1 class="number">7.</h1>
 				<h1 class="title">公司安排了四场讲座，海报如下，请问你会选择去哪个讲座？</h1>
 			</div>
-			<ul>
+			<ul class="single">
 				<li>
 					<input type="radio" name="iCheck" id="1">
 					<label for="1">A、公司创始人：**企业半个世纪的光荣奋斗史1964-2014</label>

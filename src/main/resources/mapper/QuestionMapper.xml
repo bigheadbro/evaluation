@@ -86,5 +86,52 @@
 		,#{potential}
 		)
 	</insert>
+	
+	<insert id="insertQuestionList" parameterType="java.util.List">
+		<selectKey resultType="int" order="AFTER" keyProperty="id">
+			SELECT LAST_INSERT_ID() AS id
+		</selectKey>
+		insert into t_question
+		(
+		user_id
+		,qid
+		,number
+		,choice
+		,time
+		,loyalty
+		,positive
+		,responsibility
+		,morality
+		,thinking
+		,plan
+		,innovation
+		,teamwork
+		,communication
+		,strain
+		,details
+		,potential)
+		values
+		<foreach collection="list" item="item" index="index" separator="," >  
+		(
+		#{item.userId}
+		,#{item.qid}
+		,#{item.number}
+		,#{item.choice}
+		,#{item.time}
+		,#{item.loyalty}
+		,#{item.positive}
+		,#{item.responsibility}
+		,#{item.morality}
+		,#{item.thinking}
+		,#{item.plan}
+		,#{item.innovation}
+		,#{item.teamwork}
+		,#{item.communication}
+		,#{item.strain}
+		,#{item.details}
+		,#{item.potential}
+		)
+		</foreach>  
+	</insert>
 </mapper>
 	

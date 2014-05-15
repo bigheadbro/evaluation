@@ -1,6 +1,8 @@
 package com.psylife.service;
 
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
@@ -31,17 +33,23 @@ public class CommonService {
 	@Qualifier("userDAO")
 	private UserDAO userDAO;
 	
-	public DimensionEntity getDim(int qid, int choice)
+	public DimensionEntity getDim(int qid, int choice, int number)
 	{
 		DimensionEntity dim = new DimensionEntity();
 		dim.setQid(qid);
 		dim.setChoice(choice);
+		dim.setNumber(number);
     	return dimensionDAO.queryDimensionByQid(dim);
 	}
 	
 	public int insertQuestion(QuestionEntity ques)
 	{
 		return questionDAO.insertQuestionEntity(ques);
+	}
+	
+	public int insertQuestionList(List<QuestionEntity> list)
+	{
+		return questionDAO.insertQuestionList(list);
 	}
 	
 	public int insertUser(UserEntity user)

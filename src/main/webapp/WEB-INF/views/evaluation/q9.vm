@@ -6,13 +6,14 @@ $(document).ready(function(){
     	radioClass: 'iradio_square-green',
     	increaseArea: '20%' // optional
     });
+	
+	$('input').on('ifChecked', function(event){
+		$("#"+$(this).attr("name")).val($(this).attr("number"));
+    });
 
-		$(".next").click(function(){
-				$("#form_q1").submit();
-				$("#form_q2").submit();
-				$("#form_q3").submit();
-				$("#form_q4").submit();
-		});
+	$(".next").click(function(){
+			$("#form_q1").submit();
+	});
 });
 </script>
 <div class="main-content-container">
@@ -58,7 +59,7 @@ $(document).ready(function(){
 			<input type="hidden" name="${status.expression}" value="1" id="number" />
 			#springBind("form.time")
 			<input type="hidden" name="${status.expression}" value="$!{status.value}" id="time"/>
-			<ul>
+			<ul class="dimension">
 				<li>
 					A、男，50岁，工作能力较差，业绩垫底，经常请假。家长80岁的父亲患癌，需要照顾；孩子在国外读书，每年要花30万供养，生活比较拮据。
 				</li>
@@ -77,21 +78,14 @@ $(document).ready(function(){
 						<label for="a5">5</label>
 				</li>
 			</ul>
-			</form>
-			<form id="form_q2" method="post" >
-			<input type="hidden" name="do_submit" value="true"/>
-			#springBind("form.questionid")
-			<input type="hidden" name="${status.expression}" value="$!{status.value}" id="qid" />
-			#springBind("form.number")
-			<input type="hidden" name="${status.expression}" value="2" id="number" />
-			#springBind("form.time")
-			<input type="hidden" name="${status.expression}" value="$!{status.value}" id="time"/>
-			<ul>
+			#springBind("form.number2")
+			<input type="hidden" name="${status.expression}" value="2" id="number2" />
+			<ul class="dimension">
 				<li>
 					B、女，44岁，工作能力较强，业绩在前20%，说话不顾及人，容易打击同事士气。工作上不配合他人，比较自私。
 				</li>
 				<li>
-						#springBind("form.choice")
+						#springBind("form.choice2")
 						<input type="hidden"  name="${status.expression}" id="b" />
 						<input type="radio" name="b" id="b1" number="1">
 						<label for="b1">1</label>
@@ -105,21 +99,14 @@ $(document).ready(function(){
 						<label for="b5">5</label>
 				</li>
 			</ul>
-			</form>
-			<form id="form_q3" method="post" >
-			<input type="hidden" name="do_submit" value="true"/>
-			#springBind("form.questionid")
-			<input type="hidden" name="${status.expression}" value="$!{status.value}" id="qid" />
-			#springBind("form.number")
-			<input type="hidden" name="${status.expression}" value="3" id="number" />
-			#springBind("form.time")
-			<input type="hidden" name="${status.expression}" value="$!{status.value}" id="time"/>
-			<ul>
+			#springBind("form.number3")
+			<input type="hidden" name="${status.expression}" value="3" id="number3" />
+			<ul class="dimension">
 				<li>
 					C、男，27岁，富二代，工作能力较差，但能带来各种丰富资源，为人也大方，经常请客。上班散漫，经常迟到早退，上班也经常走神刷微博。
 				</li>
 				<li>
-						#springBind("form.choice")
+						#springBind("form.choice3")
 						<input type="hidden"  name="${status.expression}" id="c" />
 						<input type="radio" name="c" id="c1" number="1">
 						<label for="c1">1</label>
@@ -133,21 +120,14 @@ $(document).ready(function(){
 						<label for="c5">5</label>
 				</li>
 			</ul>
-			</form>
-			<form id="form_q4" method="post" >
-			<input type="hidden" name="do_submit" value="true"/>
-			#springBind("form.questionid")
-			<input type="hidden" name="${status.expression}" value="$!{status.value}" id="qid" />
-			#springBind("form.number")
-			<input type="hidden" name="${status.expression}" value="4" id="number" />
-			#springBind("form.time")
-			<input type="hidden" name="${status.expression}" value="$!{status.value}" id="time"/>
-			<ul>
+			#springBind("form.number4")
+			<input type="hidden" name="${status.expression}" value="4" id="number4" />
+			<ul class="dimension">
 				<li>
 					D、女，30岁，工作能力非常强，业绩前5%，为人也谦逊，但是利用自己的工作人脉资源暗地里替公司竞争对手兼职，做一些产品代理。
 				</li>
 				<li>
-						#springBind("form.choice")
+						#springBind("form.choice4")
 						<input type="hidden"  name="${status.expression}" id="d" />
 						<input type="radio" name="d" id="d1" number="1">
 						<label for="d1">1</label>
