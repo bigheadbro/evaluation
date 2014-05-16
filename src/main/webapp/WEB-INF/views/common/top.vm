@@ -1,5 +1,5 @@
 <div class="main-top-container">
     <div class="main-top clearfix">
-    	<h5>桂超群，同济大学</h5>
+    	<h5>${account.userName}，${account.school}</h5>
     </div>
 </div>
