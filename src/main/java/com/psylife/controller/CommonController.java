@@ -64,8 +64,8 @@ public class CommonController extends BaseController{
 		if(isDoSubmit(request))
 		{
 			UserEntity user = form.getUser();
+			account.setGender(form.getUser().getGender());
 			user.setCardno(account.getCardno());
-			user.setGender(account.getGender());
 			user.setName(account.getUserName());
 			user.setSchool(account.getSchool());
 			commonService.insertUser(user);
@@ -313,14 +313,16 @@ public class CommonController extends BaseController{
 	}
 	
 	@RequestMapping(value="/q14")
-	public ModelAndView q14(final HttpServletRequest request,final HttpServletResponse response, @ModelAttribute("form")QuestionForm form)
+	public ModelAndView q14(final HttpServletRequest request,final HttpServletResponse response, @ModelAttribute("account")Account account, @ModelAttribute("form")QuestionForm form)
 	{
 		ModelAndView mv = new ModelAndView("/evaluation/q14");
 		form.setQuestionid(14);
 		if(isDoSubmit(request))
 		{
-			ModelAndView q15 = new ModelAndView("/evaluation/q15");
-			return q15;
+			DimensionEntity dim = commonService.getDim(14, form.getChoice(), form.getNumber());
+			QuestionEntity ques = Util.calcSingleScore(dim, account.getUserId(), form.getChoice(), form.getTime());
+			commonService.insertQuestion(ques);
+			return new ModelAndView(new RedirectView("/evaluation/q15"));
 		}
 		else
 		{

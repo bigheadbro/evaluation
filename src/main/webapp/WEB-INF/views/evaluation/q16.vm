@@ -8,6 +8,7 @@ $(document).ready(function(){
     });
     $('input').on('ifChecked', function(event){
      	$('input').iCheck('disable');
+			$("#time").val(s);
 		$("#form_q").submit();
     });
 });
@@ -45,35 +46,10 @@ $(document).ready(function(){
 			<input type="hidden" name="do_submit" value="true"/>
 			#springBind("form.questionid")
 			<input type="hidden" name="${status.expression}" value="$!{status.value}" id="qid" />
-			#if($!util.isMale($account.getGender()))
-			<h1>8. 你刚进入职场，如果有以下四个人可能成为你的直接领导，你的满意度分别如何？（五点量表）</h1>
-			<ul>
-				<li>
-					<input type="radio" name="iCheck" id="answer1">
-					<label for="answer1">A、不回应</label>
-				</li>
-				<li>
-					<input type="radio" name="iCheck" id="answer2">
-					<label for="answer2">B、点一个赞</label>
-				</li>
-				<li>
-					<input type="radio" name="iCheck" id="answer3">
-					<label for="answer3">C、回复“今天楼下车不多，我也刚叫到”</label>
-				</li>
-				<li>
-					<input type="radio" name="iCheck" id="answer4">
-					<label for="answer4">D、回复“我不是和你一起走的吗？”</label>
-				</li>
-				<li>
-					<input type="radio" name="iCheck" id="answer5">
-					<label for="answer5">E、点一个赞，同时自己发一条朋友圈，说明自己刚下班</label>
-				</li>
-				<li>
-					<input type="radio" name="iCheck" id="answer6">
-					<label for="answer6">F、不点赞，同时自己发一条朋友圈，说明自己刚下班</label>
-				</li>
-			</ul>
-			#else
+			#springBind("form.choice")
+			<input type="hidden" name="${status.expression}" value="$!{status.value}" id="choice"/>
+			#springBind("form.time")
+			<input type="hidden" name="${status.expression}" value="$!{status.value}" id="time"/>
 			<h1>16. 你们公司计划采购一种X型原材料，共计采购500吨。这种原材料都产自于某省，领导让你下周抽出两天时间去当地考察一下当地的企业。于是你搜索到了这样的三家企业：<br/>
                 <br/>
 					企业甲：<br/>
@@ -87,7 +63,7 @@ $(document).ready(function(){
 					企业丙：<br/>
                 ****有限公司是一家创业企业，成立不足三年，注重技术创新研发，已拥有十余项国家专利。其最新研制的Y型材料可以取代X型材料，并且比X型材料更为环保，而且成本更低廉。Y型材料刚刚通过国家相关权威组织的质量鉴定，计划从今年起开始量产。<br/>
                 ***有限公司今年计划生产Y型材料1万吨，价格约为8千元每吨。<br/>
-				<b4
+				<br/>
 				16.1 仅凭以上介绍材料，你认为最需要着重考察的企业是：
                 </h1>
 			<ul>
@@ -104,11 +80,10 @@ $(document).ready(function(){
 					<label for="answer3">C、企业丙</label>
 				</li>
 			</ul>
-			#end
 			</form>
 		</div>
 		<div class="operation clearfix">
-			<a class="next"></a>
+			<a class="next">下一题</a>
 		</div>
 	</div>
 </div>

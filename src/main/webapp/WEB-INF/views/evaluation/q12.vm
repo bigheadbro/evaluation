@@ -12,6 +12,7 @@ $(document).ready(function(){
     });
 
 	$(".next").click(function(){
+		$("#time").val(s);
 		$("#form_q1").submit();
 	});
 });
@@ -144,7 +145,7 @@ $(document).ready(function(){
 			</form>
 		</div>
 		<div class="operation clearfix">
-			<a class="next"></a>
+			<a class="next">下一题</a>
 		</div>
 	</div>
 </div>

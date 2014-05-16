@@ -41,11 +41,12 @@ $(document).ready(function(){
 								性别
 							</li>
 							<li class="right">
-								#if(${account.gender} == 0)
-									女
-								#else
-									男
-								#end
+								#springBind("form.user.gender")
+								<input type="hidden" name="${status.expression}"   id="sex" />
+								<input type="radio" name="sex" id="gender1" number="1">
+								<label for="gender1">男</label>
+								<input type="radio" name="sex" id="gender2" number="0">
+								<label for="gender2">女</label>
 							</li>
 						</ul>
 						#springBind("form.user.birth")

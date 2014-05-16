@@ -12,6 +12,7 @@ $(document).ready(function(){
     });
     $('input').on('ifChecked', function(event){
      	$('input').iCheck('disable');
+			$("#time").val(s);
 		$("#form_q").submit();
     });
 });

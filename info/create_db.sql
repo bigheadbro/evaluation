@@ -61,268 +61,6 @@ CREATE TABLE `t_dimension` (
 
 delimiter $$
 
-CREATE TABLE `t_question1` (
-  `id` int(11) NOT NULL,
-  `user_id` int(11) NOT NULL,
-  `choice` int(11) NOT NULL,
-  `time` int(11) NOT NULL,
-  `positive` int(11) NOT NULL,
-  `teamwork` int(11) NOT NULL,
-  `communication` int(11) NOT NULL,
-  `strain` int(11) NOT NULL,
-  `potential` int(11) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='问题1的信息'$$
-
-
-delimiter $$
-
-CREATE TABLE `t_question10` (
-  `id` int(11) NOT NULL,
-  `user_id` int(11) NOT NULL,
-  `choice` int(11) NOT NULL,
-  `time` int(11) NOT NULL,
-  `number` int(11) NOT NULL,
-  `loyalty` int(11) NOT NULL,
-  `positive` int(11) NOT NULL,
-  `responsibility` int(11) NOT NULL,
-  `innovation` int(11) NOT NULL,
-  `teamwork` int(11) NOT NULL,
-  `potential` int(11) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8$$
-
-
-delimiter $$
-
-CREATE TABLE `t_question11` (
-  `id` int(11) NOT NULL,
-  `user_id` int(11) NOT NULL,
-  `choice` int(11) NOT NULL,
-  `time` int(11) NOT NULL,
-  `number` int(11) NOT NULL,
-  `loyalty` int(11) NOT NULL,
-  `positive` int(11) NOT NULL,
-  `responsibility` int(11) NOT NULL,
-  `innovation` int(11) NOT NULL,
-  `teamwork` int(11) NOT NULL,
-  `potential` int(11) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8$$
-
-
-delimiter $$
-
-CREATE TABLE `t_question12` (
-  `id` int(11) NOT NULL,
-  `user_id` int(11) NOT NULL,
-  `choice` int(11) NOT NULL,
-  `time` int(11) NOT NULL,
-  `number` int(11) NOT NULL,
-  `loyalty` int(11) NOT NULL,
-  `responsibility` int(11) NOT NULL,
-  `teamwork` int(11) NOT NULL,
-  `strain` int(11) NOT NULL,
-  `potential` int(11) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8$$
-
-
-delimiter $$
-
-CREATE TABLE `t_question13` (
-  `id` int(11) NOT NULL,
-  `user_id` int(11) NOT NULL,
-  `choice` int(11) NOT NULL,
-  `time` int(11) NOT NULL,
-  `number` int(11) NOT NULL,
-  `thinking` int(11) NOT NULL,
-  `plan` int(11) NOT NULL,
-  `teamwork` int(11) NOT NULL,
-  `communication` int(11) NOT NULL,
-  `strain` int(11) NOT NULL,
-  `details` int(11) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8$$
-
-
-delimiter $$
-
-CREATE TABLE `t_question14` (
-  `id` int(11) NOT NULL,
-  `user_id` int(11) NOT NULL,
-  `choice` int(11) NOT NULL,
-  `time` int(11) NOT NULL,
-  `positive` int(11) NOT NULL,
-  `responsibility` int(11) NOT NULL,
-  `thinking` int(11) NOT NULL,
-  `plan` int(11) NOT NULL,
-  `communication` int(11) NOT NULL,
-  `strain` int(11) NOT NULL,
-  `details` int(11) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8$$
-
-
-delimiter $$
-
-CREATE TABLE `t_question15` (
-  `id` int(11) NOT NULL,
-  `user_id` int(11) NOT NULL,
-  `choice` int(11) NOT NULL,
-  `time` int(11) NOT NULL,
-  `number` int(11) NOT NULL,
-  `thinking` int(11) NOT NULL,
-  `plan` int(11) NOT NULL,
-  `innovation` int(11) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8$$
-
-
-delimiter $$
-
-CREATE TABLE `t_question16` (
-  `id` int(11) NOT NULL,
-  `user_id` int(11) NOT NULL,
-  `choice` int(11) NOT NULL,
-  `time` int(11) NOT NULL,
-  `number` int(11) NOT NULL,
-  `thinking` int(11) NOT NULL,
-  `plan` int(11) NOT NULL,
-  `innovation` int(11) NOT NULL,
-  `potential` int(11) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8$$
-
-
-delimiter $$
-
-CREATE TABLE `t_question2` (
-  `id` int(11) NOT NULL,
-  `user_id` int(11) NOT NULL,
-  `choice` int(11) NOT NULL,
-  `time` int(11) NOT NULL,
-  `loyalty` int(11) NOT NULL,
-  `responsibility` int(11) NOT NULL,
-  `communication` int(11) NOT NULL,
-  `strain` int(11) NOT NULL,
-  `potential` int(11) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8$$
-
-
-delimiter $$
-
-CREATE TABLE `t_question3` (
-  `id` int(11) NOT NULL,
-  `user_id` int(11) NOT NULL,
-  `choice` int(11) NOT NULL,
-  `time` int(11) NOT NULL,
-  `loyalty` int(11) NOT NULL,
-  `morality` int(11) NOT NULL,
-  `teamwork` int(11) NOT NULL,
-  `strain` int(11) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8$$
-
-
-delimiter $$
-
-CREATE TABLE `t_question4` (
-  `id` int(11) NOT NULL,
-  `user_id` int(11) NOT NULL,
-  `choice` int(11) NOT NULL,
-  `time` int(11) NOT NULL,
-  `loyalty` int(11) NOT NULL,
-  `responsibility` int(11) NOT NULL,
-  `morality` int(11) NOT NULL,
-  `teamwork` int(11) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8$$
-
-
-delimiter $$
-
-CREATE TABLE `t_question5` (
-  `id` int(11) NOT NULL,
-  `user_id` int(11) NOT NULL,
-  `choice` int(11) NOT NULL,
-  `time` int(11) NOT NULL,
-  `loyalty` int(11) NOT NULL,
-  `responsibility` int(11) NOT NULL,
-  `communication` int(11) NOT NULL,
-  `strain` int(11) NOT NULL,
-  `potential` int(11) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8$$
-
-
-delimiter $$
-
-CREATE TABLE `t_question6` (
-  `id` int(11) NOT NULL,
-  `user_id` int(11) NOT NULL,
-  `choice` int(11) NOT NULL,
-  `time` int(11) NOT NULL,
-  `loyalty` int(11) NOT NULL,
-  `positive` int(11) NOT NULL,
-  `responsibility` int(11) NOT NULL,
-  `morality` int(11) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8$$
-
-
-delimiter $$
-
-CREATE TABLE `t_question7` (
-  `id` int(11) NOT NULL,
-  `user_id` int(11) NOT NULL,
-  `choice` int(11) NOT NULL,
-  `time` int(11) NOT NULL,
-  `loyalty` int(11) NOT NULL,
-  `positive` int(11) NOT NULL,
-  `innovation` int(11) NOT NULL,
-  `details` int(11) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8$$
-
-
-delimiter $$
-
-CREATE TABLE `t_question8` (
-  `id` int(11) NOT NULL,
-  `user_id` int(11) NOT NULL,
-  `choice` int(11) NOT NULL,
-  `time` int(11) NOT NULL,
-  `number` int(11) NOT NULL,
-  `positive` int(11) NOT NULL,
-  `responsibility` int(11) NOT NULL,
-  `teamwork` int(11) NOT NULL,
-  `communication` int(11) NOT NULL,
-  `innovation` int(11) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8$$
-
-
-delimiter $$
-
-CREATE TABLE `t_question9` (
-  `id` int(11) NOT NULL,
-  `user_id` int(11) NOT NULL,
-  `choice` int(11) NOT NULL,
-  `time` int(11) NOT NULL,
-  `number` int(11) NOT NULL,
-  `loyalty` int(11) NOT NULL,
-  `positive` int(11) NOT NULL,
-  `responsibility` int(11) NOT NULL,
-  `morality` int(11) NOT NULL,
-  `communication` int(11) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8$$
-
-
-delimiter $$
-
 CREATE TABLE `t_userid` (
   `id` int(11) NOT NULL,
   `cardno` varchar(45) DEFAULT NULL,
@@ -357,4 +95,28 @@ CREATE TABLE `t_userid` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8$$
 
+CREATE 
+    ALGORITHM = UNDEFINED 
+    DEFINER = `root`@`localhost` 
+    SQL SECURITY DEFINER
+VIEW `score` AS
+    select 
+        `t_dimension`.`id` AS `id`,
+        sum(`t_dimension`.`loyalty`) AS `忠诚敬业`,
+        sum(`t_dimension`.`positive`) AS `积极主动`,
+        sum(`t_dimension`.`responsibility`) AS `责任心`,
+        sum(`t_dimension`.`morality`) AS `道德感`,
+		(sum(`t_dimension`.`loyalty`) + sum(`t_dimension`.`positive`) + sum(`t_dimension`.`responsibility`) + sum(`t_dimension`.`morality`)) AS `职业素养`,
+        sum(`t_dimension`.`thinking`) AS `信息学习能力`,
+        sum(`t_dimension`.`plan`) AS `计划能力`,
+        sum(`t_dimension`.`innovation`) AS `创新意识`,
+		(sum(`t_dimension`.`thinking`)+sum(`t_dimension`.`plan`)+sum(`t_dimension`.`innovation`)) AS `思维能力`,
+        sum(`t_dimension`.`teamwork`) AS `团队观念`,
+        sum(`t_dimension`.`communication`) AS `人际沟通`,
+        sum(`t_dimension`.`strain`) AS `应变能力`,
+        sum(`t_dimension`.`details`) AS `细节执行`,
+		(sum(`t_dimension`.`teamwork`)+sum(`t_dimension`.`communication`)+sum(`t_dimension`.`communication`)+sum(`t_dimension`.`strain`)) AS `执行能力`,
+        sum(`t_dimension`.`potential`) AS `成就潜力`
+    from
+        `t_dimension`
 
