@@ -331,35 +331,52 @@ public class CommonController extends BaseController{
 	}
 	
 	@RequestMapping(value="/q15")
-	public ModelAndView q15(final HttpServletRequest request,final HttpServletResponse response, @ModelAttribute("form")QuestionForm form)
+	public ModelAndView q15(final HttpServletRequest request,final HttpServletResponse response,@ModelAttribute("account")Account account, @ModelAttribute("form")QuestionForm form)
 	{
 		ModelAndView mv = new ModelAndView("/evaluation/q15");
 		form.setQuestionid(15);
 		if(isDoSubmit(request))
 		{
-			ModelAndView q16 = new ModelAndView("/evaluation/q16");
-			return q16;
+			DimensionEntity dim = commonService.getDim(15, form.getChoice(), 1);
+			DimensionEntity dim2 = commonService.getDim(15, 1, 2);
+			DimensionEntity dim3 = commonService.getDim(15, 1, 2);
+			List<QuestionEntity> ques = Util.calcProcessScore(dim, dim2, dim3, account.getUserId(), form);
+			commonService.insertQuestionList(ques);
+			return new ModelAndView(new RedirectView("/evaluation/q16"));
 		}
 		else
 		{
-
 			return mv;
 		}
 	}
 	
 	@RequestMapping(value="/q16")
-	public ModelAndView q16(final HttpServletRequest request,final HttpServletResponse response, @ModelAttribute("form")QuestionForm form)
+	public ModelAndView q16(final HttpServletRequest request,final HttpServletResponse response,@ModelAttribute("account")Account account, @ModelAttribute("form")QuestionForm form)
 	{
 		ModelAndView mv = new ModelAndView("/evaluation/q16");
 		form.setQuestionid(16);
 		if(isDoSubmit(request))
 		{
-			ModelAndView end = new ModelAndView("/evaluation/end");
-			return end;
+			DimensionEntity dim = commonService.getDim(16, form.getChoice(), 1);
+			DimensionEntity dim2 = commonService.getDim(16, form.getChoice2(), 2);
+			DimensionEntity dim3 = commonService.getDim(16, form.getChoice3(), 3);
+			DimensionEntity dim4 = commonService.getDim(16, form.getChoice4(), 4);
+			List<QuestionEntity> list = Util.calcQ16Score(dim, dim2, dim3, dim4, account.getUserId(), form);
+			commonService.insertQuestionList(list);
+			return new ModelAndView(new RedirectView("/evaluation/end"));
 		}
 		else
 		{
 			return mv;
 		}
+	}
+	
+	@RequestMapping(value="/end")
+	public ModelAndView end(final HttpServletRequest request,final HttpServletResponse response)
+	{
+		
+		ModelAndView mv = new ModelAndView("/evaluation/end");
+
+		return mv;
 	}
 }

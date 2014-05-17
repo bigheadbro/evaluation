@@ -1,0 +1,24 @@
+<div id="pagemask-q15a"></div>
+<div class="q15-win" id="q15a">
+    <div class="q15-win-content">
+		<h2>
+            <a class="close-q15 close-15a">x</a>
+				选项A的信息
+		</h2>
+		<div class="q15-win-body">
+			<h1>你分别打给了A，B，C三个明星的经纪人，获取信息如下：</h1>
+			<p>A明星6号，7号，11号，12号有空，代言费是25万元；</p>
+			<p>B明星9号，10号有空；11，12号可能有空，代言费是30万元；</p>
+			<p>C明星7号，8号有空；5，6号可能有空，代言费35万元</p>
+			<div class="op"><a class="close-15a">返回继续答题</a></div>
+		</div>
+    </div>
+</div>
+<script>
+$(function(){
+	$(".close-15a").click(function(){
+		$("#q15a").hide();
+		$("#pagemask-q15a").hide();
+	});
+});
+</script>
