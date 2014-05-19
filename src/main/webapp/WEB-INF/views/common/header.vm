@@ -7,5 +7,6 @@
 	<title>思来式-大学生职业评估测试</title>
 	<link href="css/square/green.css" media="all" rel="stylesheet" type="text/css">
 	<script type="text/javascript" src="js/icheck.js"></script>
+	<script type="text/javascript" src="js/jquery.validate.min.js"></script>
 	<script type="text/javascript" src="js/clock.js"></script>
 </head>

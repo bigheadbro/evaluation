@@ -12,6 +12,179 @@ $(document).ready(function(){
     	radioClass: 'iradio_square-green',
     	increaseArea: '20%' // optional
     });
+		$("#form_profile").validate({
+				ignore: [],
+				rules:{
+					"user.gender":{
+						required:true
+					},
+					"user.domicile":{
+						required:true
+					},
+					"user.birth":{
+						required:true
+					},
+					"user.major":{
+						required:true
+					},
+					"user.industry":{
+						required:true
+					},
+					"user.position":{
+						required:true
+					},
+					"user.salary":{
+						required:true
+					},
+					"user.welfare":{
+						required:true
+					},
+					"user.vacation":{
+						required:true
+					},
+					"user.freedom":{
+						required:true
+					},
+					"user.burden":{
+						required:true
+					},
+					"user.development":{
+						required:true
+					},
+					"user.training":{
+						required:true
+					},
+					"user.wtrip":{
+						required:true
+					},
+					"user.atmosphere":{
+						required:true
+					},
+					"user.brand":{
+						required:true
+					},
+					"user.distance":{
+						required:true
+					},
+					"user.lowSalary":{
+						required:true
+					},
+					"user.expectedSalary":{
+						required:true
+					},
+					"user.stateown":{
+						required:true
+					},
+					"user.institution":{
+						required:true
+					},
+					"user.administration":{
+						required:true
+					},
+					"user.foreig":{
+						required:true
+					},
+					"user.privat":{
+						required:true
+					},
+					"user.startup":{
+						required:true
+					},
+					"user.ngo":{
+						required:true
+					},
+					"user.commonweal":{
+						required:true
+					}
+				},
+				messages:{
+					"user.domicile":{
+						required:"请填写户籍"
+					},
+					"user.gender":{
+						required:"请选择性别"
+					},
+					"user.birth":{
+						required:"请填写生日"
+					},
+					"user.major":{
+						required:"请选择专业"
+					},
+					"user.industry":{
+						required:"请选择感兴趣的行业"
+					},
+					"user.position":{
+						required:"请选择感兴趣的职位"
+					},
+					"user.salary":{
+						required:"请选择薪水要求"
+					},
+					"user.welfare":{
+						required:"请选择福利要求"
+					},
+					"user.vacation":{
+						required:"请选择假期要求"
+					},
+					"user.freedom":{
+						required:"请选择自由程度要求"
+					},
+					"user.burden":{
+						required:"请选择工作负荷要求"
+					},
+					"user.development":{
+						required:"请选择职业发展要求"
+					},
+					"user.training":{
+						required:"请选择培训要求"
+					},
+					"user.wtrip":{
+						required:"请选择出差频率要求"
+					},
+					"user.atmosphere":{
+						required:"请选择工作氛围要求"
+					},
+					"user.brand":{
+						required:"请选择公司品牌度要求"
+					},
+					"user.distance":{
+						required:"请选择离家距离要求"
+					},
+					"user.lowSalary":{
+						required:"请填写最低薪水"
+					},
+					"user.expectedSalary":{
+						required:"请填写期望薪水"
+					},
+					"user.stateown":{
+						required:"请选择对国企的兴趣"
+					},
+					"user.institution":{
+						required:"请选择对机构的兴趣"
+					},
+					"user.administration":{
+						required:"请选择对行政机关的兴趣"
+					},
+					"user.foreig":{
+						required:"请选择对外企的兴趣"
+					},
+					"user.privat":{
+						required:"请选择对民营企业的兴趣"
+					},
+					"user.startup":{
+						required:"请选择对创业公司的兴趣"
+					},
+					"user.ngo":{
+						required:"请选择对非政府组织的兴趣"
+					},
+					"user.commonweal":{
+						required:"请选择对公益组织的兴趣"
+					}
+				},
+				errorElement:"em",
+				submitHandler: function(form) {
+        		$(form).submit();
+				}
+		});
 });
 </script>
 <div class="main-content-container">
@@ -33,7 +206,7 @@ $(document).ready(function(){
 								姓名
 							</li>
 							<li class="right">
-								${account.userName}
+								$!{account.userName}
 							</li>
 						</ul>
 						<ul class="item clearfix">
@@ -41,13 +214,13 @@ $(document).ready(function(){
 								性别
 							</li>
 							<li class="right">
-								#springBind("form.user.gender")
-								<input type="hidden" name="${status.expression}"   id="sex" />
 								<input type="radio" name="sex" id="gender1" number="1">
 								<label for="gender1">男</label>
 								<input type="radio" name="sex" id="gender2" number="0">
 								<label for="gender2">女</label>
 							</li>
+							#springBind("form.user.gender")
+							<input type="hidden" name="${status.expression}"   id="sex" />
 						</ul>
 						#springBind("form.user.birth")
 						<ul class="item clearfix">
@@ -72,7 +245,7 @@ $(document).ready(function(){
 								学校
 							</li>
 							<li class="right">
-								${account.school}
+								$!{account.school}
 							</li>
 						</ul>
 						#springBind("form.user.major")

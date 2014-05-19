@@ -50,7 +50,7 @@ $(document).ready(function(){
 		<div class="question">
 			<div class="q-head clearfix">
 				<h1 class="number">10.</h1>
-				<h1 class="title">刚刚完成公司为期六个月的入职轮岗培训，现在要进入第一个项目的工作，你对以下几个安排的满意程度如何？</h1>
+				<h1 class="title">刚刚完成公司为期六个月的入职轮岗培训，现在要进入第一个项目的工作，你对以下几个安排的满意程度如何？<br/>(1=最不满意，5＝最满意）</h1>
 			</div>
 			<form id="form_q1" method="post" >
 			<input type="hidden" name="do_submit" value="true"/>

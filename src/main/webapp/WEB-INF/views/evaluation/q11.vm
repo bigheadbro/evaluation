@@ -50,7 +50,7 @@ $(document).ready(function(){
 		<div class="question">
 			<div class="q-head clearfix">
 				<h1 class="number">11.</h1>
-				<h1 class="title">以下哪一种情况作为同事开会迟到的理由，你认为是可以原谅的？ </h1>
+				<h1 class="title">以下哪一种情况作为同事开会迟到的理由，你认为是可以原谅的？ <br/>(1=最不满意，5＝最满意）</h1>
 			</div>
 			<form id="form_q1" method="post" >
 			<input type="hidden" name="do_submit" value="true"/>
