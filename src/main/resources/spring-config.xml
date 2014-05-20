@@ -55,23 +55,23 @@
     
     <mvc:interceptors>
    		<mvc:interceptor>
-   			<mvc:mapping path="/evaluation/profile" />
-   			<mvc:mapping path="/evaluation/q1" />
-   			<mvc:mapping path="/evaluation/q2" />
-   			<mvc:mapping path="/evaluation/q3" />
-   			<mvc:mapping path="/evaluation/q4" />
-   			<mvc:mapping path="/evaluation/q5" />
-   			<mvc:mapping path="/evaluation/q6" />
-   			<mvc:mapping path="/evaluation/q7" />
-   			<mvc:mapping path="/evaluation/q8" />
-   			<mvc:mapping path="/evaluation/q9" />
-   			<mvc:mapping path="/evaluation/q10" />
-   			<mvc:mapping path="/evaluation/q11" />
-   			<mvc:mapping path="/evaluation/q12" />
-   			<mvc:mapping path="/evaluation/q13" />
-   			<mvc:mapping path="/evaluation/q14" />
-   			<mvc:mapping path="/evaluation/q15" />
-   			<mvc:mapping path="/evaluation/q16" />
+   			<mvc:mapping path="/profile" />
+   			<mvc:mapping path="/q1" />
+   			<mvc:mapping path="/q2" />
+   			<mvc:mapping path="/q3" />
+   			<mvc:mapping path="/q4" />
+   			<mvc:mapping path="/q5" />
+   			<mvc:mapping path="/q6" />
+   			<mvc:mapping path="/q7" />
+   			<mvc:mapping path="/q8" />
+   			<mvc:mapping path="/q9" />
+   			<mvc:mapping path="/q10" />
+   			<mvc:mapping path="/q11" />
+   			<mvc:mapping path="/q12" />
+   			<mvc:mapping path="/q13" />
+   			<mvc:mapping path="/q14" />
+   			<mvc:mapping path="/q15" />
+   			<mvc:mapping path="/q16" />
    			<bean class="com.psylife.interceptor.UserLoginInterceptor" />
 		</mvc:interceptor> 
 		</mvc:interceptors>

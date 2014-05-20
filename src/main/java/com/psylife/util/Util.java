@@ -160,6 +160,180 @@ public class Util {
 		return list;
 	}
 
+	// 15题
+	public static List<QuestionEntity> calcProcessScore(DimensionEntity dim,DimensionEntity dim2,DimensionEntity dim3, int uid, QuestionForm form) 
+	{
+		if(dim == null)
+		{
+			dim = new DimensionEntity();
+		}
+		List<QuestionEntity> list = new ArrayList<QuestionEntity>();
+		QuestionEntity ques = new QuestionEntity();
+		ques.setUserId(uid);
+		ques.setChoice(form.getChoice());
+		ques.setTime(form.getTime());
+		ques.setQid(form.getQuestionid());
+		ques.setNumber(1);
+		ques.setLoyalty(dim.getLoyalty());
+		ques.setPositive(dim.getPositive());
+		ques.setResponsibility(dim.getResponsibility());
+		ques.setMorality(dim.getMorality());
+		ques.setThinking(dim.getThinking());
+		ques.setPlan(dim.getPlan());
+		ques.setInnovation(dim.getInnovation());
+		ques.setTeamwork(dim.getTeamwork());
+		ques.setCommunication(dim.getCommunication());
+		ques.setStrain(dim.getStrain());
+		ques.setDetails(dim.getDetails());
+		ques.setPotential(dim.getPotential());
+		
+		list.add(ques);
+		
+		if(form.getChoice() == 3)//第一题选择了C
+		{
+			QuestionEntity ques2 = new QuestionEntity();
+			ques2.setUserId(uid);
+			ques2.setTime(form.getTime());
+			ques2.setQid(form.getQuestionid());
+			ques2.setNumber(2);
+			if(form.getChoice2() == 2 && form.getChoice3() == 5 && form.getChoice4() == 3)
+			{
+				ques2.setNumber(2);
+				ques2.setChoice(1);
+				ques2.setLoyalty(dim2.getLoyalty());
+				ques2.setPositive(dim2.getPositive());
+				ques2.setResponsibility(dim2.getResponsibility());
+				ques2.setMorality(dim2.getMorality());
+				ques2.setThinking(dim2.getThinking());
+				ques2.setPlan(dim2.getPlan());
+				ques2.setInnovation(dim2.getInnovation());
+				ques2.setTeamwork(dim2.getTeamwork());
+				ques2.setCommunication(dim2.getCommunication());
+				ques2.setStrain(dim2.getStrain());
+				ques2.setDetails(dim2.getDetails());
+				ques2.setPotential(dim2.getPotential());
+				list.add(ques2);
+			}
+			else if(form.getChoice2() == 3 && form.getChoice3() == 4 && form.getChoice4() == 3)
+			{
+				ques2.setNumber(2);
+				ques2.setChoice(2);
+				ques2.setLoyalty(dim3.getLoyalty());
+				ques2.setPositive(dim3.getPositive());
+				ques2.setResponsibility(dim3.getResponsibility());
+				ques2.setMorality(dim3.getMorality());
+				ques2.setThinking(dim3.getThinking());
+				ques2.setPlan(dim3.getPlan());
+				ques2.setInnovation(dim3.getInnovation());
+				ques2.setTeamwork(dim3.getTeamwork());
+				ques2.setCommunication(dim3.getCommunication());
+				ques2.setStrain(dim3.getStrain());
+				ques2.setDetails(dim3.getDetails());
+				ques2.setPotential(dim3.getPotential());
+				list.add(ques2);
+			}
+			else
+			{
+				ques2.setNumber(2);
+				ques2.setChoice(form.getChoice2()*100 + form.getChoice3()*10 + form.getChoice4());
+				list.add(ques2);
+			}
+		}
+		return list;
+	}
+	
+	public static List<QuestionEntity> calcQ16Score(DimensionEntity dim,DimensionEntity dim2,DimensionEntity dim3,DimensionEntity dim4, int uid, QuestionForm form) {
+		List<QuestionEntity> list = new ArrayList<QuestionEntity>();
+		//A
+		QuestionEntity ques = new QuestionEntity();
+		if(dim == null)
+		{
+			dim = new DimensionEntity();
+		}
+		ques.setUserId(uid);
+		ques.setChoice(form.getChoice());
+		ques.setTime(form.getTime());
+		ques.setQid(form.getQuestionid());
+		ques.setNumber(form.getNumber());
+		ques.setLoyalty(dim.getLoyalty());
+		ques.setPositive(dim.getPositive());
+		ques.setResponsibility(dim.getResponsibility());
+		ques.setMorality(dim.getMorality());
+		ques.setThinking(dim.getThinking());
+		ques.setPlan(dim.getPlan());
+		ques.setInnovation(dim.getInnovation());
+		ques.setTeamwork(dim.getTeamwork());
+		ques.setCommunication(dim.getCommunication());
+		ques.setStrain(dim.getStrain());
+		ques.setDetails(dim.getDetails());
+		ques.setPotential(dim.getPotential());
+		//B
+		QuestionEntity ques2 = new QuestionEntity();
+		ques2.setUserId(uid);
+		ques2.setChoice(form.getChoice2());
+		ques2.setTime(form.getTime());
+		ques2.setQid(form.getQuestionid());
+		ques2.setNumber(form.getNumber2());
+		ques2.setLoyalty(dim2.getLoyalty());
+		ques2.setPositive(dim2.getPositive());
+		ques2.setResponsibility(dim2.getResponsibility());
+		ques2.setMorality(dim2.getMorality());
+		ques2.setThinking(dim2.getThinking());
+		ques2.setPlan(dim2.getPlan());
+		ques2.setInnovation(dim2.getInnovation());
+		ques2.setTeamwork(dim2.getTeamwork());
+		ques2.setCommunication(dim2.getCommunication());
+		ques2.setStrain(dim2.getStrain());
+		ques2.setDetails(dim2.getDetails());
+		ques2.setPotential(dim2.getPotential());
+		
+		//C
+		QuestionEntity ques3 = new QuestionEntity();
+		ques3.setUserId(uid);
+		ques3.setChoice(form.getChoice3());
+		ques3.setTime(form.getTime());
+		ques3.setQid(form.getQuestionid());
+		ques3.setNumber(form.getNumber3());
+		ques3.setLoyalty(dim3.getLoyalty());
+		ques3.setPositive(dim3.getPositive());
+		ques3.setResponsibility(dim3.getResponsibility());
+		ques3.setMorality(dim3.getMorality());
+		ques3.setThinking(dim3.getThinking());
+		ques3.setPlan(dim3.getPlan());
+		ques3.setInnovation(dim3.getInnovation());
+		ques3.setTeamwork(dim3.getTeamwork());
+		ques3.setCommunication(dim3.getCommunication());
+		ques3.setStrain(dim3.getStrain());
+		ques3.setDetails(dim3.getDetails());
+		ques3.setPotential(dim3.getPotential());
+				
+		//D
+		QuestionEntity ques4 = new QuestionEntity();
+		ques4.setUserId(uid);
+		ques4.setChoice(form.getChoice4());
+		ques4.setTime(form.getTime());
+		ques4.setQid(form.getQuestionid());
+		ques4.setNumber(form.getNumber4());
+		ques4.setLoyalty(dim4.getLoyalty());
+		ques4.setPositive(dim4.getPositive());
+		ques4.setResponsibility(dim4.getResponsibility());
+		ques4.setMorality(dim4.getMorality());
+		ques4.setThinking(dim4.getThinking());
+		ques4.setPlan(dim4.getPlan());
+		ques4.setInnovation(dim4.getInnovation());
+		ques4.setTeamwork(dim4.getTeamwork());
+		ques4.setCommunication(dim4.getCommunication());
+		ques4.setStrain(dim4.getStrain());
+		ques4.setDetails(dim4.getDetails());
+		ques4.setPotential(dim4.getPotential());
+		
+		list.add(ques);
+		list.add(ques2);
+		list.add(ques3);
+		list.add(ques4);
+		return list;
+	}
+		
 	public static void main(String args[]) {
 		Account accnt = getStudentInfo("MjAxMTUyMDAwMg..");
 		System.out.println(accnt.getCardno());

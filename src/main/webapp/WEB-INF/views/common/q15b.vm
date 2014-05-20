@@ -1,0 +1,24 @@
+<div id="pagemask-q15b"></div>
+<div class="q15-win" id="q15b">
+    <div class="q15-win-content">
+		<h2>
+            <a class="close-q15">x</a>
+				选项B的信息
+		</h2>
+		<div class="q15-win-body">
+			<h1>你分别打给D、E、F三个景点，获取信息如下：</h1>
+			<p>D景点7，8，9号有空，租用价格是25万元；</p>
+			<p>E景点6，7号有空，租用价格是6号15万，7号20万元；</p>
+			<p>F景点8，9号有空，租用价格是16万。如果是C明星来的话，可以打7折。</p>
+			<div class="op"><a class="close-15b">返回继续答题</a></div>
+		</div>
+    </div>
+</div>
+<script>
+$(function(){
+	$(".close-15b").click(function(){
+		$("#q15b").hide();
+		$("#pagemask-q15b").hide();
+	});
+});
+</script>

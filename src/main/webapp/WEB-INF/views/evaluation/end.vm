@@ -1,0 +1,14 @@
+#set($layout = "/layout/user_detail_layout.vm")
+<div class="index-content-container">
+	<div class="main-body">
+		<div class="end-cont clearfix">
+			<img src="img/end.png"/>
+			<div class="right">
+				<h1>评测已完成</h1>
+				<h3>感谢您的参与</h3>
+			</div>
+		</div>
+		<div class="bottom"></div>
+	</div>
+	
+</div>

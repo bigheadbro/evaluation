@@ -187,7 +187,7 @@ $(document).ready(function(){
 		});
 });
 </script>
-<div class="main-content-container">
+<div class="index-content-container">
 	<div class="main-body">
 		<div class="profile-wrap">
 			<div class="head">
