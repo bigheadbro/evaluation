@@ -1,0 +1,816 @@
+计算机硬件#Computer, Hardware
+高级硬件工程师#Senior Hardware Engineer
+硬件工程师#Hardware Engineer
+其他#
+
+计算机软件#Computer, Software
+高级软件工程师#Senior Software Engineer
+软件工程师#Software Engineer
+软件UI设计师/工程师#Software UI/ Designer Engineer
+仿真应用工程师#Simulation Application Engineer
+ERP实施顾问#ERP Implementation
+ERP技术开发#ERP R&D
+需求工程师#Demand / Specification Engineer
+系统集成工程师#System Integration Engineer
+系统分析员#Consulting Manager
+系统工程师#System Engineer
+系统架构设计师#System Architecture Design
+数据库工程师/管理员#Database Engineer/Administrator
+计算机辅助设计工程师#Computer Aided Design Engineer
+其他#
+
+IT-管理#IT-Management
+首席技术执行官CTO/首席信息官CIO#Chief Technology Officer CTO/Chief Information Officer CIO
+技术总监/经理#Technical Director/Manager
+信息技术经理/主管#IT Manager/Supervisor
+信息技术专员#IT Specialist
+项目总监#Project Director
+项目经理#Project Manager
+项目主管#Project Supervisor
+项目执行/协调人员#Project Specialist / Coordinator
+其他#
+
+IT-品管、技术支持及其它#IT-QA, Technical Support...
+技术支持/维护经理#Technical Support/Maintenance Manager
+技术支持/维护工程师#Technical Support/Maintenance Engineer
+Helpdesk 技术支持#Helpdesk
+计量工程师#Measure Engineer
+标准化工程师#Standardization Engineer
+品质经理#Quality Assurance QA Manager
+系统测试#Systems Testing QA
+软件测试#Software Testing QA
+硬件测试#Hardware Testing QA
+测试员#Test Engineer /Tester
+文档工程师#Technical Writer
+技术文员/助理#Technical Clerk/Assistant
+其他#
+
+通信技术开发及应用#Communication Technology and Application
+通信技术工程师#Communication Engineer
+有线传输工程师#Wired Transmission Engineer
+无线通信工程师#Wireless Communication Engineer
+电信交换工程师#Telecommunication Exchange Engineer
+数据通信工程师#Data Communication Engineer
+移动通信工程师#Mobile Communication Engineer
+电信网络工程师#Telecommunication Network Engineer
+通信电源工程师#Communication Power Supply Engineer
+增值产品开发工程师#Value-Added Product Development Engineer
+手机软件开发工程师#Mobile Software Development Engineer
+手机应用开发工程师#Mobile Application Development Engineer
+其他#
+
+电子/电器/半导体/仪器仪表#Electronics/Wiring/Semiconductor/Instrument/Industry
+集成电路IC设计/应用工程师#IC Design/Application Engineer
+IC验证工程师#IC Verification Engineer
+电子工程师/技术员#Electronics Engineer
+电子技术研发工程师#Electronics Development Engineer
+射频工程师#RF Engineer
+电子/电器维修工程师/技师#Electronic/Electrical Appliance Technologist
+变压器与磁电工程师#Transformer and Magnetoelectricity Engineer
+版图设计工程师#Layout Design Engineer
+电气工程师/技术员#Electrical Engineer
+电路工程师/技术员(模拟/数字)#Electronic Circuit Engineer(Analog/Digital)
+电声/音响工程师/技术员#Electroacoustics Engineer
+激光/光电子技术#Laser/Optoelectronics Technology
+半导体技术#Semiconductor Technology
+自动控制工程师/技术员#Autocontrol Engineer/Technician
+电子软件开发(ARM/MCU...)#Electronics Software (ARM/MCU…)
+嵌入式软件开发(Linux/单片机/DLC/DSP…)#Embedded Software Engineer (Linux/SCM/DLC/DSP…)
+嵌入式硬件开发(主板机…)#Embedded Hardware Engineer(PCB…)
+电池/电源开发#Battery/Power Engineer
+FAE 现场应用工程师#Field Application Engineer (FAE)
+工艺工程师#Process Engineer
+家用电器/数码产品研发#Household Electronics/Digital Products Development
+仪器/仪表/计量分析师#Instrument/Measurement Analyst
+测试工程师#Quality Testing Engineer
+其他#
+
+销售管理#Sales Management
+销售总监#Sales Director
+销售经理#Sales Manager
+销售主管#Sales Supervisor
+业务拓展主管/经理#Business Development Supervisor/Manager
+渠道/分销总监#Channel/Distribution Director
+渠道/分销经理#Channel/Distribution Manager
+渠道/分销主管#Channel/Distribution Supervisor
+大客户经理#Key Account Manager
+客户经理/主管#Sales Account Manager/Supervisor
+区域销售总监#Regional Sales Director
+区域销售经理#Regional Sales Manager
+团购经理/主管#Group Purchase Manager/Supervisor
+其他#
+
+销售人员#Salespersons
+销售代表#Sales Representative / Executive
+渠道/分销专员#Channel/Distribution Representative
+客户代表#Sales Account Representative
+销售工程师#Sales Engineer
+电话销售#Telesales
+团购业务员#Group Purchase Representative
+经销商#Distributor
+其他#
+
+销售行政及商务#Sales Administration
+销售行政经理/主管#Sales Admin. Manager/Supervisor
+销售行政专员/助理#Sales Admin. Executive/Assistant
+业务分析经理/主管#Business Analysis Manager/Supervisor
+业务分析专员/助理#Business Analysis Specialist/Assistant
+商务经理#Business Manager
+商务主管/专员#Business Supervisor/Executive
+商务助理#Business Assistant
+销售助理#Sales Assistant / Trainee
+其他#
+
+客服及技术支持#Customer Service and Technical Support
+客服总监(非技术)#Customer Service Director
+客服经理(非技术)#Customer Service Manager
+客服主管(非技术)#Customer Service Supervisor
+客服专员/助理(非技术)#Customer Service Executive/Assistant
+客户关系经理/主管#Customer Relations Management
+投诉专员#Complaints Specialist
+售前/售后技术支持经理#Technical Support Manager
+售前/售后技术支持主管#Technical Support Supervisor
+售前/售后技术支持工程师#Technical Support Engineer
+咨询热线/呼叫中心服务人员#Customer Hot Line/Call Center Staff
+VIP专员#VIP Member Specialist
+其他#
+
+财务/审计/税务#Finance/Accounting/Audit/Tax
+首席财务官 CFO#Chief Financial Officer CFO
+财务总监#Finance Controller / Director
+财务经理#Finance Manager
+财务顾问#Finance Consultant
+财务主管/总帐主管#Finance Supervisor
+会计经理/会计主管#Accounting Manager/Supervisor
+会计#Accountant / Accounting Trainee
+出纳员#Cashier
+财务/会计助理#Finance/Accounting Assistant
+会计文员#Accounting Clerk
+固定资产会计#Fixed Asset Accounting
+财务分析经理/主管#Financial Analysis Manager/Supervisor
+财务分析员#Financial Analyst
+成本经理/成本主管#Cost Accounting Manager/Supervisor
+成本管理员#Cost Accounting Specialist
+资金经理/主管#Treasury Manager/Supervisor
+资金专员#Treasury Specialist
+审计经理/主管#Audit Manager/Supervisor
+审计专员/助理#Audit Executive/Assistant
+税务经理/税务主管#Tax Manager/Supervisor
+税务专员/助理#Tax Executive/Assistant
+统计员#Statistician
+其他#
+
+金融/证券/期货/投资#Finance/Securities/Commodities/Investments
+证券/期货/外汇经纪人#Securities Broker
+证券分析师#Securities Analyst
+股票/期货操盘手#Stocks/Futures Operator
+金融/经济研究员#Financial Analyst/Economist
+投资/基金项目经理#Investment Manager/Fund Manager
+投资/理财顾问#Investment/Financial Management Advisor
+投资银行业务#Investment Banking Specialist
+融资经理/融资主管#Treasury Manager/Supervisor
+融资专员#Treasury Specialist
+拍卖师#Auction
+其他#
+
+银行#Banks
+行长/副行长#President/Vice-President/Branch Manager
+个人业务部门经理/主管#Personal Banking Manager/Supervisor
+个人业务客户经理#Personal Banking Account Manager
+公司业务部门经理/主管#Corporate Banking Manager
+公司业务客户经理#Corporate Banking Account Manager
+综合业务经理/主管#Integrated Service Manager/Supervisor
+综合业务专员#Integrated Service Officer
+资产评估/分析#Assets Valuation/Analyst
+风险控制#Risk Management
+信贷管理#Loan/Credit Officer
+信审核查#Credit Review
+进出口/信用证结算#Trading / LC Officer
+外汇交易#Foreign Exchange
+清算人员#Settlement Officer
+高级客户经理/客户经理#Senior Relationship Manager
+客户主管/专员#Relationship Supervisor/Executive
+营业部大堂经理#Branch Lobby Manager
+银行柜员#Bank Teller
+银行卡、电子银行业务推广#Credit Card/E-banking business Develop
+其他#
+
+保险#Insurance
+保险精算师#Actuary
+保险产品开发/项目策划#Product Development/Planner
+保险业务经理/主管#Business Manager/Supervisor
+保险代理/经纪人/客户经理#Agent/Broker/Account Manager
+理财顾问/财务规划师#Financial Advisor/Financial Planner
+储备经理人#Agency Management Associate
+保险核保#Underwriting
+保险理赔#Claim Management
+保险客户服务/续期管理#Customer Service
+保险培训师#Trainer
+保险内勤#Staff
+契约管理#Policy Management
+其他#
+
+生产/营运#Manufacturing/Operation
+工厂经理/厂长#Plant/Factory Manager
+总工程师/副总工程师#Chief Engineer
+项目总监#Project Director
+项目经理/主管#Project Manager/Supervisor
+项目工程师#Project Engineer
+营运经理#Operations Manager
+营运主管#Operations Supervisor
+生产总监#Production Director
+生产经理/车间主任#Production Manager/Workshop Supervisor
+生产计划/物料管理(PMC)#Planner/PMC
+生产主管/督导/领班/组长#Production Supervisor/Team Leader
+生产文员#Clerk
+化验员#Laboratory Technician
+其他#
+
+质量管理/安全防护#Quality Control/Safety Protection
+质量管理/测试经理(QA/QC经理)#QA/QC Manager
+质量管理/测试主管(QA/QC主管)#QA/QC Supervisor
+质量管理/测试工程师(QA/QC工程师)#QA/QC Engineer
+质量检验员/测试员#Quality Inspector/Tester
+可靠度工程师#Reliability Engineer
+故障分析工程师#Failure Analysis Engineer
+认证工程师/审核员#Certification Engineer/Auditor
+体系工程师/审核员#Systems Engineer/Auditor
+环境/健康/安全经理/主管（EHS）#Environmental/Health/ Safety Manager/Supervisor
+环境/健康/安全工程师（EHS）#Environmental/Health/ Safety Engineer
+安全防护#Safety Protection
+供应商管理#Supplier/Vendor Management
+采购材料、设备质量管理#Supplies & Equipment Quality Management
+其他#
+
+工程/机械/能源#Engineering/Mechanical/Energy
+技术研发经理/主管#Technical Design Mgr./Spvr.
+技术研发工程师#Technical Design Engineer
+产品工艺/制程工程师#Process Engineer
+产品规划工程师#Product Planing Engineer
+实验室负责人/工程师#Lab Manager/Engineer
+工程/设备经理#Engineering/Facility Manager
+工程/设备主管#Engineering/Facility Supervisor
+工程/设备工程师#Engineering/Facility Engineer
+工程/机械绘图员#Project Drafting Specialist/Mechanical Drawing
+工业工程师#Industrial Engineer
+材料工程师#Material Engineer
+机械工程师#Mechanical Engineer
+结构工程师#Structrual Engineer
+模具工程师#Tooling Engineer
+机电工程师#Electrical & Mechanical Engineer
+维修经理/主管#Maintenance Manager/Supervisor
+维修工程师#Maintenance Engineer
+装配工程师/技师#Packaging&Assembly Engineer
+铸造/锻造工程师/技师#Casting/Forging Engineer
+注塑工程师/技师#Injection Engineer
+焊接工程师/技师#Welding Engineer
+夹具工程师/技师#Clamp Engineer
+CNC工程师#CNC Engineer
+冲压工程师/技师#Punch Engineer
+锅炉工程师/技师#Boiler Engineer
+电力工程师/技术员#Electric Power Engineer
+光源与照明工程#Lighting Engineer
+光伏系统工程师#Photovoltaic System Engineer
+汽车/摩托车工程师#Automotive Engineer
+船舶工程师#Shipping Engineer
+轨道交通工程师/技术员#Railway Engineer / Technician
+飞机维修机械师#Aviation Maintenance Technician
+飞行器设计与制造#Aircraft Design & Manufacture
+水利/水电工程师#Water Conservancy/Hydroelectricity Engineer
+石油天然气技术人员#Oil/Gas Technician
+矿产勘探/地质勘测工程师#Mineral Exploration / Geological Survey Engineer
+其他#
+
+汽车#Automotive
+汽车机构工程师#Automotive Structural Engineer
+汽车设计工程师#Automotive Design Engineer
+汽车电子工程师#Automotive Electronics Engineer
+汽车质量管理#Automotive Quality Management
+汽车安全性能工程师#Safety Performance Engineer
+汽车装配工艺工程师#Assembly Process Engineer
+汽车修理人员#Automotive Repair
+4S店经理/维修站经理#4S Shop Manager / Maintenance Station Manager
+汽车销售/经纪人#Automotive Sales Consultant / Brokers
+二手车评估师#Second-Hand Car Appraisers
+其他#
+
+技工#Technician / Engineer Trainee
+技工#Technician / Engineer Trainee
+钳工/机修工/钣金工#Locksmith/Mechanic/Repairer
+电焊工/铆焊工#Electric Welding Worker
+车工/磨工/铣工/冲压工/锣工#Latheman/Grinder/Miller/Puncher/Turner
+切割技工#Cutting Technician
+模具工#Mould Worker
+电工#Electrician
+叉车工#Forklift Worker
+空调工/电梯工/锅炉工#Air-Condition Worker/Lift Worker/Steam Worker
+水工/木工/漆工#Plumber/Carpenter/Painter
+普工/操作工#General Worker
+裁缝印纺熨烫#Tailor
+汽车修理工#Auto Repairing
+其他#
+
+服装/纺织/皮革#Apparels/Textiles/Leather Goods
+服装/纺织设计总监#Fashion/Textiles Design Director
+服装/纺织设计#Fashion/Textiles Designer
+服装/纺织/皮革工艺师#Fashion/Textiles/Leather Technologist
+面料辅料开发#Fabric/Accessories Development
+面料辅料采购#Fabric/Accessories Purchasing
+服装/纺织/皮革跟单#Apparels/Textiles/Leather Goods Merchandiser
+质量管理/验货员(QA/QC)#Quality Management QA/QC
+板房/楦头/底格出格师#Shoe Tree Design
+打样/制版#Sample Production
+电脑放码员#Grading
+纸样师/车板工#Paper Sample
+裁床#Cut Bed
+其他#
+
+采购#Purchasing
+采购总监#Purchasing Director
+采购经理#Purchasing Manager
+采购主管#Purchasing Supervisor
+采购员#Purchasing Specialist/Staff
+采购助理#Purchasing Assistant
+买手#Buyer
+供应商开发#Supplier Development
+其他#
+
+贸易#Trading
+贸易/外贸经理/主管#Trading/Manager/Supervisor
+贸易/外贸专员/助理#Trading/Specialist/Assistant
+国内贸易人员#Domestic Trade Specialist
+业务跟单经理#Merchandising Manager
+高级业务跟单#Senior Merchandiser
+业务跟单#Merchandiser
+助理业务跟单#Assistant Merchandiser
+其他#
+
+物流/仓储#Logistics/Warehouse
+物流总监#Logistics Director
+物流经理#Logistics Manager
+物流主管#Logistics Supervisor
+物流专员/助理#Logistics Specialist/Assistant
+供应链总监#Supply Chain Director
+供应链经理#Supply Chain Manager
+供应链主管/专员#Supply Chain Supervisor/Specialist
+物料经理#Materials Manager
+物料主管/专员#Materials Supervisor/Specialist
+仓库经理/主管#Warehouse Manager
+仓库管理员#Warehouse Specialist
+运输经理/主管#Distribution Manager/Supervisor
+项目经理/主管#Project Manager/Supervisor
+货运代理#Traffic Agent
+集装箱业务#Container Operator
+海关事务管理#Customs Affairs Management
+报关员#Customs Specialist
+单证员#Documentation Specialist
+船务/空运陆运操作#Shipping Specialist
+快递员#Courier
+调度员#Dispatcher
+理货员#Warehouse Stock Management
+其他#
+
+生物/制药/医疗器械#Biotechnology/Pharmaceuticals/Medical Equipment
+生物工程/生物制药#Biotechnology/Pharmaceuticals
+化学分析测试员#Chemical Analyst
+医药技术研发管理人员#Pharmaceutical Technology R&D Management
+医药技术研发人员#Pharmaceutical Technology R&D Specialist
+临床研究员#Clinical Researcher
+临床协调员#Clinical Coodinator
+临床数据分析员#Clinical Data Analyst
+药品注册#Pharmaceuticals Register Specialist
+药品生产/质量管理#Pharmaceutical Manufacturing/Quality Management
+药品市场推广经理#Pharmaceutical Marketing Manager
+药品市场推广主管/专员#Pharmaceutical Marketing Supervisor/Specialist
+医药招商#Pharmaceutical Business Development
+政府事务管理#Government Affairs
+招投标管理#Tendering Coordinator
+医药销售经理/主管#Pharmaceutical Sales Manager
+医药销售代表#Pharmaceutical Sales Representative
+医疗器械注册#Medical Equipment Registration
+医疗器械研发#Medical Equipment R&D
+医疗器械生产/质量管理#Medical Equipment Manufacturing/Quality Control
+医疗器械市场推广#Medical Equipment Marketing
+医疗器械销售#Medical Equipment Sales
+医疗器械维修人员#Medical Equipment Maintenance Engineer
+其他#
+
+化工#Chemical
+化工技术应用/化工工程师#Chemical Technical Application/Chemical Engineer
+化工实验室研究员/技术员#Chemical Lab Scientist / Technician
+涂料研发工程师#R&D Chemist Scientist
+配色技术员#Color Matcher (Technician)
+塑料工程师#Plastics Engineer
+化妆品研发#Cosmetics Scientist
+食品/饮料研发#Food / Beverage Scientist
+造纸研发#Paper Making Scientist
+其他#
+
+医院/医疗/护理#Hospital/Medicine/Nursing
+医院管理人员#Hospital Management
+内科医生#Doctor, Internal Medicine
+外科医生#Doctor, Surgeial
+专科医生#Doctor, Specialist
+牙科医生#Dentist
+麻醉医生#Anesthesiologist
+美容整形师#Plastic Surgeon
+理疗师#Physical Therapist
+中医科医生#Chinese Medicine Practioners
+针灸、推拿#Acupuncturist
+儿科医生#Pediatrician
+心理医生#Psychologist/Psychiatrist
+营养师#Dietitian
+药库主任/药剂师#Pharmacist
+医药学检验#Clinical Laboratory
+公共卫生/疾病控制#Public Sanitation/Disease Control
+护理主任/护士长#Nursing Officer
+护士/护理人员#Nurse/Medical Assistant
+兽医#Veterinarian
+验光师#Optometrist
+其他#
+
+广告#Advertising
+广告客户总监/副总监#Advertising Account Director/Associate Director
+广告客户经理#Advertising Account Manager
+广告客户主管/专员#Advertising Account Supervisor/Executive
+广告创意/设计经理#Advertising Creative/Design Manager
+广告创意总监#Advertising Creative Director
+广告创意/设计主管/专员#Advertising Creative/Design Supervisor/Executive
+美术指导#Art Director
+文案/策划#Copywriter/Planner
+企业/业务发展经理#Business Development Manager
+企业策划人员#Business Planning Staff
+其他#
+
+公关/媒介#Public Relations/Media
+公关经理#Public Relations Manager
+公关主管#Public Relations Supervisor
+公关专员#Public Relations Executive
+会务/会展经理#Exhibition/Event Manager
+会务/会展主管#Exhibition/Event Supervisor
+会务/会展专员#Exhibition/Event Executive
+媒介经理#Media Manager
+媒介主管#Media Supervisor
+媒介专员#Media Specialist
+公关/媒介助理#Public Relations/Media Assistant
+媒介销售#Media Sales
+活动策划#Event Planner
+其他#
+
+市场/营销#Marketing
+市场/营销/拓展总监#Marketing / BD Director / VP
+市场/营销/拓展经理#Marketing / BD Manager
+市场/营销/拓展主管#Marketing / BD Supervisor
+市场/营销/拓展专员#Marketing / BD Executive/Communication
+市场助理#Marketing Assistant / Trainee
+市场分析/调研人员#Market Analyst/ Research Analyst
+产品/品牌经理#Product/Brand Manager
+产品/品牌主管#Product/Brand Supervisor
+产品/品牌专员#Product/Brand Executive
+市场通路经理/主管#Trade Marketing Manager/Supervisor
+市场通路专员#Trade Marketing Specialist
+市场企划经理/主管#Marketing Planning Manager/Supervisor
+市场企划专员#Marketing Planning Executive
+促销经理#Promotion Manager
+促销主管/督导#Promotion Supervisor
+促销员/导购#Promotion Specialist
+选址拓展/新店开发#Site Development
+其他#
+
+影视/媒体#Film Entertainment/Media
+影视策划/制作人员#Entertainment /Produer
+导演/编导#Director
+艺术/设计总监#Artistic/Design Director
+经纪人/星探#Entertainment Agent
+演员/模特/主持人#Actor/Actress/Model/MC
+摄影师/摄像师#Photographer
+后期制作#Postproduction
+音效师#Recording / Sounds Specialist
+配音员#Dubbing Specialist
+放映经理/主管#Projection Manager/Supervisor
+放映员#Projectionist
+化妆师/造型师#Makeup Artist/Image Designer
+其他#
+
+写作/出版/印刷#Publishing/Printing
+总编/副总编#Chief Editor
+编辑#Editor
+作家/撰稿人#Writer
+记者#Journalist / Reporter
+电话采编#Telephone Reporter
+美术编辑#Art Editor
+排版设计#Layout Designer
+校对/录入#Proofreader/Data Entry Staff
+出版/发行#Publishing/Distribution
+电分操作员#Operator-Colour Distinguishing
+印刷排版/制版#Layout Designer
+数码直印/菲林输出#Digital/Film Printing
+打稿机操作员#Operator
+调墨技师#Ink Technician
+印刷机械机长#Printing Machine Operator
+晒版/拼版/装订/烫金技工#Technician
+其他#
+
+艺术/设计#Artist/Designer
+平面设计总监#Graphic Design Director
+平面设计经理/主管#Graphic Design Manager/Supervisor
+平面设计师#Graphic Artist/Designer
+绘画#Graphic Illustrator
+动画/3D设计#Animation/3D Design
+原画师#Original Artist
+展览/展示/店面设计#Exhibition/Display/Storefront Design
+多媒体设计#Multimedia Design
+包装设计#Package Design
+工业/产品设计#Industrial Designer
+工艺品/珠宝设计鉴定#Artwork/Jewelry Design and Appraisal
+家具/家居用品设计#Furniture/Household Product Design
+玩具设计#Toy Design
+其他#
+
+建筑装潢/市政建设#Construction
+高级建筑工程师/总工#Senior Architect
+建筑工程师#Architect
+建筑设计师#Architectural Designer
+市政工程师#Municipal Project Engineer
+结构/土木/土建工程师#Structural Engineer
+公路/桥梁/港口/隧道工程#Road/Bridge/Port/Tunnel Project Engineer
+岩土工程#Geotechnical Engineer
+楼宇自动化#Building Automation
+建筑机电工程师#Building Electrical Engineer
+安防工程师#Defence&Security Engineer
+给排水/暖通工程#Drainage/HVAC Project Engineer
+幕墙工程师#Curtain Wall Engineer
+规划与设计#Design/Planning
+室内外装潢设计#Interial Design/Decorator
+园艺/园林/景观设计#Gardenning Designer
+测绘/测量#Mapping/Surveyor
+建筑制图#CAD Drafter
+开发报建#Programming&Applying for Building
+工程造价师/预结算经理#Project Estimator
+预结算员#Quantity Surveyor
+建筑工程管理/项目经理#Construction Project Management
+建筑工程验收#Construction Project Inspector
+工程监理#Engineering Project Supervisor
+合同管理#Contract Management
+安全员#Safety Specialist
+资料员#Data Management Specialist
+施工员#Construction Crew
+其他#
+
+房地产#Real Estate
+房地产项目/开发/策划经理#Real Estate Project/Development/Planning Manager
+房地产项目/开发/策划主管/专员#Real Estate Project/Development/Planning Supervisor/Specialist
+房产项目配套工程师#Conveyance System Engineer
+房地产项目招投标#Real Estate Tender /Bidding
+房地产评估#Real Estate Appraisal
+房地产中介/交易#Real Estate Agent/Broker
+房地产销售经理/主管#Real Estate Sales Manager/Supervisor
+房地产销售人员#Real Estate Sales
+其他#
+
+物业管理#Property Management
+高级物业顾问/物业顾问#Senior Property Advisor/Property Advisor
+物业管理经理/主管#Property Management Manager/Supervisor
+物业管理专员/助理#Property Management
+物业招商/租赁/租售#Property Lease/Rent
+物业设施管理人员#Property Establishment Management
+物业机电工程师#Property Mechanical Engineer
+物业维修人员#Property Maintainence Staff
+其他#
+
+人力资源#Human Resources
+人事总监#Human Resources Director
+人事经理#Human Resources Manager
+人事主管#Human Resources Supervisor
+人事专员#Human Resources Specialist
+人事助理#Human Resources Assistant
+招聘经理/主管#Recruiting Manager/Supervisor
+招聘专员/助理#Recruiting Specialist/Assistant
+薪资福利经理/主管#Compensation & Benefits Mgr./Supervisor
+薪资福利专员/助理#Compensation & Benefits Specialist/Assistant
+绩效考核经理/主管#Performance Assessment Manager/Supervisor
+绩效考核专员/助理#Performance Assessment Specialist/Assistant
+培训经理/主管#Training Manager/Supervisor
+培训专员/助理/培训师#Training Specialist/Assistant/Trainer
+企业文化/员工关系/工会管理#Corporate Culture/Employee Labor Union Relations
+人力资源信息系统专员#HRIS Specialist
+其他#
+
+高级管理#Senior Management
+首席执行官CEO/总裁/总经理#CEO/President/General Manager
+首席运营官COO#COO
+副总经理/副总裁#Deputy GM/Vice President
+合伙人#Partner
+总监/部门经理#Director/Department Manager
+策略发展总监#Strategic Planning Director
+办事处首席代表#Chief Representative
+办事处/分公司/分支机构经理#Branch Office Manager
+总裁助理/总经理助理#CEO/GM/President Assistant
+其他#
+
+行政/后勤#Admin./Support Services
+行政总监#Admin Director
+行政经理/主管/办公室主任#Admin Manager/Supervisor/Office Manager
+行政专员/助理#Admin Staff/Assistant
+经理助理/秘书#Executive Assistant/Secretary
+前台接待/总机/接待生#Receptionist
+后勤#Office Support
+图书管理员/资料管理员#Librarian / Information/Data Management Specialist
+电脑操作员/打字员#Computer Operator/Typist
+其他#
+
+咨询/顾问#Consultant
+专业顾问#Senior Consultant
+咨询总监#Consulting Director / Partner
+咨询经理#Consulting Manager
+专业培训师#Professional Trainer
+咨询员#Consultant
+调研员#Research Analyst
+猎头/人才中介#Headhunting
+情报信息分析人员#Market Intelligence Analyst
+其他#
+
+律师/法务/合规#Legal/Compliance
+律师/法律顾问#Lawyer/Counsel
+律师助理#Paralegal
+法务经理#Corporate Counsel/Compliance Officer
+法务主管/专员#Legal Supervisor/Specialist
+法务助理#Legal Assistant
+合规经理#Compliance Manager
+合规主管/专员#Compliance Supervisor/Specialist
+知识产权/专利顾问/专员#Intellectual Property/Patent Advisor/Specialist
+其他#
+
+教师#Professor/Teacher
+校长#School Principal
+大学教授#Professor
+讲师/助教#Lecturer/Teaching Assistant
+中学教师#High School Teacher
+小学教师#Grade School Teacher
+幼教#Preschool Education
+院校教务管理人员#Educational Facility Management
+兼职教师#Part-time Teacher
+家教#Tutor
+音乐/美术教师#Music/Art Teacher
+职业技术教师#Vocational Instructor
+其他#
+
+培训#Training
+培训督导#Supervision Training
+培训讲师#Trainer
+培训策划#Training Planning
+培训产品开发#Training Product Development
+培训/课程顾问#Training/Course Consultant
+培训助理#Training Assistant
+其他#
+
+科研人员#Research Specialist Staff
+科研管理人员#Research Management
+科研人员#Research Specialist Staff
+ 
+餐饮/娱乐#Restaurant & Food / Entertainment
+餐饮/娱乐管理#Restaurant & Food / Entertainment Services Management
+餐饮/娱乐领班/部长#Restaurant & Food / Entertainment Services Supervisor
+餐饮/娱乐服务员#Restaurant & Food / Entertainment Services Waiter
+传菜主管/传菜员#Food Server
+礼仪/迎宾#Reception
+司仪#Event Host
+行政主厨/厨师长#Executive Chef
+厨师/面点师#Chef/Cook
+厨师助理/学徒#Cooking Assistant
+调酒师/侍酒师/吧台员#Bartender/Sommelier
+茶艺师#Tea Specialist
+其他#
+
+酒店/旅游#Hospitality/Tourism
+酒店/宾馆经理#Hotel Manager
+酒店/宾馆营销#Hotel Sales
+宴会管理#Banquet Management
+大堂经理#Hall Manager
+宾客服务经理#Guest Service Manager
+楼面经理#Floor Manager
+前厅接待#Reception
+预定部主管#Reservation Supervisor
+预定员#Reservation Staff
+客房服务员/楼面服务员#Room Service
+机场代表#Hotel Airport Representatives
+行李员#Bellperson
+管家部经理/主管#Housekeeping Manager
+清洁服务人员#Housekeeping Staff
+健身房服务#Fitness Center Service
+旅游产品销售#Tourism Product Sales
+导游/旅行顾问#Tour Guide/Travel Consultant
+行程管理/操作#Travel Management /Operations
+票务/订房服务#Reservation Service
+签证专员#Visa Specialist
+其他#
+
+美容/健身/体育#Beauty/Health/Sport
+美容顾问/化妆#Beauty Advisor/Makeup
+彩妆培训师#Makeup Trainer
+专柜彩妆顾问(BA)#Beauty Advisor
+美容助理/见席美容师#Beautician Assistant
+瘦身顾问#Slimming/Weight Loss Conunselor
+发型师#Hair Stylist
+发型助理/学徒#Hair Stylist Assistant
+美甲师#Nail Specialist
+按摩/足疗#Spa/Massage/Foot Care
+健身顾问/教练#Fitness Trainer
+体育运动教练#Coach
+救生员#Lifeguard
+瑜伽/舞蹈老师#Yoga/Dance Instructor
+宠物护理/美容#Pet Care
+其他#
+
+百货/连锁/零售服务#Department Store/Chain Shops/Retail
+店长/卖场经理/楼面管理#Store Manager/Floor Manager
+品类经理#Category Manager
+店员/营业员#Store Manager Trainee/Salesperson
+安防主管#Security Technical Service Executive
+防损员/内保#Loss Prevention
+收银主管/收银员#Cashier
+理货员/陈列员/收货员#Inventory Management/Display/Receiver
+导购员#Sales
+西点师/面包糕点加工#Pastry/Bakery Assistant
+生鲜食品加工/处理#Raw Food Assistant
+熟食加工#Cooked Food Assistant
+兼职店员#Part-time Salesperson
+其他#
+
+交通运输服务#Traffic Service
+飞机机长/副机长#Flight Captain
+空乘人员#Flight Attendant
+地勤人员#Ground Attendant
+列车/地铁车长#Train/Subway Conductor
+列车/地铁司机#Train/Subway Driver
+船长/副船长#Fleet Captain
+船员#Sailor
+乘务员#Attendant
+司机#Chauffeur/Driver
+其他#
+
+保安/家政/其他服务#Security/Housekeeping/Other Service
+保安经理#Security Manager
+保安人员#Security
+保镖#Bodyguard
+寻呼员/话务员#Paging Operator
+搬运工#Mover
+清洁工#Cleaning Staff
+家政服务/保姆#Housekeeping/Nanny
+其他#
+
+公务员#Official
+公务员#Official
+ 
+翻译#Translator
+英语翻译#English Translator
+日语翻译#Japanese Translator
+德语翻译#German Translator
+法语翻译#French Translator
+俄语翻译#Russian Translator
+意大利语翻译#Italian Translator
+西班牙语翻译#Spanish Translator
+葡萄牙语翻译#Portuguese Translator
+阿拉伯语翻译#Arabic Translator
+韩语/朝鲜语翻译#Korean Translator
+泰语翻译#Thai Translator
+中国方言翻译#Chinese Dialect Translator
+其他语种翻译#Other Language Translator
+ 
+在校学生#Student
+研究生#Graduate Student
+大学/大专应届毕业生#University/College Graduating Student
+中专/职校生#Technical/Vocational School Student
+其他#
+
+储备干部/培训生/实习生#Trainee/Intern
+储备干部#Associate Trainee
+培训生#Trainee
+实习生#Intern
+ 
+兼职#Part Time
+兼职#Part Time
+ 
+其他#Others
+驯兽师/助理驯兽师#Animal Trainer
+志愿者#Volunteer
+其他#
+
+环保#Environmental
+环保工程师#Environmental Protection Engineer
+环境影响评价工程师#Environmental Impact Assessment Engineer
+环保检测#Environmental Inspector
+水质检测员#Water Quality Inspector
+水处理工程师#Water Treatment Engineer
+固废工程师#Waste Treatment Engineer
+其它#
+
+农/林/牧/渔#Agriculture/Forestry/Fishing
+养殖部主管#Culturist
+场长(农/林/牧/渔业)#Director(Agriculture/Forestry/Fishing)
+农艺师#Agronomist
+畜牧师#Animal Husbandry
+饲养员#Animal Care Technician
+动物营养/饲料研发#Animal Food R&D
+其他#Others
+==

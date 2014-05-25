@@ -87,8 +87,10 @@ public class CommonController extends BaseController{
 		{
 			DimensionEntity dim = commonService.getDim(1, form.getChoice(), form.getNumber());
 			QuestionEntity ques = Util.calcSingleScore(dim, account.getUserId(), form.getChoice(), form.getTime());
-			commonService.insertQuestion(ques);
-			return new ModelAndView(new RedirectView("/evaluation/q2"));
+			if(commonService.insertQuestion(ques) > 0)
+				return new ModelAndView(new RedirectView("/evaluation/q2"));
+			else
+				return mv;
 		}
 		else
 		{
@@ -105,8 +107,10 @@ public class CommonController extends BaseController{
 		{
 			DimensionEntity dim = commonService.getDim(2, form.getChoice(), form.getNumber());
 			QuestionEntity ques = Util.calcSingleScore(dim, account.getUserId(), form.getChoice(), form.getTime());
-			commonService.insertQuestion(ques);
-			return new ModelAndView(new RedirectView("/evaluation/q3"));
+			if(commonService.insertQuestion(ques) > 0)
+				return new ModelAndView(new RedirectView("/evaluation/q3"));
+			else
+				return mv;
 		}
 		else
 		{
@@ -123,8 +127,10 @@ public class CommonController extends BaseController{
 		{
 			DimensionEntity dim = commonService.getDim(3, form.getChoice(), form.getNumber());
 			QuestionEntity ques = Util.calcSingleScore(dim, account.getUserId(), form.getChoice(), form.getTime());
-			commonService.insertQuestion(ques);
-			return new ModelAndView(new RedirectView("/evaluation/q4"));
+			if(commonService.insertQuestion(ques) > 0)
+				return new ModelAndView(new RedirectView("/evaluation/q4"));
+			else
+				return mv;
 		}
 		else
 		{
@@ -141,8 +147,10 @@ public class CommonController extends BaseController{
 		{
 			DimensionEntity dim = commonService.getDim(4, form.getChoice(), form.getNumber());
 			QuestionEntity ques = Util.calcSingleScore(dim, account.getUserId(), form.getChoice(), form.getTime());
-			commonService.insertQuestion(ques);
-			return new ModelAndView(new RedirectView("/evaluation/q5"));
+			if(commonService.insertQuestion(ques) > 0)
+				return new ModelAndView(new RedirectView("/evaluation/q5"));
+			else
+				return mv;
 		}
 		else
 		{
@@ -159,8 +167,10 @@ public class CommonController extends BaseController{
 		{
 			DimensionEntity dim = commonService.getDim(5, form.getChoice(), form.getNumber());
 			QuestionEntity ques = Util.calcSingleScore(dim, account.getUserId(), form.getChoice(), form.getTime());
-			commonService.insertQuestion(ques);
-			return new ModelAndView(new RedirectView("/evaluation/q6"));
+			if(commonService.insertQuestion(ques) > 0)
+				return new ModelAndView(new RedirectView("/evaluation/q6"));
+			else
+				return mv;
 		}
 		else
 		{
@@ -177,8 +187,10 @@ public class CommonController extends BaseController{
 		{
 			DimensionEntity dim = commonService.getDim(6, form.getChoice(), form.getNumber());
 			QuestionEntity ques = Util.calcSingleScore(dim, account.getUserId(), form.getChoice(), form.getTime());
-			commonService.insertQuestion(ques);
-			return new ModelAndView(new RedirectView("/evaluation/q7"));
+			if(commonService.insertQuestion(ques) > 0)
+				return new ModelAndView(new RedirectView("/evaluation/q7"));
+			else
+				return mv;
 		}
 		else
 		{
@@ -195,8 +207,10 @@ public class CommonController extends BaseController{
 		{
 			DimensionEntity dim = commonService.getDim(7, form.getChoice(), form.getNumber());
 			QuestionEntity ques = Util.calcSingleScore(dim, account.getUserId(), form.getChoice(), form.getTime());
-			commonService.insertQuestion(ques);
-			return new ModelAndView(new RedirectView("/evaluation/q8"));
+			if(commonService.insertQuestion(ques) > 0)
+				return new ModelAndView(new RedirectView("/evaluation/q8"));
+			else
+				return mv;
 		}
 		else
 		{
@@ -213,8 +227,10 @@ public class CommonController extends BaseController{
 		{
 			DimensionEntity dim = commonService.getDim(8, 0, form.getNumber());
 			List<QuestionEntity> list = Util.calcDimensionScore(dim, account.getUserId(), form);
-			commonService.insertQuestionList(list);
-			return new ModelAndView(new RedirectView("/evaluation/q9"));
+			if(commonService.insertQuestionList(list) > 0)
+				return new ModelAndView(new RedirectView("/evaluation/q9"));
+			else
+				return mv;
 		}
 		else
 		{
@@ -231,8 +247,10 @@ public class CommonController extends BaseController{
 		{
 			DimensionEntity dim = commonService.getDim(9, 0, form.getNumber());
 			List<QuestionEntity> list = Util.calcDimensionScore(dim, account.getUserId(), form);
-			commonService.insertQuestionList(list);
-			return new ModelAndView(new RedirectView("/evaluation/q10"));
+			if(commonService.insertQuestionList(list) > 0)
+				return new ModelAndView(new RedirectView("/evaluation/q10"));
+			else
+				return mv;
 		}
 		else
 		{
@@ -249,8 +267,10 @@ public class CommonController extends BaseController{
 		{
 			DimensionEntity dim = commonService.getDim(10, 0, form.getNumber());
 			List<QuestionEntity> list = Util.calcDimensionScore(dim, account.getUserId(), form);
-			commonService.insertQuestionList(list);
-			return new ModelAndView(new RedirectView("/evaluation/q11"));
+			if(commonService.insertQuestionList(list) > 0)
+				return new ModelAndView(new RedirectView("/evaluation/q11"));
+			else
+				return mv;
 		}
 		else
 		{
@@ -267,8 +287,10 @@ public class CommonController extends BaseController{
 		{
 			DimensionEntity dim = commonService.getDim(11, 0, form.getNumber());
 			List<QuestionEntity> list = Util.calcDimensionScore(dim, account.getUserId(), form);
-			commonService.insertQuestionList(list);
-			return new ModelAndView(new RedirectView("/evaluation/q12"));
+			if(commonService.insertQuestionList(list) > 0)
+				return new ModelAndView(new RedirectView("/evaluation/q12"));
+			else
+				return mv;
 		}
 		else
 		{
@@ -285,8 +307,10 @@ public class CommonController extends BaseController{
 		{
 			DimensionEntity dim = commonService.getDim(12, 0, form.getNumber());
 			List<QuestionEntity> list = Util.calcDimensionScore(dim, account.getUserId(), form);
-			commonService.insertQuestionList(list);
-			return new ModelAndView(new RedirectView("/evaluation/q13"));
+			if(commonService.insertQuestionList(list) > 0)
+				return new ModelAndView(new RedirectView("/evaluation/q13"));
+			else
+				return mv;
 		}
 		else
 		{
@@ -303,8 +327,10 @@ public class CommonController extends BaseController{
 		{
 			DimensionEntity dim = commonService.getDim(13, form.getChoice(), form.getNumber());
 			QuestionEntity ques = Util.calcSingleScore(dim, account.getUserId(), form.getChoice(), form.getTime());
-			commonService.insertQuestion(ques);
-			return new ModelAndView(new RedirectView("/evaluation/q14"));
+			if(commonService.insertQuestion(ques) > 0)
+				return new ModelAndView(new RedirectView("/evaluation/q14"));
+			else
+				return mv;
 		}
 		else
 		{
@@ -321,8 +347,10 @@ public class CommonController extends BaseController{
 		{
 			DimensionEntity dim = commonService.getDim(14, form.getChoice(), form.getNumber());
 			QuestionEntity ques = Util.calcSingleScore(dim, account.getUserId(), form.getChoice(), form.getTime());
-			commonService.insertQuestion(ques);
-			return new ModelAndView(new RedirectView("/evaluation/q15"));
+			if(commonService.insertQuestion(ques) > 0)
+				return new ModelAndView(new RedirectView("/evaluation/q15"));
+			else
+				return mv;
 		}
 		else
 		{
@@ -341,8 +369,10 @@ public class CommonController extends BaseController{
 			DimensionEntity dim2 = commonService.getDim(15, 1, 2);
 			DimensionEntity dim3 = commonService.getDim(15, 1, 2);
 			List<QuestionEntity> ques = Util.calcProcessScore(dim, dim2, dim3, account.getUserId(), form);
-			commonService.insertQuestionList(ques);
-			return new ModelAndView(new RedirectView("/evaluation/q16"));
+			if(commonService.insertQuestionList(ques) > 0)
+				return new ModelAndView(new RedirectView("/evaluation/q16"));
+			else
+				return mv;
 		}
 		else
 		{
@@ -362,8 +392,10 @@ public class CommonController extends BaseController{
 			DimensionEntity dim3 = commonService.getDim(16, form.getChoice3(), 3);
 			DimensionEntity dim4 = commonService.getDim(16, form.getChoice4(), 4);
 			List<QuestionEntity> list = Util.calcQ16Score(dim, dim2, dim3, dim4, account.getUserId(), form);
-			commonService.insertQuestionList(list);
-			return new ModelAndView(new RedirectView("/evaluation/end"));
+			if(commonService.insertQuestionList(list) > 0)
+				return new ModelAndView(new RedirectView("/evaluation/end"));
+			else
+				return mv;
 		}
 		else
 		{

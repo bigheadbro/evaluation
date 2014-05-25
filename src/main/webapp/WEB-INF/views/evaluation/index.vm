@@ -1,5 +1,5 @@
 #set($layout = "/layout/user_detail_layout.vm")
-<div class="main-content-container">
+<div class="index-content-container">
 	<div class="main-body">
 		<h1 class="welcome">欢迎参加职业测评</h1>
 		<ul class="steps clearfix">

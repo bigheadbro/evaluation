@@ -1,5 +1,9 @@
 package com.psylife.util;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
 import java.net.URL;
 import java.net.URLConnection;
 import java.util.ArrayList;
@@ -28,6 +32,37 @@ public class Util {
 			return false;
 	}
 
+	public static void parseJob() {
+		File file = new File("info/job.txt");
+		BufferedReader reader = null;
+		try {
+			reader = new BufferedReader(new FileReader(file));
+			String tempString = null;
+			// 一次读入一行，直到读入null为文件结束
+			System.out.println("<ul class=\"sub\">");
+			while ((tempString = reader.readLine()) != "==") {
+				
+				if(tempString.trim().isEmpty() ){
+					System.out.println("</ul>");
+					System.out.println("<ul class=\"sub\">");
+				}
+				else{
+					System.out.println("<li>"+tempString.split("#")[0]+"</li>");
+				}
+			}
+			reader.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		} finally {
+			if (reader != null) {
+				try {
+					reader.close();
+				} catch (IOException e1) {
+				}
+			}
+		}
+	}
+	
 	// 获取学生信息
 	public static Account getStudentInfo(String cardno) {
 		Account account = new Account();
@@ -335,11 +370,11 @@ public class Util {
 	}
 		
 	public static void main(String args[]) {
-		Account accnt = getStudentInfo("MjAxMTUyMDAwMg..");
+		/*Account accnt = getStudentInfo("MjAxMTUyMDAwMg..");
 		System.out.println(accnt.getCardno());
 		System.out.println(accnt.getSchool());
-		System.out.println(accnt.getUserName());
-		
+		System.out.println(accnt.getUserName());*/
+		parseJob();
 
 	}
 

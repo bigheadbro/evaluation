@@ -10,6 +10,7 @@ img{border:none;}
 html{flow-y:scroll;height:100%;}  
 table{border-collapse: collapse;border-spacing: 0;}
 em{font-style:normal}
+em.error{color:red;margin-left:10px;}
 ul, li, ol {
 list-style: none;
 }
