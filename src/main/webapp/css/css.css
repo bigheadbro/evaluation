@@ -167,9 +167,12 @@ ul.industry-wrap li.detail a:hover{background-color:#47644e;color:white;}
 .white{background-color:white;}
 ul.position-wrap li{float:left;}
 ul.position-wrap li.category{width:180px;color:#47644e;font-weight:700}
-ul.position-wrap li.detail{width: 640px;}
+ul.position-wrap li.detail{width: 640px;display:relative;}
 ul.position-wrap li.detail a{width: 210px;display: inline-block;}
 ul.position-wrap li.detail a:hover{background-color:#47644e;color:white;}
+ul.position-wrap ul.sub{display:none;position:absolute;border: 1px solid #47644e;background-color: wheat;margin-top:-20px;width: 150px;}
+ul.position-wrap ul.sub li{display:block;float:none;padding: 2px;}
+ul.position-wrap ul.sub li:hover{background-color:#47644e;color:white;}
 
 #pagemask-major, #pagemask-industry, #pagemask-position, #pagemask-q15a,#pagemask-q15b,#pagemask-q15c{
 position: absolute;

@@ -1044,15 +1044,37 @@
 <script>
 	var cntPos = 0;
 	$(function(){
-		$(".position-win .detail a").click(function(){
-    		if(cntPos == 3)
-    		{
-    			alert("最多选择3个职位");
-    			last;
-    		}
-			$(".position-win .selected span").append("<a>" + $(this).text() + "</a>");
-    		cntPos++;
+		$(".position-win .detail a").click(function(event){
+			$(this).next(".sub").css("left",event.pageX -$(".position-win").offset().left);
+			$(this).next(".sub").show();
     	});
+		$(".position-win .detail ul.sub li").click(function(){
+			var position = $(this).text();
+			if($(this).attr("check") == undefined){
+				$(this).attr("check", 1);
+				if(cntPos == 3)
+        		{
+        			alert("最多选择3个职位");
+        			last;
+        		}
+    			$(".position-win .selected span").append("<a>" + $(this).text() + "</a>");
+        		cntPos++;
+			}else{
+				$(this).removeAttr("check");
+				$(".selected span a").each(function(){
+					if($(this).text() == position){
+						$(this).remove();
+					}
+				});
+				cntPos--;
+			}
+			
+		});
+		$(".position-win .detail ul.sub").mouseenter(function(){
+			$(this).show();
+		}).mouseleave(function(){
+			$(this).hide();
+		});
 		$(".position-win .selected span").on("click", "a", function(){
   			$(this).remove();
   			cntPos--;

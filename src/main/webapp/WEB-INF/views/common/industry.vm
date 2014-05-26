@@ -123,13 +123,25 @@
     var cntInd = 0;
 	$(function(){
 		$(".industry-win .detail a").click(function(){
-    		if(cntInd == 5)
-    		{
-    			alert("最多选择5个行业");
-    			last;
-    		}
-        	$(".industry-win .selected span").append("<a>" + $(this).text() + "</a>");
-    		cntInd++;
+			var ind = $(this).text();
+			if($(this).attr("check") == undefined){
+				$(this).attr("check", 1);
+        		if(cntInd == 5)
+        		{
+        			alert("最多选择5个行业");
+        			last;
+        		}
+            	$(".industry-win .selected span").append("<a>" + $(this).text() + "</a>");
+        		cntInd++;
+			}else{
+				$(this).removeAttr("check");
+				$(".selected span a").each(function(){
+					if($(this).text() == ind){
+						$(this).remove();
+					}
+				});
+				cntInd--;
+			}
         });
     	$(".industry-win .selected span").on("click", "a", function(){
     		$(this).remove();
