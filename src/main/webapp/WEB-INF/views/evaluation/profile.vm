@@ -872,7 +872,6 @@ $(document).ready(function(){
 		$("#"+$(this).attr("name")).val(parseInt($(this).attr("order")));
     });
 	$(".next").click(function(){
-		alert($("#sex").val());
 		$("#form_profile").submit();
 	});
 	
