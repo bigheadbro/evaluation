@@ -80,7 +80,7 @@ $(document).ready(function(){
 			</div>
 			#springBind("form.choice2")
 			<input type="hidden"  name="${status.expression}" value="0" id="q2" />
-			<ul>
+			<ul class="mt10">
 				<li>
 					<input type="radio" name="q2" id="a1" number="1">
 					<label for="a1">A代言人</label>
@@ -102,7 +102,7 @@ $(document).ready(function(){
 			</div>
 			#springBind("form.choice3")
 			<input type="hidden"  name="${status.expression}" value="0" id="q3" />
-			<ul>
+			<ul class="mt10">
 				<li>
 					<input type="radio" name="q3" id="b1" number="1">
 					<label for="b1">5号</label>
@@ -140,7 +140,7 @@ $(document).ready(function(){
 			</div>
 			#springBind("form.choice4")
 			<input type="hidden"  name="${status.expression}" value="0" id="q4" />
-			<ul>
+			<ul class="mt10">
 				<li>
 					<input type="radio" name="q4" id="c1" number="1">
 					<label for="c1">D景点</label>

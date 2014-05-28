@@ -277,8 +277,7 @@ public class Util {
 		return list;
 	}
 	
-	public static List<QuestionEntity> calcQ16Score(DimensionEntity dim,DimensionEntity dim2,DimensionEntity dim3,DimensionEntity dim4, int uid, QuestionForm form) {
-		List<QuestionEntity> list = new ArrayList<QuestionEntity>();
+	public static QuestionEntity calcQ16MainScore(DimensionEntity dim, int uid, QuestionForm form) {
 		//A
 		QuestionEntity ques = new QuestionEntity();
 		if(dim == null)
@@ -289,7 +288,7 @@ public class Util {
 		ques.setChoice(form.getChoice());
 		ques.setTime(form.getTime());
 		ques.setQid(form.getQuestionid());
-		ques.setNumber(form.getNumber());
+		ques.setNumber(1);
 		ques.setLoyalty(dim.getLoyalty());
 		ques.setPositive(dim.getPositive());
 		ques.setResponsibility(dim.getResponsibility());
@@ -302,6 +301,13 @@ public class Util {
 		ques.setStrain(dim.getStrain());
 		ques.setDetails(dim.getDetails());
 		ques.setPotential(dim.getPotential());
+		
+		return ques;
+	}
+	
+	public static List<QuestionEntity> calcQ16Score(DimensionEntity dim2,DimensionEntity dim3,DimensionEntity dim4, int uid, QuestionForm form) {
+		List<QuestionEntity> list = new ArrayList<QuestionEntity>();
+		
 		//B
 		QuestionEntity ques2 = new QuestionEntity();
 		ques2.setUserId(uid);
@@ -362,7 +368,6 @@ public class Util {
 		ques4.setDetails(dim4.getDetails());
 		ques4.setPotential(dim4.getPotential());
 		
-		list.add(ques);
 		list.add(ques2);
 		list.add(ques3);
 		list.add(ques4);

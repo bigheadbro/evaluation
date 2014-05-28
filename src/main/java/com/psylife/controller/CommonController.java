@@ -227,10 +227,8 @@ public class CommonController extends BaseController{
 		{
 			DimensionEntity dim = commonService.getDim(8, 0, form.getNumber());
 			List<QuestionEntity> list = Util.calcDimensionScore(dim, account.getUserId(), form);
-			if(commonService.insertQuestionList(list) > 0)
-				return new ModelAndView(new RedirectView("/evaluation/q9"));
-			else
-				return mv;
+			commonService.insertQuestionList(list);
+			return new ModelAndView(new RedirectView("/evaluation/q9"));
 		}
 		else
 		{
@@ -247,10 +245,8 @@ public class CommonController extends BaseController{
 		{
 			DimensionEntity dim = commonService.getDim(9, 0, form.getNumber());
 			List<QuestionEntity> list = Util.calcDimensionScore(dim, account.getUserId(), form);
-			if(commonService.insertQuestionList(list) > 0)
-				return new ModelAndView(new RedirectView("/evaluation/q10"));
-			else
-				return mv;
+			commonService.insertQuestionList(list);
+			return new ModelAndView(new RedirectView("/evaluation/q10"));
 		}
 		else
 		{
@@ -267,10 +263,8 @@ public class CommonController extends BaseController{
 		{
 			DimensionEntity dim = commonService.getDim(10, 0, form.getNumber());
 			List<QuestionEntity> list = Util.calcDimensionScore(dim, account.getUserId(), form);
-			if(commonService.insertQuestionList(list) > 0)
-				return new ModelAndView(new RedirectView("/evaluation/q11"));
-			else
-				return mv;
+			commonService.insertQuestionList(list);
+			return new ModelAndView(new RedirectView("/evaluation/q11"));
 		}
 		else
 		{
@@ -287,10 +281,8 @@ public class CommonController extends BaseController{
 		{
 			DimensionEntity dim = commonService.getDim(11, 0, form.getNumber());
 			List<QuestionEntity> list = Util.calcDimensionScore(dim, account.getUserId(), form);
-			if(commonService.insertQuestionList(list) > 0)
-				return new ModelAndView(new RedirectView("/evaluation/q12"));
-			else
-				return mv;
+			commonService.insertQuestionList(list);
+			return new ModelAndView(new RedirectView("/evaluation/q12"));
 		}
 		else
 		{
@@ -307,10 +299,8 @@ public class CommonController extends BaseController{
 		{
 			DimensionEntity dim = commonService.getDim(12, 0, form.getNumber());
 			List<QuestionEntity> list = Util.calcDimensionScore(dim, account.getUserId(), form);
-			if(commonService.insertQuestionList(list) > 0)
-				return new ModelAndView(new RedirectView("/evaluation/q13"));
-			else
-				return mv;
+			commonService.insertQuestionList(list);
+			return new ModelAndView(new RedirectView("/evaluation/q13"));
 		}
 		else
 		{
@@ -345,12 +335,394 @@ public class CommonController extends BaseController{
 		form.setQuestionid(14);
 		if(isDoSubmit(request))
 		{
-			DimensionEntity dim = commonService.getDim(14, form.getChoice(), form.getNumber());
-			QuestionEntity ques = Util.calcSingleScore(dim, account.getUserId(), form.getChoice(), form.getTime());
-			if(commonService.insertQuestion(ques) > 0)
-				return new ModelAndView(new RedirectView("/evaluation/q15"));
+			account.setQ14time(form.getTime());
+			if(form.getChoice() == 0)
+			{
+				return new ModelAndView(new RedirectView("/evaluation/q14a"));
+			}
+			else if(form.getChoice() == 1)
+			{
+				return new ModelAndView(new RedirectView("/evaluation/q14b"));
+			}
+			else if(form.getChoice() == 2)
+			{
+				return new ModelAndView(new RedirectView("/evaluation/q14c"));
+			}
 			else
-				return mv;
+			{
+				DimensionEntity dim = commonService.getDim(14, 1, 0);
+				QuestionEntity ques = Util.calcSingleScore(dim, account.getUserId(), 1, account.getQ14time());
+				if(commonService.insertQuestion(ques) > 0)
+					return new ModelAndView(new RedirectView("/evaluation/q12"));
+				else
+					return mv;
+			}
+		}
+		else
+		{
+			return mv;
+		}
+	}
+	
+	@RequestMapping(value="/q14a")
+	public ModelAndView q14a(final HttpServletRequest request,final HttpServletResponse response, @ModelAttribute("account")Account account, @ModelAttribute("form")QuestionForm form)
+	{
+		ModelAndView mv = new ModelAndView("/evaluation/q14a");
+		form.setQuestionid(14);
+		if(isDoSubmit(request))
+		{
+			account.setQ14time(account.getQ14time() + form.getTime());
+			if(form.getChoice() == 0)
+			{
+				return new ModelAndView(new RedirectView("/evaluation/q14a1"));
+			}
+			else if(form.getChoice() == 1)
+			{
+				return new ModelAndView(new RedirectView("/evaluation/q14a2"));
+			}
+			else if(form.getChoice() == 2)
+			{
+				DimensionEntity dim = commonService.getDim(14, 2, 0);
+				QuestionEntity ques = Util.calcSingleScore(dim, account.getUserId(), 2, account.getQ14time());
+				if(commonService.insertQuestion(ques) > 0)
+					return new ModelAndView(new RedirectView("/evaluation/q14c"));
+				else
+					return mv;
+			}
+			else
+			{
+				DimensionEntity dim = commonService.getDim(14, 3, 0);
+				QuestionEntity ques = Util.calcSingleScore(dim, account.getUserId(), 3, account.getQ14time());
+				if(commonService.insertQuestion(ques) > 0)
+					return new ModelAndView(new RedirectView("/evaluation/q15"));
+				else
+					return mv;
+			}
+		}
+		else
+		{
+			return mv;
+		}
+	}
+	
+	@RequestMapping(value="/q14a1")
+	public ModelAndView q14a1(final HttpServletRequest request,final HttpServletResponse response, @ModelAttribute("account")Account account, @ModelAttribute("form")QuestionForm form)
+	{
+		ModelAndView mv = new ModelAndView("/evaluation/q14a1");
+		form.setQuestionid(14);
+		if(isDoSubmit(request))
+		{
+			account.setQ14time(account.getQ14time() + form.getTime());
+			if(form.getChoice() == 0)
+			{
+				DimensionEntity dim = commonService.getDim(14, 4, 0);
+				QuestionEntity ques = Util.calcSingleScore(dim, account.getUserId(), 4, account.getQ14time());
+				if(commonService.insertQuestion(ques) > 0)
+					return new ModelAndView(new RedirectView("/evaluation/q15"));
+				else
+					return mv;
+			}
+			else if(form.getChoice() == 1)
+			{
+				DimensionEntity dim = commonService.getDim(14, 5, 0);
+				QuestionEntity ques = Util.calcSingleScore(dim, account.getUserId(), 5, account.getQ14time());
+				if(commonService.insertQuestion(ques) > 0)
+					return new ModelAndView(new RedirectView("/evaluation/q15"));
+				else
+					return mv;
+			}
+			else
+			{
+				DimensionEntity dim = commonService.getDim(14, 6, 0);
+				QuestionEntity ques = Util.calcSingleScore(dim, account.getUserId(), 6, account.getQ14time());
+				if(commonService.insertQuestion(ques) > 0)
+					return new ModelAndView(new RedirectView("/evaluation/q15"));
+				else
+					return mv;
+			}
+		}
+		else
+		{
+			return mv;
+		}
+	}
+	
+	@RequestMapping(value="/q14a2")
+	public ModelAndView q14a2(final HttpServletRequest request,final HttpServletResponse response, @ModelAttribute("account")Account account, @ModelAttribute("form")QuestionForm form)
+	{
+		ModelAndView mv = new ModelAndView("/evaluation/q14a2");
+		form.setQuestionid(14);
+		if(isDoSubmit(request))
+		{
+			account.setQ14time(account.getQ14time() + form.getTime());
+			if(form.getChoice() == 0)
+			{
+				return new ModelAndView(new RedirectView("/evaluation/q14a21"));
+			}
+			else if(form.getChoice() == 1)
+			{
+				DimensionEntity dim = commonService.getDim(14, 7, 0);
+				QuestionEntity ques = Util.calcSingleScore(dim, account.getUserId(), 7, account.getQ14time());
+				if(commonService.insertQuestion(ques) > 0)
+					return new ModelAndView(new RedirectView("/evaluation/q15"));
+				else
+					return mv;
+			}
+			else
+			{
+				DimensionEntity dim = commonService.getDim(14, 8, 0);
+				QuestionEntity ques = Util.calcSingleScore(dim, account.getUserId(), 8, account.getQ14time());
+				if(commonService.insertQuestion(ques) > 0)
+					return new ModelAndView(new RedirectView("/evaluation/q15"));
+				else
+					return mv;
+			}
+		}
+		else
+		{
+			return mv;
+		}
+	}
+	
+	@RequestMapping(value="/q14a21")
+	public ModelAndView q14a21(final HttpServletRequest request,final HttpServletResponse response, @ModelAttribute("account")Account account, @ModelAttribute("form")QuestionForm form)
+	{
+		ModelAndView mv = new ModelAndView("/evaluation/q14a21");
+		form.setQuestionid(14);
+		if(isDoSubmit(request))
+		{
+			account.setQ14time(account.getQ14time() + form.getTime());
+			if(form.getChoice() == 0)
+			{
+				DimensionEntity dim = commonService.getDim(14, 9, 0);
+				QuestionEntity ques = Util.calcSingleScore(dim, account.getUserId(), 9, account.getQ14time());
+				if(commonService.insertQuestion(ques) > 0)
+					return new ModelAndView(new RedirectView("/evaluation/q15"));
+				else
+					return mv;
+			}
+			else if(form.getChoice() == 1)
+			{
+				DimensionEntity dim = commonService.getDim(14, 10, 0);
+				QuestionEntity ques = Util.calcSingleScore(dim, account.getUserId(), 10, account.getQ14time());
+				if(commonService.insertQuestion(ques) > 0)
+					return new ModelAndView(new RedirectView("/evaluation/q15"));
+				else
+					return mv;
+			}
+			else
+			{
+				DimensionEntity dim = commonService.getDim(14, 11, 0);
+				QuestionEntity ques = Util.calcSingleScore(dim, account.getUserId(), 11, account.getQ14time());
+				if(commonService.insertQuestion(ques) > 0)
+					return new ModelAndView(new RedirectView("/evaluation/q15"));
+				else
+					return mv;
+			}
+		}
+		else
+		{
+			return mv;
+		}
+	}
+	
+	@RequestMapping(value="/q14b")
+	public ModelAndView q14b(final HttpServletRequest request,final HttpServletResponse response, @ModelAttribute("account")Account account, @ModelAttribute("form")QuestionForm form)
+	{
+		ModelAndView mv = new ModelAndView("/evaluation/q14b");
+		form.setQuestionid(14);
+		if(isDoSubmit(request))
+		{
+			account.setQ14time(account.getQ14time() + form.getTime());
+			if(form.getChoice() == 0)
+			{
+				DimensionEntity dim = commonService.getDim(14, 12, 0);
+				QuestionEntity ques = Util.calcSingleScore(dim, account.getUserId(), 12, account.getQ14time());
+				if(commonService.insertQuestion(ques) > 0)
+					return new ModelAndView(new RedirectView("/evaluation/q15"));
+				else
+					return mv;
+			}
+			else if(form.getChoice() == 1)
+			{
+				DimensionEntity dim = commonService.getDim(14, 13, 0);
+				QuestionEntity ques = Util.calcSingleScore(dim, account.getUserId(), 13, account.getQ14time());
+				if(commonService.insertQuestion(ques) > 0)
+					return new ModelAndView(new RedirectView("/evaluation/q15"));
+				else
+					return mv;
+			}
+			else
+			{
+				DimensionEntity dim = commonService.getDim(14, 14, 0);
+				QuestionEntity ques = Util.calcSingleScore(dim, account.getUserId(), 14, account.getQ14time());
+				if(commonService.insertQuestion(ques) > 0)
+					return new ModelAndView(new RedirectView("/evaluation/q15"));
+				else
+					return mv;
+			}
+		}
+		else
+		{
+			return mv;
+		}
+	}
+	
+	@RequestMapping(value="/q14c")
+	public ModelAndView q14c(final HttpServletRequest request,final HttpServletResponse response, @ModelAttribute("account")Account account, @ModelAttribute("form")QuestionForm form)
+	{
+		ModelAndView mv = new ModelAndView("/evaluation/q14c");
+		form.setQuestionid(14);
+		if(isDoSubmit(request))
+		{
+			account.setQ14time(account.getQ14time() + form.getTime());
+			if(form.getChoice() == 0)
+			{
+				return new ModelAndView(new RedirectView("/evaluation/q14c1"));
+			}
+			else if(form.getChoice() == 1)
+			{
+				return new ModelAndView(new RedirectView("/evaluation/q14c2"));
+			}
+			else if(form.getChoice() == 2)
+			{
+				DimensionEntity dim = commonService.getDim(14, 15, 0);
+				QuestionEntity ques = Util.calcSingleScore(dim, account.getUserId(), 15, account.getQ14time());
+				if(commonService.insertQuestion(ques) > 0)
+					return new ModelAndView(new RedirectView("/evaluation/q15"));
+				else
+					return mv;
+			}
+			else
+			{
+				DimensionEntity dim = commonService.getDim(14, 16, 0);
+				QuestionEntity ques = Util.calcSingleScore(dim, account.getUserId(), 16, account.getQ14time());
+				if(commonService.insertQuestion(ques) > 0)
+					return new ModelAndView(new RedirectView("/evaluation/q15"));
+				else
+					return mv;
+			}
+		}
+		else
+		{
+			return mv;
+		}
+	}
+	
+	@RequestMapping(value="/q14c1")
+	public ModelAndView q14c1(final HttpServletRequest request,final HttpServletResponse response, @ModelAttribute("account")Account account, @ModelAttribute("form")QuestionForm form)
+	{
+		ModelAndView mv = new ModelAndView("/evaluation/q14c1");
+		form.setQuestionid(14);
+		if(isDoSubmit(request))
+		{
+			account.setQ14time(account.getQ14time() + form.getTime());
+			if(form.getChoice() == 0)
+			{
+				DimensionEntity dim = commonService.getDim(14, 17, 0);
+				QuestionEntity ques = Util.calcSingleScore(dim, account.getUserId(), 17, account.getQ14time());
+				if(commonService.insertQuestion(ques) > 0)
+					return new ModelAndView(new RedirectView("/evaluation/q15"));
+				else
+					return mv;
+			}
+			else if(form.getChoice() == 1)
+			{
+				DimensionEntity dim = commonService.getDim(14, 18, 0);
+				QuestionEntity ques = Util.calcSingleScore(dim, account.getUserId(), 18, account.getQ14time());
+				if(commonService.insertQuestion(ques) > 0)
+					return new ModelAndView(new RedirectView("/evaluation/q15"));
+				else
+					return mv;
+			}
+			else
+			{
+				DimensionEntity dim = commonService.getDim(14, 19, 0);
+				QuestionEntity ques = Util.calcSingleScore(dim, account.getUserId(), 19, account.getQ14time());
+				if(commonService.insertQuestion(ques) > 0)
+					return new ModelAndView(new RedirectView("/evaluation/q15"));
+				else
+					return mv;
+			}
+		}
+		else
+		{
+			return mv;
+		}
+	}
+	
+	@RequestMapping(value="/q14c2")
+	public ModelAndView q14c2(final HttpServletRequest request,final HttpServletResponse response, @ModelAttribute("account")Account account, @ModelAttribute("form")QuestionForm form)
+	{
+		ModelAndView mv = new ModelAndView("/evaluation/q14c2");
+		form.setQuestionid(14);
+		if(isDoSubmit(request))
+		{
+			account.setQ14time(account.getQ14time() + form.getTime());
+			if(form.getChoice() == 0)
+			{
+				return new ModelAndView(new RedirectView("/evaluation/q14c21"));
+			}
+			else if(form.getChoice() == 1)
+			{
+				DimensionEntity dim = commonService.getDim(14, 20, 0);
+				QuestionEntity ques = Util.calcSingleScore(dim, account.getUserId(), 20, account.getQ14time());
+				if(commonService.insertQuestion(ques) > 0)
+					return new ModelAndView(new RedirectView("/evaluation/q15"));
+				else
+					return mv;
+			}
+			else
+			{
+				DimensionEntity dim = commonService.getDim(14, 21, 0);
+				QuestionEntity ques = Util.calcSingleScore(dim, account.getUserId(), 21, account.getQ14time());
+				if(commonService.insertQuestion(ques) > 0)
+					return new ModelAndView(new RedirectView("/evaluation/q15"));
+				else
+					return mv;
+			}
+		}
+		else
+		{
+			return mv;
+		}
+	}
+	
+	@RequestMapping(value="/q14c21")
+	public ModelAndView q14c21(final HttpServletRequest request,final HttpServletResponse response, @ModelAttribute("account")Account account, @ModelAttribute("form")QuestionForm form)
+	{
+		ModelAndView mv = new ModelAndView("/evaluation/q14c21");
+		form.setQuestionid(14);
+		if(isDoSubmit(request))
+		{
+			account.setQ14time(account.getQ14time() + form.getTime());
+			if(form.getChoice() == 0)
+			{
+				DimensionEntity dim = commonService.getDim(14, 22, 0);
+				QuestionEntity ques = Util.calcSingleScore(dim, account.getUserId(), 22, account.getQ14time());
+				if(commonService.insertQuestion(ques) > 0)
+					return new ModelAndView(new RedirectView("/evaluation/q15"));
+				else
+					return mv;
+			}
+			else if(form.getChoice() == 1)
+			{
+				DimensionEntity dim = commonService.getDim(14, 23, 0);
+				QuestionEntity ques = Util.calcSingleScore(dim, account.getUserId(), 23, account.getQ14time());
+				if(commonService.insertQuestion(ques) > 0)
+					return new ModelAndView(new RedirectView("/evaluation/q15"));
+				else
+					return mv;
+			}
+			else
+			{
+				DimensionEntity dim = commonService.getDim(14, 24, 0);
+				QuestionEntity ques = Util.calcSingleScore(dim, account.getUserId(), 24, account.getQ14time());
+				if(commonService.insertQuestion(ques) > 0)
+					return new ModelAndView(new RedirectView("/evaluation/q15"));
+				else
+					return mv;
+			}
 		}
 		else
 		{
@@ -369,10 +741,8 @@ public class CommonController extends BaseController{
 			DimensionEntity dim2 = commonService.getDim(15, 1, 2);
 			DimensionEntity dim3 = commonService.getDim(15, 1, 2);
 			List<QuestionEntity> ques = Util.calcProcessScore(dim, dim2, dim3, account.getUserId(), form);
-			if(commonService.insertQuestionList(ques) > 0)
-				return new ModelAndView(new RedirectView("/evaluation/q16"));
-			else
-				return mv;
+			commonService.insertQuestionList(ques);
+			return new ModelAndView(new RedirectView("/evaluation/q16"));
 		}
 		else
 		{
@@ -388,14 +758,31 @@ public class CommonController extends BaseController{
 		if(isDoSubmit(request))
 		{
 			DimensionEntity dim = commonService.getDim(16, form.getChoice(), 1);
+			QuestionEntity q = Util.calcQ16MainScore(dim, account.getUserId(), form);
+			if(commonService.insertQuestion(q) > 0)
+				return new ModelAndView(new RedirectView("/evaluation/q162"));
+			else
+				return mv;
+		}
+		else
+		{
+			return mv;
+		}
+	}
+	
+	@RequestMapping(value="/q162")
+	public ModelAndView q162(final HttpServletRequest request,final HttpServletResponse response,@ModelAttribute("account")Account account, @ModelAttribute("form")QuestionForm form)
+	{
+		ModelAndView mv = new ModelAndView("/evaluation/q162");
+		form.setQuestionid(16);
+		if(isDoSubmit(request))
+		{
 			DimensionEntity dim2 = commonService.getDim(16, form.getChoice2(), 2);
 			DimensionEntity dim3 = commonService.getDim(16, form.getChoice3(), 3);
 			DimensionEntity dim4 = commonService.getDim(16, form.getChoice4(), 4);
-			List<QuestionEntity> list = Util.calcQ16Score(dim, dim2, dim3, dim4, account.getUserId(), form);
-			if(commonService.insertQuestionList(list) > 0)
-				return new ModelAndView(new RedirectView("/evaluation/end"));
-			else
-				return mv;
+			List<QuestionEntity> list = Util.calcQ16Score(dim2, dim3, dim4, account.getUserId(), form);
+			commonService.insertQuestionList(list);
+			return new ModelAndView(new RedirectView("/evaluation/end"));
 		}
 		else
 		{

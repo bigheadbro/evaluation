@@ -50,7 +50,7 @@ $(document).ready(function(){
 		<div class="question">
 			<div class="q-head clearfix">
 				<h1 class="number">9.</h1>
-				<h1 class="title">你的团队将会有一个人将被裁员，如果以下五个人被裁员的话，你的态度分别是<br/>(1=最不满意，5＝最满意）</h1>
+				<h1 class="title">你的团队将会有一个人将被裁员，如果以下五个人被裁员的话，你的态度分别是<br/>(1=很反对，2=较反对，3=无所谓，4=较支持，5＝很支持）</h1>
 			</div>
 			<form id="form_q1" method="post" >
 			<input type="hidden" name="do_submit" value="true"/>

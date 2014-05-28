@@ -16,6 +16,8 @@ public class Account implements Serializable{
 	private int gender;
 	private String school;
 	private int totalTime;
+	private int q14time;
+	private int q16time;
 	//回答到第几题，避免修改之前问题
 	private int state;
 
@@ -90,5 +92,29 @@ public class Account implements Serializable{
 	}
 	public void setCardno(String cardno) {
 		this.cardno = cardno;
+	}
+	/**
+	 * @return the q14time
+	 */
+	public int getQ14time() {
+		return q14time;
+	}
+	/**
+	 * @param q14time the q14time to set
+	 */
+	public void setQ14time(int q14time) {
+		this.q14time = q14time;
+	}
+	/**
+	 * @return the q16time
+	 */
+	public int getQ16time() {
+		return q16time;
+	}
+	/**
+	 * @param q16time the q16time to set
+	 */
+	public void setQ16time(int q16time) {
+		this.q16time = q16time;
 	}
 }

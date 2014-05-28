@@ -6,19 +6,6 @@ $(document).ready(function(){
     	radioClass: 'iradio_square-green',
     	increaseArea: '20%' // optional
     });
-    /*$('input').on('ifChecked', function(event){
-     	var choice = $(this).parent().parent().attr("choice");
-			var show = $(this).parent().parent().attr("show");
-			if(show != null && show != undefined && show != ""){
-					$(this).parent().parent().parent().find("input").iCheck('disable');
-					$("."+show).show();
-			}
-			
-			if(choice > 0){
-					$("#choice").val(choice);
-					$("#form_q").submit();
-			}
-    });*/
 	$('input').on('ifChecked', function(event){
 		$("#choice").val($(this).attr("id"));
      	$('input').iCheck('disable');
@@ -65,28 +52,23 @@ $(document).ready(function(){
 		<input type="hidden" name="${status.expression}" value="$!{status.value}" id="choice"/>
 		#springBind("form.time")
 		<input type="hidden" name="${status.expression}" value="$!{status.value}" id="time"/>
-		<div class="question">
+		<div class="question subqb">
 			<div class="q-head clearfix">
-				<h1 class="number">14.</h1>
-				<h1 class="title">你带领两名同事代表公司前往美国纽约一个国际展览会参展，下午两点，你来到展览中心准备开始布展。会展中心工作人员通过广播告知所有参展商，
-					说现在有一个黄金位置的展位出现了空缺，所有参展公司都可以通过补差价的方式获得该展位，先订先得。这时，你的第一反应是：</h1>
+				<h1 class="number">14.1</h1>
+				<h1 class="title">你要向领导报告情况，你会选用：</h1>
 			</div>
 			<ul>
-				<li show="subqa">
-					<input type="radio" name="choice" id="0">
-					<label for="0">A、去实地考察一下该展位的位置</label>
+				<li choice="12">
+					<input type="radio" name="q6" id="0">
+					<label for="0">B-1、短信</label>
 				</li>
-				<li show="subqb">
-					<input type="radio" name="choice" id="1">
-					<label for="1">B、向在国内的领导请示</label>
+				<li choice="13">
+					<input type="radio" name="q6" id="1">
+					<label for="1">B-2、打领导手机</label>
 				</li>
-				<li show="subqc">
-					<input type="radio" name="choice" id="2">
-					<label for="2">C、询问工作人员具体费用情况</label>
-				</li>
-				<li choice="1">
-					<input type="radio" name="choice" id="3">
-					<label for="3">D、不理睬</label>
+				<li choice="14">
+					<input type="radio" name="q6" id="2">
+					<label for="2">B-3、打办公室电话</label>
 				</li>
 			</ul>
 		</div>

@@ -183,10 +183,7 @@ $(document).ready(function(){
 						required:"请选择对公益组织的兴趣"
 					}
 				},
-				errorElement:"em",
-				submitHandler: function(form) {
-        		$(form).submit();
-				}
+				errorElement:"em"
 		});
 });
 </script>

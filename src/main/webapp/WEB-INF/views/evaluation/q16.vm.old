@@ -7,21 +7,19 @@ $(document).ready(function(){
     	increaseArea: '20%' // optional
     });
 	
-	/*$('input').on('ifChecked', function(event){
+	$('input').on('ifChecked', function(event){
 		$("#"+$(this).attr("name")).val($(this).attr("number"));
     });
 	
     $('.mainquestion input').on('ifChecked', function(event){
 		$(".subquestion").show();
 		$('.mainquestion input').iCheck('disable');
-    });*/
+    });
 	
-	$('input').on('ifChecked', function(event){
-		$("#choice").val($(this).attr("id"));
-     	$('input').iCheck('disable');
+	$(".next").click(function(){
 		$("#time").val(s);
 		$("#form_q").submit();
-    });
+	});
 });
 </script>
 <div class="main-content-container">
@@ -82,19 +80,98 @@ $(document).ready(function(){
 
 			<ul>
 				<li>
-					<input type="radio" name="choice" id="1"  number="1">
-					<label for="1">A、企业甲</label>
+					<input type="radio" name="choice" id="answer1"  number="1">
+					<label for="answer1">A、企业甲</label>
 				</li>
 				<li>
-					<input type="radio" name="choice" id="2"  number="2">
-					<label for="2">B、企业乙</label>
+					<input type="radio" name="choice" id="answer2"  number="2">
+					<label for="answer2">B、企业乙</label>
 				</li>
 				<li>
-					<input type="radio" name="choice" id="3"  number="3">
-					<label for="3">C、企业丙</label>
+					<input type="radio" name="choice" id="answer3"  number="3">
+					<label for="answer3">C、企业丙</label>
+				</li>
+			</ul>
+		</div>
+		<div class="question subquestion">
+			<div class="q-head clearfix">
+				<h1 class="number">&nbsp;</h1>
+				<h1 class="title">你将你找到的资料发送给了领导，领导在邮件中给了你以下回复：
+					企业甲是业内的老大哥，牌子老，信誉也好，不过我们采购量太小，很难引起他们的重视。你即使去考察，也不会有人认真接待你。企业乙的质量是非常好的，外国许多知名厂家都用他们的产品，听说他们的工艺是很独特的，可以去看看。企业丙没有听说过，但是价格很有优势，如果他们的描述属实，引进他们产品是非常合算的。
+					两天时间比较紧，三家都深入了解比较困难，以我的经验，有目的地考察一家供应商至少需要一天的时间。你此行是实地考察，把有价值的信息带给我，便于我做出决定。<br/>
+				16.2 根据领导的回复，你对三家企业的考察会采取怎样的态度：<br/>
+				企业甲</h1>
+			</div>
+			#springBind("form.number2")
+			<input type="hidden" name="${status.expression}" value="2" id="number2" />
+			#springBind("form.choice2")
+			<input type="hidden"  name="${status.expression}" id="q2" />
+			<ul>
+				<li>
+					<input type="radio" name="q2" id="b1" number="1">
+					<label for="b1">不考察</label>
+				</li>
+				<li>
+					<input type="radio" name="q2" id="b2" number="2">
+					<label for="b2">走马观花</label>
+				</li>
+				<li>
+					<input type="radio" name="q2" id="b3" number="3">
+					<label for="b3">详细考察</label>
+				</li>
+			</ul>
+		</div>
+		<div class="question subquestion">
+			<div class="q-head clearfix">
+				<h1 class="number">&nbsp;</h1>
+				<h1 class="title">企业乙</h1>
+			</div>
+			#springBind("form.number3")
+			<input type="hidden" name="${status.expression}" value="3" id="number3" />
+			#springBind("form.choice3")
+			<input type="hidden"  name="${status.expression}" id="q3" />
+			<ul>
+				<li>
+					<input type="radio" name="q3" id="c1" number="1">
+					<label for="c1">不考察</label>
+				</li>
+				<li>
+					<input type="radio" name="q3" id="c2" number="2">
+					<label for="c2">走马观花</label>
+				</li>
+				<li>
+					<input type="radio" name="q3" id="c3" number="3">
+					<label for="c3">详细考察</label>
+				</li>
+			</ul>
+		</div>
+		<div class="question subquestion">
+			<div class="q-head clearfix">
+				<h1 class="number">&nbsp;</h1>
+				<h1 class="title">企业丙</h1>
+			</div>
+			#springBind("form.number4")
+			<input type="hidden" name="${status.expression}" value="4" id="number4" />
+			#springBind("form.choice4")
+			<input type="hidden"  name="${status.expression}" id="q4" />
+			<ul>
+				<li>
+					<input type="radio" name="q4" id="d1" number="1">
+					<label for="d1">不考察</label>
+				</li>
+				<li>
+					<input type="radio" name="q4" id="d2" number="2">
+					<label for="d2">走马观花</label>
+				</li>
+				<li>
+					<input type="radio" name="q4" id="d3" number="3">
+					<label for="d3">详细考察</label>
 				</li>
 			</ul>
 		</div>
 		</form>
+		<div class="operation clearfix">
+			<a class="next">下一题</a>
+		</div>
 	</div>
 </div>

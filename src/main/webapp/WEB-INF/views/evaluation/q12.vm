@@ -50,7 +50,7 @@ $(document).ready(function(){
 		<div class="question">
 			<div class="q-head clearfix">
 				<h1 class="number">12.</h1>
-				<h1 class="title">你正要去参加一个公司会议，突然发现了以下情况，你认为其中哪一项作为你迟到的理由是比较合理的？ <br/>(1=最不满意，5＝最满意）</h1>
+				<h1 class="title">你正要去参加一个公司会议，突然发现了以下情况，你认为其中哪一项作为你迟到的理由是比较合理的？ <br/>(1=最不合理，2=较不合理，3=无所谓，4=较合理，5＝很合理）</h1>
 			</div>
 			<form id="form_q1" method="post" >
 			<input type="hidden" name="do_submit" value="true"/>

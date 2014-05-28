@@ -94,28 +94,28 @@ $(document).ready(function(){
 			</div>
 			<ul>
 				<li>
-					<input type="radio" name="iCheck" id="answer1">
-					<label for="answer1">A、不回应</label>
+					<input type="radio" name="iCheck" id="1">
+					<label for="1">A、不回应</label>
 				</li>
 				<li>
-					<input type="radio" name="iCheck" id="answer2">
-					<label for="answer2">B、点一个赞</label>
+					<input type="radio" name="iCheck" id="2">
+					<label for="2">B、点一个赞</label>
 				</li>
 				<li>
-					<input type="radio" name="iCheck" id="answer3">
-					<label for="answer3">C、回复“我也刚乘上车，注意安全！”</label>
+					<input type="radio" name="iCheck" id="3">
+					<label for="3">C、回复“我也刚乘上车，注意安全！”</label>
 				</li>
 				<li>
-					<input type="radio" name="iCheck" id="answer4">
-					<label for="answer4">D、回复“我不是和你一起走的吗？”</label>
+					<input type="radio" name="iCheck" id="4">
+					<label for="4">D、回复“我不是和你一起走的吗？”</label>
 				</li>
 				<li>
-					<input type="radio" name="iCheck" id="answer5">
-					<label for="answer5">E、点一个赞，同时自己发一条朋友圈，说明自己刚下班</label>
+					<input type="radio" name="iCheck" id="5">
+					<label for="5">E、点一个赞，同时自己发一条朋友圈，说明自己刚下班</label>
 				</li>
 				<li>
-					<input type="radio" name="iCheck" id="answer6">
-					<label for="answer6">F、不点赞，同时自己发一条朋友圈，说明自己刚下班</label>
+					<input type="radio" name="iCheck" id="6">
+					<label for="6">F、不点赞，同时自己发一条朋友圈，说明自己刚下班</label>
 				</li>
 			</ul>
 			#end
