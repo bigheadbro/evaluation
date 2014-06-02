@@ -219,9 +219,14 @@ public class CommonController extends BaseController{
 	}
 
 	@RequestMapping(value="/q8")
-	public ModelAndView q8(final HttpServletRequest request,final HttpServletResponse response, @ModelAttribute("account")Account account, @ModelAttribute("form")QuestionForm form)
+	public ModelAndView q8(final HttpServletRequest request,final HttpServletResponse response, @ModelAttribute("account")Account account, @ModelAttribute("form")QuestionForm form, BindingResult result)
 	{
+		if(result.hasErrors())
+		{
+			return new ModelAndView("/evaluation/q8");
+		}
 		ModelAndView mv = new ModelAndView("/evaluation/q8");
+		
 		form.setQuestionid(8);
 		if(isDoSubmit(request))
 		{
@@ -237,8 +242,12 @@ public class CommonController extends BaseController{
 	}
 	
 	@RequestMapping(value="/q9")
-	public ModelAndView q9(final HttpServletRequest request,final HttpServletResponse response, @ModelAttribute("account")Account account, @ModelAttribute("form")QuestionForm form)
+	public ModelAndView q9(final HttpServletRequest request,final HttpServletResponse response, @ModelAttribute("account")Account account, @ModelAttribute("form")QuestionForm form, BindingResult result)
 	{
+		if(result.hasErrors())
+		{
+			return new ModelAndView("/evaluation/q9");
+		}
 		ModelAndView mv = new ModelAndView("/evaluation/q9");
 		form.setQuestionid(9);
 		if(isDoSubmit(request))
@@ -255,8 +264,12 @@ public class CommonController extends BaseController{
 	}
 	
 	@RequestMapping(value="/q10")
-	public ModelAndView q10(final HttpServletRequest request,final HttpServletResponse response, @ModelAttribute("account")Account account, @ModelAttribute("form")QuestionForm form)
+	public ModelAndView q10(final HttpServletRequest request,final HttpServletResponse response, @ModelAttribute("account")Account account, @ModelAttribute("form")QuestionForm form, BindingResult result)
 	{
+		if(result.hasErrors())
+		{
+			return new ModelAndView("/evaluation/q10");
+		}
 		ModelAndView mv = new ModelAndView("/evaluation/q10");
 		form.setQuestionid(10);
 		if(isDoSubmit(request))
@@ -273,8 +286,12 @@ public class CommonController extends BaseController{
 	}
 	
 	@RequestMapping(value="/q11")
-	public ModelAndView q11(final HttpServletRequest request,final HttpServletResponse response, @ModelAttribute("account")Account account, @ModelAttribute("form")QuestionForm form)
+	public ModelAndView q11(final HttpServletRequest request,final HttpServletResponse response, @ModelAttribute("account")Account account, @ModelAttribute("form")QuestionForm form, BindingResult result)
 	{
+		if(result.hasErrors())
+		{
+			return new ModelAndView("/evaluation/q11");
+		}
 		ModelAndView mv = new ModelAndView("/evaluation/q11");
 		form.setQuestionid(11);
 		if(isDoSubmit(request))
@@ -291,8 +308,12 @@ public class CommonController extends BaseController{
 	}
 	
 	@RequestMapping(value="/q12")
-	public ModelAndView q12(final HttpServletRequest request,final HttpServletResponse response, @ModelAttribute("account")Account account, @ModelAttribute("form")QuestionForm form)
+	public ModelAndView q12(final HttpServletRequest request,final HttpServletResponse response, @ModelAttribute("account")Account account, @ModelAttribute("form")QuestionForm form, BindingResult result)
 	{
+		if(result.hasErrors())
+		{
+			return new ModelAndView("/evaluation/q12");
+		}
 		ModelAndView mv = new ModelAndView("/evaluation/q12");
 		form.setQuestionid(12);
 		if(isDoSubmit(request))
@@ -737,6 +758,10 @@ public class CommonController extends BaseController{
 		form.setQuestionid(15);
 		if(isDoSubmit(request))
 		{
+			if(form.getChoice2() == 0 || form.getChoice3() == 0 || form.getChoice4() == 0)
+			{
+				return new ModelAndView("/evaluation/q15");
+			}
 			DimensionEntity dim = commonService.getDim(15, form.getChoice(), 1);
 			DimensionEntity dim2 = commonService.getDim(15, 1, 2);
 			DimensionEntity dim3 = commonService.getDim(15, 1, 2);
@@ -771,8 +796,12 @@ public class CommonController extends BaseController{
 	}
 	
 	@RequestMapping(value="/q162")
-	public ModelAndView q162(final HttpServletRequest request,final HttpServletResponse response,@ModelAttribute("account")Account account, @ModelAttribute("form")QuestionForm form)
+	public ModelAndView q162(final HttpServletRequest request,final HttpServletResponse response,@ModelAttribute("account")Account account, @ModelAttribute("form")QuestionForm form, BindingResult result)
 	{
+		if(result.hasErrors())
+		{
+			return new ModelAndView("/evaluation/q162");
+		}
 		ModelAndView mv = new ModelAndView("/evaluation/q162");
 		form.setQuestionid(16);
 		if(isDoSubmit(request))

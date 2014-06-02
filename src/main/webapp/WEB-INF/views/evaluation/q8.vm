@@ -51,7 +51,7 @@ $(document).ready(function(){
 			#if($!util.isMale($account.getGender()))
 			<div class="q-head clearfix">
 				<h1 class="number">8.</h1>
-				<h1 class="title">你刚进入职场，如果有以下四个人可能成为你的直接领导，你的满意度分别如何？<br/>(1=最不满意，2=较不满意，3=无所谓，4=较满意，5＝最满意）</h1>
+				<h1 class="title">你刚进入职场，如果有以下四个人可能成为你的直接领导，你的满意度分别如何？</h1>
 			</div>
 			<form id="form_q1" method="post">
 			<input type="hidden" name="do_submit" value="true"/>
@@ -69,15 +69,15 @@ $(document).ready(function(){
 						#springBind("form.choice")
 						<input type="hidden"  name="${status.expression}" id="a"/>
 						<input type="radio" name="a" id="a1" number="1">
-						<label for="a1">1</label>
+						<label for="a1">很不满意</label>
 						<input type="radio" name="a" id="a2" number="2">
-						<label for="a2">2</label>
+						<label for="a2">较不满意</label>
 						<input type="radio" name="a" id="a3" number="3">
-						<label for="a3">3</label>
+						<label for="a3">无所谓</label>
 						<input type="radio" name="a" id="a4" number="4">
-						<label for="a4">4</label>
+						<label for="a4">较满意</label>
 						<input type="radio" name="a" id="a5" number="5">
-						<label for="a5">5</label>
+						<label for="a5">很满意</label>
 				</li>
 			</ul>
 			#springBind("form.number2")
@@ -87,18 +87,18 @@ $(document).ready(function(){
 					B、男，35岁，思路清晰，雷厉风行，作风强势，业绩最出色，经常需要加班。喜欢批评人，喜欢夸耀自己的功劳
 				</li>
 				<li>
-						#springBind("form.choice2")
-						<input type="hidden"  name="${status.expression}" id="b"/>
-						<input type="radio" name="b" id="b1" number="1">
-						<label for="b1">1</label>
-						<input type="radio" name="b" id="b2" number="2">
-						<label for="b2">2</label>
-						<input type="radio" name="b" id="b3" number="3">
-						<label for="b3">3</label>
-						<input type="radio" name="b" id="b4" number="4">
-						<label for="b4">4</label>
-						<input type="radio" name="b" id="b5" number="5">
-						<label for="b5">5</label>
+					#springBind("form.choice2")
+					<input type="hidden"  name="${status.expression}" id="b"/>
+					<input type="radio" name="b" id="b1" number="1">
+					<label for="b1">很不满意</label>
+					<input type="radio" name="b" id="b2" number="2">
+					<label for="b2">较不满意</label>
+					<input type="radio" name="b" id="b3" number="3">
+					<label for="b3">无所谓</label>
+					<input type="radio" name="b" id="b4" number="4">
+					<label for="b4">较满意</label>
+					<input type="radio" name="b" id="b5" number="5">
+					<label for="b5">很满意</label>
 				</li>
 			</ul>
 			#springBind("form.number3")
@@ -108,18 +108,18 @@ $(document).ready(function(){
 					C、男，42岁，为人温和，人缘好，深受领导信任，对手下要求不高，业务水平一般，擅长用人，能够提供许多培训资源
 				</li>
 				<li>
-						#springBind("form.choice3")
-						<input type="hidden"  name="${status.expression}" id="c" />
-						<input type="radio" name="c" id="c1" number="1">
-						<label for="c1">1</label>
-						<input type="radio" name="c" id="c2" number="2">
-						<label for="c2">2</label>
-						<input type="radio" name="c" id="c3" number="3">
-						<label for="c3">3</label>
-						<input type="radio" name="c" id="c4" number="4">
-						<label for="c4">4</label>
-						<input type="radio" name="c" id="c5" number="5">
-						<label for="c5">5</label>
+					#springBind("form.choice3")
+					<input type="hidden"  name="${status.expression}" id="c" />
+					<input type="radio" name="c" id="c1" number="1">
+					<label for="c1">很不满意</label>
+					<input type="radio" name="c" id="c2" number="2">
+					<label for="c2">较不满意</label>
+					<input type="radio" name="c" id="c3" number="3">
+					<label for="c3">无所谓</label>
+					<input type="radio" name="c" id="c4" number="4">
+					<label for="c4">较满意</label>
+					<input type="radio" name="c" id="c5" number="5">
+					<label for="c5">很满意</label>
 				</li>
 			</ul>
 			#springBind("form.number4")
@@ -129,18 +129,18 @@ $(document).ready(function(){
 					D、男，29岁，名牌大学毕业研究生，入职三年，多次被领导表扬，探索能力强，但是比较骄傲，不太听取意见，喜欢单兵作战
 				</li>
 				<li>
-						#springBind("form.choice4")
-						<input type="hidden"  name="${status.expression}" id="d" />
-						<input type="radio" name="d" id="d1" number="1">
-						<label for="d1">1</label>
-						<input type="radio" name="d" id="d2" number="2">
-						<label for="d2">2</label>
-						<input type="radio" name="d" id="d3" number="3">
-						<label for="d3">3</label>
-						<input type="radio" name="d" id="d4" number="4">
-						<label for="d4">4</label>
-						<input type="radio" name="d" id="d5" number="5">
-						<label for="d5">5</label>
+					#springBind("form.choice4")
+					<input type="hidden"  name="${status.expression}" id="d" />
+					<input type="radio" name="d" id="d1" number="1">
+					<label for="d1">很不满意</label>
+					<input type="radio" name="d" id="d2" number="2">
+					<label for="d2">较不满意</label>
+					<input type="radio" name="d" id="d3" number="3">
+					<label for="d3">无所谓</label>
+					<input type="radio" name="d" id="d4" number="4">
+					<label for="d4">较满意</label>
+					<input type="radio" name="d" id="d5" number="5">
+					<label for="d5">很满意</label>
 				</li>
 			</ul>
 			</form>

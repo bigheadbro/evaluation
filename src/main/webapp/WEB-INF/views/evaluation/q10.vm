@@ -50,7 +50,7 @@ $(document).ready(function(){
 		<div class="question">
 			<div class="q-head clearfix">
 				<h1 class="number">10.</h1>
-				<h1 class="title">刚刚完成公司为期六个月的入职轮岗培训，现在要进入第一个项目的工作，你对以下几个安排的满意程度如何？<br/>(1=最不满意，2=较不满意，3=无所谓，4=较满意，5＝最满意）</h1>
+				<h1 class="title">刚刚完成公司为期六个月的入职轮岗培训，现在要进入第一个项目的工作，你对以下几个安排的满意程度如何？</h1>
 			</div>
 			<form id="form_q1" method="post" >
 			<input type="hidden" name="do_submit" value="true"/>
@@ -68,15 +68,15 @@ $(document).ready(function(){
 						#springBind("form.choice")
 						<input type="hidden" name="${status.expression}" value="$!{status.value}" id="a"/>
 						<input type="radio" name="a" id="a1" number="1">
-						<label for="a1">1</label>
+						<label for="a1">很不满意</label>
 						<input type="radio" name="a" id="a2" number="2">
-						<label for="a2">2</label>
+						<label for="a2">较不满意</label>
 						<input type="radio" name="a" id="a3" number="3">
-						<label for="a3">3</label>
+						<label for="a3">无所谓</label>
 						<input type="radio" name="a" id="a4" number="4">
-						<label for="a4">4</label>
+						<label for="a4">较满意</label>
 						<input type="radio" name="a" id="a5" number="5">
-						<label for="a5">5</label>
+						<label for="a5">很满意</label>
 				</li>
 			</ul>
 			#springBind("form.number2")
@@ -89,15 +89,15 @@ $(document).ready(function(){
 						#springBind("form.choice2")
 						<input type="hidden"  name="${status.expression}" id="b" />
 						<input type="radio" name="b" id="b1" number="1">
-						<label for="b1">1</label>
+						<label for="b1">很不满意</label>
 						<input type="radio" name="b" id="b2" number="2">
-						<label for="b2">2</label>
+						<label for="b2">较不满意</label>
 						<input type="radio" name="b" id="b3" number="3">
-						<label for="b3">3</label>
+						<label for="b3">无所谓</label>
 						<input type="radio" name="b" id="b4" number="4">
-						<label for="b4">4</label>
+						<label for="b4">较满意</label>
 						<input type="radio" name="b" id="b5" number="5">
-						<label for="b5">5</label>
+						<label for="b5">很满意</label>
 				</li>
 			</ul>
 			#springBind("form.number3")
@@ -110,15 +110,15 @@ $(document).ready(function(){
 						#springBind("form.choice3")
 						<input type="hidden"  name="${status.expression}" id="c" />
 						<input type="radio" name="c" id="c1" number="1">
-						<label for="c1">1</label>
+						<label for="c1">很不满意</label>
 						<input type="radio" name="c" id="c2" number="2">
-						<label for="c2">2</label>
+						<label for="c2">较不满意</label>
 						<input type="radio" name="c" id="c3" number="3">
-						<label for="c3">3</label>
+						<label for="c3">无所谓</label>
 						<input type="radio" name="c" id="c4" number="4">
-						<label for="c4">4</label>
+						<label for="c4">较满意</label>
 						<input type="radio" name="c" id="c5" number="5">
-						<label for="c5">5</label>
+						<label for="c5">很满意</label>
 				</li>
 			</ul>
 			#springBind("form.number4")
@@ -131,15 +131,15 @@ $(document).ready(function(){
 						#springBind("form.choice4")
 						<input type="hidden"  name="${status.expression}" id="d" />
 						<input type="radio" name="d" id="d1" number="1">
-						<label for="d1">1</label>
+						<label for="d1">很不满意</label>
 						<input type="radio" name="d" id="d2" number="2">
-						<label for="d2">2</label>
+						<label for="d2">较不满意</label>
 						<input type="radio" name="d" id="d3" number="3">
-						<label for="d3">3</label>
+						<label for="d3">无所谓</label>
 						<input type="radio" name="d" id="d4" number="4">
-						<label for="d4">4</label>
+						<label for="d4">较满意</label>
 						<input type="radio" name="d" id="d5" number="5">
-						<label for="d5">5</label>
+						<label for="d5">很满意</label>
 				</li>
 			</ul>
 			</form>

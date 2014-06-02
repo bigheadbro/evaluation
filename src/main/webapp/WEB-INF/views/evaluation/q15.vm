@@ -6,6 +6,32 @@ $(document).ready(function(){
     	radioClass: 'iradio_square-green',
     	increaseArea: '20%' // optional
     });
+	$("#form_q").validate({
+			ignore: [],
+			rules:{
+    			"choice2":{
+    					required:true
+    				},
+    			"choice3":{
+    				required:true
+    			},
+    			"choice4":{
+    				required:true
+    			}
+			},
+			messages:{
+				"choice2":{
+					required:"请选择答案"
+				},
+				"choice3":{
+					required:"请选择答案"
+				},
+				"choice4":{
+					required:"请选择答案"
+				}
+			},
+			errorElement:"em"
+	});
 });
 </script>
 <div class="main-content-container">
@@ -76,21 +102,24 @@ $(document).ready(function(){
 		<div class="question subquestion">
 			<div class="q-head clearfix">
 				<h1 class="number">&nbsp;</h1>
-				<h1 class="title">决定某代言人</h1>
+				<h1 class="title">
+					决定某代言人
+					#springBind("form.choice2")
+					<input type="hidden"  name="${status.expression}" id="q2" />
+				</h1>
 			</div>
-			#springBind("form.choice2")
-			<input type="hidden"  name="${status.expression}" value="0" id="q2" />
+			
 			<ul class="mt10">
 				<li>
-					<input type="radio" name="q2" id="a1" number="1">
+					<input type="radio" name="q2" id="a1" order="1">
 					<label for="a1">A代言人</label>
 				</li>
 				<li>
-					<input type="radio" name="q2" id="a2" number="2">
+					<input type="radio" name="q2" id="a2" order="2">
 					<label for="a2">B代言人</label>
 				</li>
 				<li>
-					<input type="radio" name="q2" id="a3" number="3">
+					<input type="radio" name="q2" id="a3" order="3">
 					<label for="a3">C代言人</label>
 				</li>
 			</ul>
@@ -98,37 +127,40 @@ $(document).ready(function(){
 		<div class="question subquestion">
 			<div class="q-head clearfix">
 				<h1 class="number">&nbsp;</h1>
-				<h1 class="title">决定日期</h1>
+				<h1 class="title">
+					决定日期
+					#springBind("form.choice3")
+					<input type="hidden"  name="${status.expression}" id="q3" />
+				</h1>
 			</div>
-			#springBind("form.choice3")
-			<input type="hidden"  name="${status.expression}" value="0" id="q3" />
+			
 			<ul class="mt10">
 				<li>
-					<input type="radio" name="q3" id="b1" number="1">
+					<input type="radio" name="q3" id="b1" order="1">
 					<label for="b1">5号</label>
 				</li>
 				<li>
-					<input type="radio" name="q3" id="b2" number="2">
+					<input type="radio" name="q3" id="b2" order="2">
 					<label for="b2">6号</label>
 				</li>
 				<li>
-					<input type="radio" name="q3" id="b3" number="3">
+					<input type="radio" name="q3" id="b3" order="3">
 					<label for="b3">7号</label>
 				</li>
 				<li>
-					<input type="radio" name="q3" id="b4" number="4">
+					<input type="radio" name="q3" id="b4" order="4">
 					<label for="b4">8号</label>
 				</li>
 				<li>
-					<input type="radio" name="q3" id="b5" number="5">
+					<input type="radio" name="q3" id="b5" order="5">
 					<label for="b5">9号</label>
 				</li>
 				<li>
-					<input type="radio" name="q3" id="b6" number="6">
+					<input type="radio" name="q3" id="b6" order="6">
 					<label for="b6">10号</label>
 				</li>
 				<li>
-					<input type="radio" name="q3" id="b7" number="7">
+					<input type="radio" name="q3" id="b7" order="7">
 					<label for="b7">11号</label>
 				</li>
 			</ul>
@@ -136,21 +168,23 @@ $(document).ready(function(){
 		<div class="question subquestion">
 			<div class="q-head clearfix">
 				<h1 class="number">&nbsp;</h1>
-				<h1 class="title">决定景点</h1>
+				<h1 class="title">
+					决定景点
+					#springBind("form.choice4")
+					<input type="hidden"  name="${status.expression}" id="q4" />
+				</h1>
 			</div>
-			#springBind("form.choice4")
-			<input type="hidden"  name="${status.expression}" value="0" id="q4" />
 			<ul class="mt10">
 				<li>
-					<input type="radio" name="q4" id="c1" number="1">
+					<input type="radio" name="q4" id="c1" order="1">
 					<label for="c1">D景点</label>
 				</li>
 				<li>
-					<input type="radio" name="q4" id="c2" number="2">
+					<input type="radio" name="q4" id="c2" order="2">
 					<label for="c2">E景点</label>
 				</li>
 				<li>
-					<input type="radio" name="q4" id="c3" number="3">
+					<input type="radio" name="q4" id="c3" order="3">
 					<label for="c3">F景点</label>
 				</li>
 			</ul>
@@ -206,7 +240,7 @@ function showc() {
 }
 $(document).ready(function(){
 	$('input').on('ifChecked', function(event){
-		$("#"+$(this).attr("name")).val($(this).attr("number"));
+		$("#"+$(this).attr("name")).val($(this).attr("order"));
     });
     $('#answer1').on('ifChecked', function(event){
      	$('#answer1').iCheck('disable');

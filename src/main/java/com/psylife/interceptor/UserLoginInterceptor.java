@@ -24,6 +24,7 @@ public class UserLoginInterceptor extends HandlerInterceptorAdapter {
 		}
 		else
 		{
+			int state = account.getState();
 			return true;
 		}
 	}
