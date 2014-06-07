@@ -24,20 +24,29 @@ $(document).ready(function(){
     			<ul>
     				<li class="done"><em><span>●</span>1</em></li>
     				<li class="done"><em><span>●</span>2</em></li>
-    				<li><em><span>●</span>3</em></li>
-    				<li><em><span>●</span>4</em></li>
-    				<li><em><span>●</span>5</em></li>
-    				<li><em><span>●</span>6</em></li>
-    				<li><em><span>●</span>7</em></li>
-    				<li><em><span>●</span>8</em></li>
-    				<li><em><span>●</span>9</em></li>
-    				<li><em><span>●</span>10</em></li>
-    				<li><em><span>●</span>11</em></li>
-    				<li><em><span>●</span>12</em></li>
+    				<li class="done"><em><span>●</span>1</em></li>
+    				<li class="done"><em><span>●</span>2</em></li>
+    				<li class="done"><em><span>●</span>3</em></li>
+    				<li class="done"><em><span>●</span>4</em></li>
+    				<li class="done"><em><span>●</span>5</em></li>
+    				<li class="done"><em><span>●</span>6</em></li>
+    				<li class="done"><em><span>●</span>7</em></li>
+    				<li class="done"><em><span>●</span>8</em></li>
+    				<li class="done"><em><span>●</span>9</em></li>
+    				<li class="done"><em><span>●</span>10</em></li>
+    				<li class="done"><em><span>●</span>11</em></li>
+    				<li class="done"><em><span>●</span>12</em></li>
     				<li><em><span>●</span>13</em></li>
-    				<li><em><span>●</span>14</em></li>
+						<li><em><span>●</span>14</em></li>
     				<li><em><span>●</span>15</em></li>
-    				<li><em><span>●</span>16</em></li>
+						<li><em><span>●</span>16</em></li>
+    				<li><em><span>●</span>17</em></li>
+    				<li><em><span>●</span>18</em></li>
+    				<li><em><span>●</span>19</em></li>
+    				<li><em><span>●</span>20</em></li>
+    				<li><em><span>●</span>21</em></li>
+    				<li><em><span>●</span>22</em></li>
+    				<li><em><span>●</span>23</em></li>
     			</ul>
     			<div class="time-cost clearfix">
     				<ul>
@@ -58,7 +67,7 @@ $(document).ready(function(){
 			<input type="hidden" name="${status.expression}" value="$!{status.value}" id="time"/>
 			<div class="q-head clearfix">
 				<h1 class="number">13.</h1>
-				<h1 class="title">如果公司委派你和几个同事进行实施一项调研，你觉得你最擅长的是完成哪一部分工作？</h1>
+				<h1 class="title"><img src="img/13.png" /></h1>
 			</div>
 			<ul class="single">
 				<li>

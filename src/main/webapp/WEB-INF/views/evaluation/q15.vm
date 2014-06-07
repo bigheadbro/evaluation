@@ -53,8 +53,15 @@ $(document).ready(function(){
     				<li class="done"><em><span>●</span>12</em></li>
     				<li class="done"><em><span>●</span>13</em></li>
     				<li class="done"><em><span>●</span>14</em></li>
-    				<li><em><span>●</span>15</em></li>
-    				<li><em><span>●</span>16</em></li>
+    				<li class="done"><em><span>●</span>15</em></li>
+						<li class="done"><em><span>●</span>16</em></li>
+    				<li class="done"><em><span>●</span>17</em></li>
+    				<li class="done"><em><span>●</span>18</em></li>
+    				<li class="done"><em><span>●</span>19</em></li>
+    				<li class="done"><em><span>●</span>20</em></li>
+    				<li class="done"><em><span>●</span>21</em></li>
+    				<li><em><span>●</span>22</em></li>
+    				<li><em><span>●</span>23</em></li>
     			</ul>
     			<div class="time-cost clearfix">
     				<ul>
@@ -74,9 +81,8 @@ $(document).ready(function(){
 		<input type="hidden" name="${status.expression}" value="$!{status.value}" id="time"/>
 		<div class="question">
 			<div class="q-head clearfix">
-				<h1 class="number">15.</h1>
-				<h1 class="title">你负责协调公司拍摄宣传片的事宜，公司方面提出的要求是：（1）要A，B，C三位一线明星之一来代言产品，参与宣传片拍摄（优先级是C高于B高于A）；（2）宣传片拍摄取景地可以从D、E，F三个地方中选取；（3）公司副总裁黄总必须在宣传片中出镜；（4）预算尽量控制在50万之内。<br/>
-					现在你需要做的是确定可以拍摄的日期、地点与参与人物。<br/>
+				<h1 class="number">22.</h1>
+				<h1 class="title"><img src="img/15.png" /><br/>
 					<br/>
 					这时，你首先会：【A、B、C分别只能点一次】</h1>
 			</div>

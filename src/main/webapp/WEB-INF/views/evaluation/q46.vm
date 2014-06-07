@@ -6,15 +6,21 @@ $(document).ready(function(){
     	radioClass: 'iradio_square-green',
     	increaseArea: '20%' // optional
     });
+		$( "#sortable" ).sortable();
+    $( "#sortable" ).disableSelection();
 	$('input').on('ifChecked', function(event){
 		$("#choice").val($(this).attr("id"));
      	$('input').iCheck('disable');
     });
-    $('input').on('ifChecked', function(event){
-     	$('input').iCheck('disable');
+    $(".next").click(function(){
 			$("#time").val(s);
-		$("#form_q").submit();
-    });
+			var sort = '';
+			$("#sortable li").each(function(){
+				sort = sort + $(this).attr("item").toString();
+			});
+			$("#choice").val(sort);
+			$("#form_q").submit();
+	});
 });
 </script>
 <div class="main-content-container">
@@ -25,20 +31,20 @@ $(document).ready(function(){
     				<li class="done"><em><span>●</span>1</em></li>
     				<li class="done"><em><span>●</span>2</em></li>
     				<li class="done"><em><span>●</span>3</em></li>
-    				<li><em><span>●</span>4</em></li>
-    				<li><em><span>●</span>5</em></li>
-    				<li><em><span>●</span>6</em></li>
-    				<li><em><span>●</span>7</em></li>
-    				<li><em><span>●</span>8</em></li>
-    				<li><em><span>●</span>9</em></li>
-    				<li><em><span>●</span>10</em></li>
-    				<li><em><span>●</span>11</em></li>
-    				<li><em><span>●</span>12</em></li>
-    				<li><em><span>●</span>13</em></li>
-    				<li><em><span>●</span>14</em></li>
+    				<li class="done"><em><span>●</span>4</em></li>
+    				<li class="done"><em><span>●</span>5</em></li>
+    				<li class="done"><em><span>●</span>6</em></li>
+    				<li class="done"><em><span>●</span>7</em></li>
+    				<li class="done"><em><span>●</span>8</em></li>
+    				<li class="done"><em><span>●</span>9</em></li>
+    				<li class="done"><em><span>●</span>10</em></li>
+    				<li class="done"><em><span>●</span>11</em></li>
+    				<li class="done"><em><span>●</span>12</em></li>
+    				<li class="done"><em><span>●</span>13</em></li>
+						<li><em><span>●</span>14</em></li>
     				<li><em><span>●</span>15</em></li>
-    				<li><em><span>●</span>16</em></li>
-						<li><em><span>●</span>17</em></li>
+						<li><em><span>●</span>16</em></li>
+    				<li><em><span>●</span>17</em></li>
     				<li><em><span>●</span>18</em></li>
     				<li><em><span>●</span>19</em></li>
     				<li><em><span>●</span>20</em></li>
@@ -64,33 +70,20 @@ $(document).ready(function(){
 			#springBind("form.time")
 			<input type="hidden" name="${status.expression}" value="$!{status.value}" id="time"/>
 			<div class="q-head clearfix">
-				<h1 class="number">4.</h1>
-				<h1 class="title"><img src="img/4.png" /></h1>
+				<h1 class="number">14.</h1>
+				<h1 class="title intelligence">请你按逻辑发生顺序给下列图片排序<img src="img/46.png" /></h1>
 			</div>
-			<ul class="single">
-				<li>
-					<input type="radio" name="iCheck" id="1">
-					<label for="1">A、承认，并积极提供证据</label>
-				</li>
-				<li>
-					<input type="radio" name="iCheck" id="2">
-					<label for="2">B、承认，但强调排放的危害并不明确</label>
-				</li>
-				<li>
-					<input type="radio" name="iCheck" id="3">
-					<label for="3">C、部分承认，对违规情节淡化处理</label>
-				</li>
-				<li>
-					<input type="radio" name="iCheck" id="4">
-					<label for="4">D、说自己不知道，请询问其他人员</label>
-				</li>
-				<li>
-					<input type="radio" name="iCheck" id="5">
-					<label for="5">E、否认公司有相关行为</label>
-				</li>
-			</ul>
+			<ul id="sortable">
+        <li class="ui-state-default" item="1"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>图1</li>
+        <li class="ui-state-default" item="2"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>图2</li>
+        <li class="ui-state-default" item="3"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>图3</li>
+        <li class="ui-state-default" item="4"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>图4</li>
+        <li class="ui-state-default" item="5"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>图5</li>
+      </ul>
+			<div class="operation clearfix">
+  			<a class="next">下一题</a>
+  		</div>
 			</form>
 		</div>
-
 	</div>
 </div>

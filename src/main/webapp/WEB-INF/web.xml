@@ -112,6 +112,10 @@
     <url-pattern>*.svg</url-pattern>
   </servlet-mapping>
   <servlet-mapping>
+    <servlet-name>default</servlet-name>
+    <url-pattern>*.mp3</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
     <servlet-name>evaluationServlet</servlet-name>
     <url-pattern>/</url-pattern>
   </servlet-mapping>

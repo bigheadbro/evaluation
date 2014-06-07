@@ -38,6 +38,13 @@ $(document).ready(function(){
     				<li><em><span>●</span>14</em></li>
     				<li><em><span>●</span>15</em></li>
     				<li><em><span>●</span>16</em></li>
+						<li><em><span>●</span>17</em></li>
+    				<li><em><span>●</span>18</em></li>
+    				<li><em><span>●</span>19</em></li>
+    				<li><em><span>●</span>20</em></li>
+    				<li><em><span>●</span>21</em></li>
+    				<li><em><span>●</span>22</em></li>
+    				<li><em><span>●</span>23</em></li>
     			</ul>
     			<div class="time-cost clearfix">
     				<ul>
@@ -58,8 +65,7 @@ $(document).ready(function(){
 			<input type="hidden" name="${status.expression}" value="$!{status.value}" id="time"/>
 			<div class="q-head clearfix">
 				<h1 class="number">6.</h1>
-				<h1 class="title">你从A公司离职已经有两个月时间了。有一天你接到了在A公司时的一个客户打来的电话，他们从A公司购买个一个设备出了技术问题，希望你能够援助解决。该设备已过了A公司承诺的保修期，如果客户请A进行维修的话需要支付较高的费用更换部件，
-					而你知道其实设备问题只需要简单调试就能排除，不需要更换零件。而你现在任职的B公司也恰好有一款想同类的产品。你会采取哪种处理方法？</h1>
+				<h1 class="title"><img src="img/6.png" /></h1>
 			</div>
 			<ul class="single">
 				<li>

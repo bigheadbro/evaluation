@@ -38,6 +38,13 @@ $(document).ready(function(){
     				<li><em><span>●</span>14</em></li>
     				<li><em><span>●</span>15</em></li>
     				<li><em><span>●</span>16</em></li>
+						<li><em><span>●</span>17</em></li>
+    				<li><em><span>●</span>18</em></li>
+    				<li><em><span>●</span>19</em></li>
+    				<li><em><span>●</span>20</em></li>
+    				<li><em><span>●</span>21</em></li>
+    				<li><em><span>●</span>22</em></li>
+    				<li><em><span>●</span>23</em></li>
     			</ul>
     			<div class="time-cost clearfix">
     				<ul>
@@ -50,7 +57,7 @@ $(document).ready(function(){
 		<div class="question">
 			<div class="q-head clearfix">
 				<h1 class="number">12.</h1>
-				<h1 class="title">你正要去参加一个公司会议，突然发现了以下情况，你认为其中哪一项作为你迟到的理由是比较合理的？ </h1>
+				<h1 class="title"><img src="img/12.png" /></h1>
 			</div>
 			<form id="form_q1" method="post" >
 			<input type="hidden" name="do_submit" value="true"/>

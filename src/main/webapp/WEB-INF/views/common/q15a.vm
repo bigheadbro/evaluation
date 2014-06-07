@@ -7,9 +7,13 @@
 		</h2>
 		<div class="q15-win-body">
 			<h1>你分别打给了A，B，C三个明星的经纪人，获取信息如下：</h1>
-			<p>A明星6号，7号，11号，12号有空，代言费是25万元；</p>
-			<p>B明星9号，10号有空；11，12号可能有空，代言费是30万元；</p>
-			<p>C明星7号，8号有空；5，6号可能有空，代言费35万元</p>
+			#if($!util.isMale($account.getGender()))
+				<span class="mp3" id="mysong"></span>
+			#else
+				<p>A经纪人的电话录音<embed type="audio/mpeg" autostart="false" src="resource/a_female.mp3" /></p>
+  			<p>B经纪人的电话录音<embed type="audio/mpeg" autostart="false" src="resource/b_female.mp3" /></p>
+  			<p>C经纪人的电话录音<embed type="audio/mpeg" autostart="false" src="resource/c_female.mp3" /></p>
+			#end
 			<div class="op"><a class="close-15a">返回继续答题</a></div>
 		</div>
     </div>
@@ -20,5 +24,6 @@ $(function(){
 		$("#q15a").hide();
 		$("#pagemask-q15a").hide();
 	});
+	$(".mp3").jmp3();
 });
 </script>

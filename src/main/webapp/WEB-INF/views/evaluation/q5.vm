@@ -38,6 +38,13 @@ $(document).ready(function(){
     				<li><em><span>●</span>14</em></li>
     				<li><em><span>●</span>15</em></li>
     				<li><em><span>●</span>16</em></li>
+						<li><em><span>●</span>17</em></li>
+    				<li><em><span>●</span>18</em></li>
+    				<li><em><span>●</span>19</em></li>
+    				<li><em><span>●</span>20</em></li>
+    				<li><em><span>●</span>21</em></li>
+    				<li><em><span>●</span>22</em></li>
+    				<li><em><span>●</span>23</em></li>
     			</ul>
     			<div class="time-cost clearfix">
     				<ul>
@@ -58,8 +65,7 @@ $(document).ready(function(){
 			<input type="hidden" name="${status.expression}" value="$!{status.value}" id="time"/>
 			<div class="q-head clearfix">
 				<h1 class="number">5.</h1>
-				<h1 class="title">你正在跟进一个项目，写好了一份项目方案，呈交给领导审阅。领导从来没有接触过该项目，也从来没有和你有过业务方面的交流，但他看了之后对方案进行了批评，提出了多条修改意见。你内心认为他提出的意见并不符合客户的实际需求。
-					但另一方面，他确实是个经验丰富的方案指定专家，有大量成功案例。这时，你会：</h1>
+				<h1 class="title"><img src="img/5.png" /></h1>
 			</div>
 			<ul class="single">
 				<li>

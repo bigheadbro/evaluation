@@ -38,6 +38,13 @@ $(document).ready(function(){
     				<li><em><span>●</span>14</em></li>
     				<li><em><span>●</span>15</em></li>
     				<li><em><span>●</span>16</em></li>
+						<li><em><span>●</span>17</em></li>
+    				<li><em><span>●</span>18</em></li>
+    				<li><em><span>●</span>19</em></li>
+    				<li><em><span>●</span>20</em></li>
+    				<li><em><span>●</span>21</em></li>
+    				<li><em><span>●</span>22</em></li>
+    				<li><em><span>●</span>23</em></li>
     			</ul>
     			<div class="time-cost clearfix">
     				<ul>
@@ -50,7 +57,7 @@ $(document).ready(function(){
 		<div class="question">
 			<div class="q-head clearfix">
 				<h1 class="number">10.</h1>
-				<h1 class="title">刚刚完成公司为期六个月的入职轮岗培训，现在要进入第一个项目的工作，你对以下几个安排的满意程度如何？</h1>
+				<h1 class="title"><img src="img/10.png" /></h1>
 			</div>
 			<form id="form_q1" method="post" >
 			<input type="hidden" name="do_submit" value="true"/>

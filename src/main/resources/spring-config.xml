@@ -81,7 +81,13 @@
    			<mvc:mapping path="/q14c21" />
    			<mvc:mapping path="/q15" />
    			<mvc:mapping path="/q16" />
-   			<mvc:mapping path="/q162" />
+   			<mvc:mapping path="/q46" />
+   			<mvc:mapping path="/q51" />
+   			<mvc:mapping path="/q52" />
+   			<mvc:mapping path="/q53" />
+   			<mvc:mapping path="/q54" />
+   			<mvc:mapping path="/q55" />
+   			<mvc:mapping path="/q56" />
    			<bean class="com.psylife.interceptor.UserLoginInterceptor" />
 		</mvc:interceptor> 
 		</mvc:interceptors>
