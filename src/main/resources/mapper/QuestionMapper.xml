@@ -23,6 +23,7 @@
    	  <!---->
 		<id property="morality" column="morality" />
    	  <!---->
+   	  	<id property="intelligence" column="intelligence" />
 		<id property="thinking" column="thinking" />
    	  <!---->
 		<id property="plan" column="plan" />
@@ -57,6 +58,7 @@
 		,positive
 		,responsibility
 		,morality
+		,intelligence
 		,thinking
 		,plan
 		,innovation
@@ -77,6 +79,7 @@
 		,#{positive}
 		,#{responsibility}
 		,#{morality}
+		,#{intelligence}
 		,#{thinking}
 		,#{plan}
 		,#{innovation}
@@ -103,6 +106,7 @@
 		,positive
 		,responsibility
 		,morality
+		,intelligence
 		,thinking
 		,plan
 		,innovation
@@ -123,6 +127,7 @@
 		,#{item.positive}
 		,#{item.responsibility}
 		,#{item.morality}
+		,#{item.intelligence}
 		,#{item.thinking}
 		,#{item.plan}
 		,#{item.innovation}

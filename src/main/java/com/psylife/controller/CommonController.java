@@ -357,7 +357,7 @@ public class CommonController extends BaseController{
 		if(isDoSubmit(request))
 		{
 			DimensionEntity dim = commonService.getDim(46, form.getChoice(), form.getNumber());
-			QuestionEntity ques = Util.calcSingleScore(dim, account.getUserId(), form.getChoice(), form.getTime());
+			QuestionEntity ques = Util.calcIntelligenceScore(dim, account.getUserId(), 46, form.getChoice(), form.getTime());
 			if(commonService.insertQuestion(ques) > 0)
 				return new ModelAndView(new RedirectView("/evaluation/q51"));
 			else
@@ -377,7 +377,7 @@ public class CommonController extends BaseController{
 		if(isDoSubmit(request))
 		{
 			DimensionEntity dim = commonService.getDim(51, form.getChoice(), form.getNumber());
-			QuestionEntity ques = Util.calcSingleScore(dim, account.getUserId(), form.getChoice(), form.getTime());
+			QuestionEntity ques = Util.calcIntelligenceScore(dim, account.getUserId(), 51, form.getChoice(), form.getTime());
 			if(commonService.insertQuestion(ques) > 0)
 				return new ModelAndView(new RedirectView("/evaluation/q52"));
 			else
@@ -397,7 +397,7 @@ public class CommonController extends BaseController{
 		if(isDoSubmit(request))
 		{
 			DimensionEntity dim = commonService.getDim(52, form.getChoice(), form.getNumber());
-			QuestionEntity ques = Util.calcSingleScore(dim, account.getUserId(), form.getChoice(), form.getTime());
+			QuestionEntity ques = Util.calcIntelligenceScore(dim, account.getUserId(), 52, form.getChoice(), form.getTime());
 			if(commonService.insertQuestion(ques) > 0)
 				return new ModelAndView(new RedirectView("/evaluation/q53"));
 			else
@@ -417,7 +417,7 @@ public class CommonController extends BaseController{
 		if(isDoSubmit(request))
 		{
 			DimensionEntity dim = commonService.getDim(53, form.getChoice(), form.getNumber());
-			QuestionEntity ques = Util.calcSingleScore(dim, account.getUserId(), form.getChoice(), form.getTime());
+			QuestionEntity ques = Util.calcIntelligenceScore(dim, account.getUserId(), 53, form.getChoice(), form.getTime());
 			if(commonService.insertQuestion(ques) > 0)
 				return new ModelAndView(new RedirectView("/evaluation/q54"));
 			else
@@ -437,7 +437,7 @@ public class CommonController extends BaseController{
 		if(isDoSubmit(request))
 		{
 			DimensionEntity dim = commonService.getDim(54, form.getChoice(), form.getNumber());
-			QuestionEntity ques = Util.calcSingleScore(dim, account.getUserId(), form.getChoice(), form.getTime());
+			QuestionEntity ques = Util.calcIntelligenceScore(dim, account.getUserId(), 54, form.getChoice(), form.getTime());
 			if(commonService.insertQuestion(ques) > 0)
 				return new ModelAndView(new RedirectView("/evaluation/q55"));
 			else
@@ -457,7 +457,7 @@ public class CommonController extends BaseController{
 		if(isDoSubmit(request))
 		{
 			DimensionEntity dim = commonService.getDim(55, form.getChoice(), form.getNumber());
-			QuestionEntity ques = Util.calcSingleScore(dim, account.getUserId(), form.getChoice(), form.getTime());
+			QuestionEntity ques = Util.calcIntelligenceScore(dim, account.getUserId(), 55, form.getChoice(), form.getTime());
 			if(commonService.insertQuestion(ques) > 0)
 				return new ModelAndView(new RedirectView("/evaluation/q56"));
 			else
@@ -477,7 +477,7 @@ public class CommonController extends BaseController{
 		if(isDoSubmit(request))
 		{
 			DimensionEntity dim = commonService.getDim(56, form.getChoice(), form.getNumber());
-			QuestionEntity ques = Util.calcSingleScore(dim, account.getUserId(), form.getChoice(), form.getTime());
+			QuestionEntity ques = Util.calcIntelligenceScore(dim, account.getUserId(), 56, form.getChoice(), form.getTime());
 			if(commonService.insertQuestion(ques) > 0)
 				return new ModelAndView(new RedirectView("/evaluation/q14"));
 			else

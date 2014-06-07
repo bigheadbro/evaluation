@@ -26,6 +26,7 @@ public class DimensionEntity implements Serializable {
 	private double responsibility;
 	//
 	private double morality;
+	private double intelligence;
 	//
 	private double thinking;
 	//
@@ -314,5 +315,19 @@ public class DimensionEntity implements Serializable {
 	 */
 	public void setAnswer(String answer) {
 		this.answer = answer;
+	}
+
+	/**
+	 * @return the intelligence
+	 */
+	public double getIntelligence() {
+		return intelligence;
+	}
+
+	/**
+	 * @param intelligence the intelligence to set
+	 */
+	public void setIntelligence(double intelligence) {
+		this.intelligence = intelligence;
 	}
 }

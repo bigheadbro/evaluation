@@ -216,3 +216,6 @@ opacity: .3;
 #sortable { list-style-type: none; margin: 0; padding: 0; width:50%;margin-left:150px; }
 #sortable li { margin: 0 3px 3px 3px;padding: 5px;padding-left: 20px;font-size: 13px;height: 18px; }
 #sortable li span { position: absolute; margin-left: -1.3em; }
+
+.audio{margin:10px;}
+.audio object{margin-left:5px;}

@@ -24,8 +24,6 @@ $(document).ready(function(){
     			<ul>
     				<li class="done"><em><span>●</span>1</em></li>
     				<li class="done"><em><span>●</span>2</em></li>
-    				<li class="done"><em><span>●</span>1</em></li>
-    				<li class="done"><em><span>●</span>2</em></li>
     				<li class="done"><em><span>●</span>3</em></li>
     				<li class="done"><em><span>●</span>4</em></li>
     				<li class="done"><em><span>●</span>5</em></li>

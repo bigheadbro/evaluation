@@ -29,6 +29,8 @@ public class QuestionEntity implements Serializable {
 	//
 	private double morality;
 	//
+	private double intelligence;
+	//
 	private double thinking;
 	//
 	private double plan;
@@ -312,5 +314,19 @@ public class QuestionEntity implements Serializable {
 	 */
 	public void setChoice(int choice) {
 		this.choice = choice;
+	}
+
+	/**
+	 * @return the intelligence
+	 */
+	public double getIntelligence() {
+		return intelligence;
+	}
+
+	/**
+	 * @param intelligence the intelligence to set
+	 */
+	public void setIntelligence(double intelligence) {
+		this.intelligence = intelligence;
 	}
 }

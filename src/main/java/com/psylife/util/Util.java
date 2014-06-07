@@ -106,6 +106,24 @@ public class Util {
 		return ques;
 	}
 	
+	// 智力题
+	public static QuestionEntity calcIntelligenceScore(DimensionEntity dim, int qid, int uid,
+			int choice, int time) {
+		if(dim == null)
+		{
+			dim = new DimensionEntity();
+		}
+		QuestionEntity ques = new QuestionEntity();
+		ques.setUserId(uid);
+		ques.setChoice(choice);
+		ques.setTime(time);
+		ques.setQid(qid);
+
+		ques.setIntelligence(dim.getIntelligence());
+		return ques;
+	}
+		
+		
 	// 计算维度题
 	public static List<QuestionEntity> calcDimensionScore(DimensionEntity dim, int uid, QuestionForm form) {
 		List<QuestionEntity> list = new ArrayList<QuestionEntity>();
