@@ -12,6 +12,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.servlet.ModelAndView;
@@ -41,14 +42,14 @@ public class CommonController extends BaseController{
 	{
 		ModelAndView mv = new ModelAndView("/evaluation/index");
 
-		Account account = new Account();
-		//获取爱才网信息
-		account.setCardno("1234");
-		account.setGender(1);
-		account.setUserName("guichaoqun");
-		account.setSchool("tongji");
-		
-		request.getSession().setAttribute("account", account);
+		return mv;
+	}
+	
+	@RequestMapping(value="/index")
+	public ModelAndView index(final HttpServletRequest request,final HttpServletResponse response)
+	{
+		ModelAndView mv = new ModelAndView("/evaluation/index");
+
 		return mv;
 	}
 	
@@ -68,6 +69,7 @@ public class CommonController extends BaseController{
 			user.setCardno(account.getCardno());
 			user.setName(account.getUserName());
 			user.setSchool(account.getSchool());
+			user.setState(0);
 			commonService.insertUser(user);
 			account.setUserId(user.getId());
 			return new ModelAndView(new RedirectView("/evaluation/q1"));
@@ -500,14 +502,26 @@ public class CommonController extends BaseController{
 			account.setQ14time(form.getTime());
 			if(form.getChoice() == 0)
 			{
+				UserEntity user = new UserEntity();
+				user.setId(account.getUserId());
+				user.setState(141);
+				commonService.updateState(user);
 				return new ModelAndView(new RedirectView("/evaluation/q14a"));
 			}
 			else if(form.getChoice() == 1)
 			{
+				UserEntity user = new UserEntity();
+				user.setId(account.getUserId());
+				user.setState(142);
+				commonService.updateState(user);
 				return new ModelAndView(new RedirectView("/evaluation/q14b"));
 			}
 			else if(form.getChoice() == 2)
 			{
+				UserEntity user = new UserEntity();
+				user.setId(account.getUserId());
+				user.setState(143);
+				commonService.updateState(user);
 				return new ModelAndView(new RedirectView("/evaluation/q14c"));
 			}
 			else
@@ -536,10 +550,18 @@ public class CommonController extends BaseController{
 			account.setQ14time(account.getQ14time() + form.getTime());
 			if(form.getChoice() == 0)
 			{
+				UserEntity user = new UserEntity();
+				user.setId(account.getUserId());
+				user.setState(1411);
+				commonService.updateState(user);
 				return new ModelAndView(new RedirectView("/evaluation/q14a1"));
 			}
 			else if(form.getChoice() == 1)
 			{
+				UserEntity user = new UserEntity();
+				user.setId(account.getUserId());
+				user.setState(1412);
+				commonService.updateState(user);
 				return new ModelAndView(new RedirectView("/evaluation/q14a2"));
 			}
 			else if(form.getChoice() == 2)
@@ -619,6 +641,10 @@ public class CommonController extends BaseController{
 			account.setQ14time(account.getQ14time() + form.getTime());
 			if(form.getChoice() == 0)
 			{
+				UserEntity user = new UserEntity();
+				user.setId(account.getUserId());
+				user.setState(14121);
+				commonService.updateState(user);
 				return new ModelAndView(new RedirectView("/evaluation/q14a21"));
 			}
 			else if(form.getChoice() == 1)
@@ -740,10 +766,18 @@ public class CommonController extends BaseController{
 			account.setQ14time(account.getQ14time() + form.getTime());
 			if(form.getChoice() == 0)
 			{
+				UserEntity user = new UserEntity();
+				user.setId(account.getUserId());
+				user.setState(1431);
+				commonService.updateState(user);
 				return new ModelAndView(new RedirectView("/evaluation/q14c1"));
 			}
 			else if(form.getChoice() == 1)
 			{
+				UserEntity user = new UserEntity();
+				user.setId(account.getUserId());
+				user.setState(1432);
+				commonService.updateState(user);
 				return new ModelAndView(new RedirectView("/evaluation/q14c2"));
 			}
 			else if(form.getChoice() == 2)
@@ -823,6 +857,10 @@ public class CommonController extends BaseController{
 			account.setQ14time(account.getQ14time() + form.getTime());
 			if(form.getChoice() == 0)
 			{
+				UserEntity user = new UserEntity();
+				user.setId(account.getUserId());
+				user.setState(14321);
+				commonService.updateState(user);
 				return new ModelAndView(new RedirectView("/evaluation/q14c21"));
 			}
 			else if(form.getChoice() == 1)
@@ -952,6 +990,10 @@ public class CommonController extends BaseController{
 			DimensionEntity dim4 = commonService.getDim(16, form.getChoice4(), 4);
 			List<QuestionEntity> list = Util.calcQ16Score(dim2, dim3, dim4, account.getUserId(), form);
 			commonService.insertQuestionList(list);
+			UserEntity user = new UserEntity();
+			user.setId(account.getUserId());
+			user.setState(162);
+			commonService.updateState(user);
 			return new ModelAndView(new RedirectView("/evaluation/end"));
 		}
 		else

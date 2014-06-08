@@ -32,9 +32,16 @@ $(document).ready(function(){
     				<li class="done"><em><span>●</span>11</em></li>
     				<li class="done"><em><span>●</span>12</em></li>
     				<li class="done"><em><span>●</span>13</em></li>
-    				<li><em><span>●</span>14</em></li>
-    				<li><em><span>●</span>15</em></li>
-    				<li><em><span>●</span>16</em></li>
+					<li class="done"><em><span>●</span>14</em></li>
+    				<li class="done"><em><span>●</span>15</em></li>
+					<li class="done"><em><span>●</span>16</em></li>
+    				<li class="done"><em><span>●</span>17</em></li>
+    				<li class="done"><em><span>●</span>18</em></li>
+    				<li class="done"><em><span>●</span>19</em></li>
+    				<li class="done"><em><span>●</span>20</em></li>
+    				<li><em><span>●</span>21</em></li>
+    				<li><em><span>●</span>22</em></li>
+    				<li><em><span>●</span>23</em></li>
     			</ul>
     			<div class="time-cost clearfix">
     				<ul>
@@ -54,7 +61,7 @@ $(document).ready(function(){
 		<input type="hidden" name="${status.expression}" value="$!{status.value}" id="time"/>
 		<div class="question">
 			<div class="q-head clearfix">
-				<h1 class="number">14.1</h1>
+				<h1 class="number">21.1</h1>
 				<h1 class="title">你看到了实际的场地，位置非常理想，人流比你现在的展位要大得多。你判断这确实是一个更好的布展位置。而且你发现来考察场地的其他公司代表非常多。这时，你会</h1>
 			</div>
 			<ul>

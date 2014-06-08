@@ -40,6 +40,7 @@ public class UserEntity implements Serializable {
 	private int startup;
 	private int ngo;
 	private int commonweal;
+	private int state;
 	
 
 	/**
@@ -463,6 +464,20 @@ public class UserEntity implements Serializable {
 
 	public void setForeig(int foreig) {
 		this.foreig = foreig;
+	}
+
+	/**
+	 * @return the state
+	 */
+	public int getState() {
+		return state;
+	}
+
+	/**
+	 * @param state the state to set
+	 */
+	public void setState(int state) {
+		this.state = state;
 	}
 	
 }

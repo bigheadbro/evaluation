@@ -63,11 +63,18 @@
 		<id property="ngo" column="ngo" />
    	  <!---->
 		<id property="commonweal" column="commonweal" />
+		<id property="state" column="state" />
 	</resultMap>
 
 	<select id="queryUserEntityById" parameterType="int" resultMap="UserResultMap">
 	<![CDATA[
-		SELECT * from t_user t WHERE t.id = 1
+		SELECT * from t_user t WHERE t.id = #{id}
+	]]>
+	</select>
+
+	<select id="queryUserEntityByCN" parameterType="String" resultMap="UserResultMap">
+	<![CDATA[
+		SELECT * from t_user t WHERE t.cardno = #{cn}
 	]]>
 	</select>
 
@@ -107,7 +114,8 @@
 		,privat
 		,startup
 		,ngo
-		,commonweal)
+		,commonweal
+		,state)
 		values
 		(
 		#{id}
@@ -141,8 +149,12 @@
 		,#{startup}
 		,#{ngo}
 		,#{commonweal}
-
+		,#{state}
 		)
 	</insert>
+	
+	<update id="updateStateById" parameterType="UserEntity">
+		update t_user set state = #{state} where id=#{id}
+	</update>
 </mapper>
 	

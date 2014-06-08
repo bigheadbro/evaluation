@@ -57,5 +57,20 @@ public class CommonService {
 		return userDAO.insertUserEntity(user);
 	}
 	
+	public UserEntity getUser(int id)
+	{
+		return userDAO.queryUserEntityById(id);
+	}
+	
+	public UserEntity getUserByCN(String cn)
+	{
+		return userDAO.queryUserEntityByCN(cn);
+	}
+	
+	public void updateState(UserEntity user)
+	{
+		userDAO.updateStateById(user);
+	}
+	
 
 }

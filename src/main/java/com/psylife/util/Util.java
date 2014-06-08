@@ -107,7 +107,7 @@ public class Util {
 	}
 	
 	// 智力题
-	public static QuestionEntity calcIntelligenceScore(DimensionEntity dim, int qid, int uid,
+	public static QuestionEntity calcIntelligenceScore(DimensionEntity dim,  int uid, int qid,
 			int choice, int time) {
 		if(dim == null)
 		{
@@ -393,11 +393,10 @@ public class Util {
 	}
 		
 	public static void main(String args[]) {
-		/*Account accnt = getStudentInfo("MjAxMTUyMDAwMg..");
+		Account accnt = getStudentInfo("MjAxMTUyMDAwMg..");
 		System.out.println(accnt.getCardno());
 		System.out.println(accnt.getSchool());
-		System.out.println(accnt.getUserName());*/
-		parseJob();
+		System.out.println(accnt.getUserName());
 
 	}
 
