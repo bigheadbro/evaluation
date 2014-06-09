@@ -1,3 +1,6 @@
+<link rel="stylesheet" type="text/css" href="css/mp3-player-button.css" />
+<script type="text/javascript" src="js/soundmanager2-jsmin.js"></script>
+<script type="text/javascript" src="js/mp3-player-button.js"></script>
 <div id="pagemask-q15a"></div>
 <div class="q15-win" id="q15a">
     <div class="q15-win-content">
@@ -9,65 +12,23 @@
 			<h1>你分别打给了A，B，C三个明星的经纪人，获取信息如下：</h1>
 			#if($!util.isMale($account.getGender()))
 				<div class="audio">
-					和A明星经纪人的电话
-				<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" 
-                    codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab">
-                    <param name="movie" value="singlemp3player.swf?showDownload=false" />
-                    <param name="wmode" value="transparent" />
-                    <embed wmode="transparent" width="150" height="20" src="js/singlemp3player/singlemp3player.swf?file=resource/a_male.mp3&autoStart=false&showDownload=false"
-                    type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
-                </object>
+					和A明星经纪人的电话<a href="resource/a_male.mp3" class="sm2_button">A明星经纪人</a>
 				</div>
 				<div class="audio">
-					和B明星经纪人的电话
-				<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="150" height="20"
-                    codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab">
-                    <param name="movie" value="singlemp3player.swf?showDownload=false" />
-                    <param name="wmode" value="transparent" />
-                    <embed wmode="transparent" width="150" height="20" src="js/singlemp3player/singlemp3player.swf?file=resource/b_male.mp3&autoStart=false&showDownload=false"
-                    type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
-                </object>
+					和B明星经纪人的电话<a href="resource/b_male.mp3" class="sm2_button">B明星经纪人</a>
 				</div>
 				<div class="audio">
-					和C明星经纪人的电话
-				<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="150" height="20"
-                    codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab">
-                    <param name="movie" value="singlemp3player.swf?showDownload=false" />
-                    <param name="wmode" value="transparent" />
-                    <embed wmode="transparent" width="150" height="20" src="js/singlemp3player/singlemp3player.swf?file=resource/c_male.mp3&autoStart=false&showDownload=false"
-                    type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
-                </object>
+					和C明星经纪人的电话<a href="resource/c_male.mp3" class="sm2_button">C明星经纪人</a>
 				</div>
 			#else
 				<div class="audio">
-					和A明星经纪人的电话
-				<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="150" height="20"
-                    codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab">
-                    <param name="movie" value="singlemp3player.swf?showDownload=false" />
-                    <param name="wmode" value="transparent" />
-                    <embed wmode="transparent" width="150" height="20" src="js/singlemp3player/singlemp3player.swf?file=resource/a_female.mp3&autoStart=false&showDownload=false"
-                    type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
-                </object>
+					和A明星经纪人的电话<a href="resource/a_female.mp3" class="sm2_button">A明星经纪人</a>
 				</div>
 				<div class="audio">
-					和B明星经纪人的电话
-				<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="150" height="20"
-                    codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab">
-                    <param name="movie" value="singlemp3player.swf?showDownload=false" />
-                    <param name="wmode" value="transparent" />
-                    <embed wmode="transparent" width="150" height="20" src="js/singlemp3player/singlemp3player.swf?file=resource/b_female.mp3&autoStart=false&showDownload=false"
-                    type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
-                </object>
+					和B明星经纪人的电话<a href="resource/b_female.mp3" class="sm2_button">B明星经纪人</a>
 				</div>
 				<div class="audio">
-					和C明星经纪人的电话
-				<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="150" height="20"
-                    codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab">
-                    <param name="movie" value="singlemp3player.swf?showDownload=false" />
-                    <param name="wmode" value="transparent" />
-                    <embed wmode="transparent" width="150" height="20" src="js/singlemp3player/singlemp3player.swf?file=resource/c_female.mp3&autoStart=false&showDownload=false"
-                    type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
-                </object>
+					和C明星经纪人的电话<a href="resource/c_female.mp3" class="sm2_button">C明星经纪人</a>
 				</div>
 			#end
 			<div class="op"><a class="close-15a">返回继续答题</a></div>
@@ -80,12 +41,9 @@ $(function(){
 		$("#q15a").hide();
 		$("#pagemask-q15a").hide();
 	});
-	$(".mp3").jmp3();
-	$("#mysong").jmp3({
-		backcolor: "000000",
-		forecolor: "00ff00",
-		width: 200,
-		showdownload: "true"
+	$(".op").click(function(){
+		soundManager.pauseAll();
 	});
+	
 });
 </script>
