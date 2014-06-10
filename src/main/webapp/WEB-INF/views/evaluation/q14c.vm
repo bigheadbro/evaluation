@@ -83,66 +83,6 @@ $(document).ready(function(){
 				</li>
 			</ul>
 		</div>
-		<div class="question subqc1">
-			<div class="q-head clearfix">
-				<h1 class="number"></h1>
-				<h1 class="title">你打了领导的电话，但他没有接。这时，你会：</h1>
-			</div>
-			<ul>
-				<li choice="17">
-					<input type="radio" name="q8" id="c5">
-					<label for="c5">C-5：与同行同事商量表决是否同意</label>
-				</li>
-				<li choice="18">
-					<input type="radio" name="q8" id="c6">
-					<label for="c6">C-6：给领导留短信，并且预定该场地</label>
-				</li>
-				<li choice="19">
-					<input type="radio" name="q8" id="c7">
-					<label for="c7">C-7：给领导留短信，等到他回复再做决定</label>
-				</li>
-			</ul>
-		</div>
-		<div class="question subqc2">
-			<div class="q-head clearfix">
-				<h1 class="number"></h1>
-				<h1 class="title">你看到了实际的场地，位置非常理想，人流比你现在的展位要大得多。你判断这确实是一个更好的布展位置。而且你发现来考察场地的其他公司代表非常多。这时，你会：</h1>
-			</div>
-			<ul>
-				<li show="subqc21">
-					<input type="radio" name="q9" id="c8">
-					<label for="c8">C-8：向在国内的领导请示</label>
-				</li>
-				<li choice="20">
-					<input type="radio" name="q9" id="c9">
-					<label for="c9">C-9：与同行同事商量表决是否同意</label>
-				</li>
-				<li choice="21">
-					<input type="radio" name="q9" id="c10">
-					<label for="c10">C-10：直接预定该场地</label>
-				</li>
-			</ul>
-		</div>
-		<div class="question subqc21">
-			<div class="q-head clearfix">
-				<h1 class="number"></h1>
-				<h1 class="title">你打了领导的电话，但他没有接。这时，你会：</h1>
-			</div>
-			<ul>
-				<li choice="22">
-					<input type="radio" name="q10" id="c11">
-					<label for="c11">C-11：与同行同事商量表决是否同意</label>
-				</li>
-				<li choice="23">
-					<input type="radio" name="q10" id="c12">
-					<label for="c12">C-12：给领导留短信，并且预定该场地</label>
-				</li>
-				<li choice="24">
-					<input type="radio" name="q10" id="c13">
-					<label for="c13">C-13：给领导留短信，等到他回复再做决定</label>
-				</li>
-			</ul>
-		</div>
 		</form>
 	</div>
 </div>
