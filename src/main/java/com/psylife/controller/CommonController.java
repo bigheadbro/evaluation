@@ -937,13 +937,22 @@ public class CommonController extends BaseController{
 		form.setQuestionid(15);
 		if(isDoSubmit(request))
 		{
+			if(form.getChoice() == 4)//选D
+			{
+				DimensionEntity dim = commonService.getDim(15, 4, 1);
+				DimensionEntity dim2 = new DimensionEntity();
+				DimensionEntity dim3 = new DimensionEntity();
+				List<QuestionEntity> ques = Util.calcProcessScore(dim, dim2, dim3, account.getUserId(), form);
+				commonService.insertQuestionList(ques);
+				return new ModelAndView(new RedirectView("/evaluation/q16"));
+			}
 			if(form.getChoice2() == 0 || form.getChoice3() == 0 || form.getChoice4() == 0)
 			{
 				return new ModelAndView("/evaluation/q15");
 			}
 			DimensionEntity dim = commonService.getDim(15, form.getChoice(), 1);
 			DimensionEntity dim2 = commonService.getDim(15, 1, 2);
-			DimensionEntity dim3 = commonService.getDim(15, 1, 2);
+			DimensionEntity dim3 = commonService.getDim(15, 2, 2);
 			List<QuestionEntity> ques = Util.calcProcessScore(dim, dim2, dim3, account.getUserId(), form);
 			commonService.insertQuestionList(ques);
 			return new ModelAndView(new RedirectView("/evaluation/q16"));

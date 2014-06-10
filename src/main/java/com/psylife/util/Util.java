@@ -74,6 +74,18 @@ public class Util {
 			account.setCardno(doc.getElementsByTagName("cardno").item(0).getTextContent());
 			account.setUserName(doc.getElementsByTagName("name").item(0).getTextContent());
 			account.setSchool(doc.getElementsByTagName("shool").item(0).getTextContent());
+			if(StringUtil.isEqual(doc.getElementsByTagName("sex").item(0).getTextContent(), "女"))
+			{
+				account.setGender(1);
+			}
+			else if(StringUtil.isEqual(doc.getElementsByTagName("sex").item(0).getTextContent(), "null"))
+			{
+				account.setGender(2);
+			}
+			else
+			{
+				account.setGender(0);
+			}
 
 		} catch (Exception e) {
 			

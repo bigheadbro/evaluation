@@ -214,10 +214,16 @@ $(document).ready(function(){
 								性别
 							</li>
 							<li class="right">
-								<input type="radio" name="sex" id="gender1" order="1">
-								<label for="gender1">男</label>
-								<input type="radio" name="sex" id="gender2" order="0">
-								<label for="gender2">女</label>
+								#if(${account.gender} == 2)
+    								<input type="radio" name="sex" id="gender1" order="1">
+    								<label for="gender1">男</label>
+    								<input type="radio" name="sex" id="gender2" order="0">
+    								<label for="gender2">女</label>
+								#elseif(${account.gender} == 1)
+									女
+								#else
+									男
+								#end										
 							</li>
 							#springBind("form.user.gender")
 							<input type="hidden" name="${status.expression}"   id="sex" />

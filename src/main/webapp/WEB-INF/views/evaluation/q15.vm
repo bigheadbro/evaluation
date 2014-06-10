@@ -7,7 +7,6 @@ $(document).ready(function(){
     	increaseArea: '20%' // optional
     });
 	$("#form_q").validate({
-			ignore: [],
 			rules:{
     			"choice2":{
     					required:true
@@ -93,7 +92,7 @@ $(document).ready(function(){
 				</li>
 				<li>
 					<input type="radio" name="choiceb" id="answer2">
-					<label for="answer2">B、联系经典</label>
+					<label for="answer2">B、联系景点</label>
 				</li>
 				<li>
 					<input type="radio" name="choicec" id="answer3">
@@ -111,7 +110,7 @@ $(document).ready(function(){
 				<h1 class="title">
 					决定某代言人
 					#springBind("form.choice2")
-					<input type="hidden"  name="${status.expression}" id="q2" />
+					<input type="hidden" value=0  name="${status.expression}" id="q2" />
 				</h1>
 			</div>
 			
@@ -136,7 +135,7 @@ $(document).ready(function(){
 				<h1 class="title">
 					决定日期
 					#springBind("form.choice3")
-					<input type="hidden"  name="${status.expression}" id="q3" />
+					<input type="hidden" value=0 name="${status.expression}" id="q3" />
 				</h1>
 			</div>
 			
@@ -177,7 +176,7 @@ $(document).ready(function(){
 				<h1 class="title">
 					决定景点
 					#springBind("form.choice4")
-					<input type="hidden"  name="${status.expression}" id="q4" />
+					<input type="hidden" value=0  name="${status.expression}" id="q4" />
 				</h1>
 			</div>
 			<ul class="mt10">
