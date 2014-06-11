@@ -66,7 +66,7 @@ $(document).ready(function(){
 			#if($!util.isMale($account.getGender()))
 			<div class="q-head clearfix">
 				<h1 class="number">1.</h1>
-				<h1 class="title"><img src="img/1-男.png" /></h1>
+				<h1 class="title"><img src="img/1-1.png" /></h1>
 			</div>
 			<ul class="single">
 				<li>
@@ -97,7 +97,7 @@ $(document).ready(function(){
 			#else
 			<div class="q-head clearfix">
 				<h1 class="number">1.</h1>
-				<h1 class="title"><img src="img/1-女.png" /></h1>
+				<h1 class="title"><img src="img/1-2.png" /></h1>
 			</div>
 			<ul>
 				<li>

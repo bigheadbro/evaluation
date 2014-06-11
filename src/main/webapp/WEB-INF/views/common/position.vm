@@ -1057,12 +1057,12 @@
         			alert("最多选择3个职位");
         			last;
         		}
-    			$(".position-win .selected span").append("<a>" + $(this).text() + "</a>");
+    			$(".position-win .selected span").append("<a>" + $(this).text() + "<em>x</em></a>");
         		cntPos++;
 			}else{
 				$(this).removeAttr("check");
 				$(".selected span a").each(function(){
-					if($(this).text() == position){
+					if($(this).text() == position + "x"){
 						$(this).remove();
 					}
 				});
@@ -1076,12 +1076,22 @@
 			$(this).hide();
 		});
 		$(".position-win .selected span").on("click", "a", function(){
+			var tmp = $(this).text();
   			$(this).remove();
+			$(".sub li").each(function(){
+				if($(this).text() + "x" == tmp){
+					$(this).removeAttr("check");
+					return false; 
+				}
+			});
   			cntPos--;
   		});
 			
   		$(".close-position").click(function(){
-  			$("#position").val($(".position-win .selected span").text());
+			re = new RegExp("x", "g");
+			var txt = $(".position-win .selected span").text().replace(re, " ");
+  			$("#position").val(txt);
+			$("#position").attr("title",txt);
       		hideposition();
       	});
 	});

@@ -9,26 +9,26 @@
 				选项A的信息
 		</h2>
 		<div class="q15-win-body">
-			<h1>你分别打给了A，B，C三个明星的经纪人，获取信息如下：</h1>
+			<h1>你分别打给了A，B，C三个明星的经纪人，得到的回复是：</h1>
 			#if($!util.isMale($account.getGender()))
 				<div class="audio">
-					和A明星经纪人的电话<a href="resource/a_male.mp3" class="sm2_button">A明星经纪人</a>
+					和A明星经纪人的电话，点击播放录音<a href="resource/a_male.mp3" class="sm2_button">A明星经纪人</a>
 				</div>
 				<div class="audio">
-					和B明星经纪人的电话<a href="resource/b_male.mp3" class="sm2_button">B明星经纪人</a>
+					和B明星经纪人的电话，点击播放录音<a href="resource/b_male.mp3" class="sm2_button">B明星经纪人</a>
 				</div>
 				<div class="audio">
-					和C明星经纪人的电话<a href="resource/c_male.mp3" class="sm2_button">C明星经纪人</a>
+					和C明星经纪人的电话，点击播放录音<a href="resource/c_male.mp3" class="sm2_button">C明星经纪人</a>
 				</div>
 			#else
 				<div class="audio">
-					和A明星经纪人的电话<a href="resource/a_female.mp3" class="sm2_button">A明星经纪人</a>
+					和A明星经纪人的电话，点击播放录音<a href="resource/a_female.mp3" class="sm2_button">A明星经纪人</a>
 				</div>
 				<div class="audio">
-					和B明星经纪人的电话<a href="resource/b_female.mp3" class="sm2_button">B明星经纪人</a>
+					和B明星经纪人的电话，点击播放录音<a href="resource/b_female.mp3" class="sm2_button">B明星经纪人</a>
 				</div>
 				<div class="audio">
-					和C明星经纪人的电话<a href="resource/c_female.mp3" class="sm2_button">C明星经纪人</a>
+					和C明星经纪人的电话，点击播放录音<a href="resource/c_female.mp3" class="sm2_button">C明星经纪人</a>
 				</div>
 			#end
 			<div class="op"><a class="close-15a">返回继续答题</a></div>

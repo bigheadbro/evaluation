@@ -62,7 +62,7 @@ $(document).ready(function(){
 		<div class="question subqa2">
 			<div class="q-head clearfix">
 				<h1 class="number">21.2</h1>
-				<h1 class="title">工作告诉人员告诉了你差价费用，你计算了一下，如果换到该展台，那么将会超出此次布展预算的3%。这是，你会：</h1>
+				<h1 class="title">工作人员告诉了你差价费用，你计算了一下，如果换到该展台，那么将会超出此次布展预算的3%。这是，你会：</h1>
 			</div>
 			<ul>
 				<li show="subqa21">

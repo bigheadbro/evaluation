@@ -131,12 +131,12 @@
         			alert("最多选择5个行业");
         			last;
         		}
-            	$(".industry-win .selected span").append("<a>" + $(this).text() + "</a>");
+            	$(".industry-win .selected span").append("<a>" + $(this).text() + "<em>x</em></a>");
         		cntInd++;
 			}else{
 				$(this).removeAttr("check");
 				$(".selected span a").each(function(){
-					if($(this).text() == ind){
+					if($(this).text() == ind + "x"){
 						$(this).remove();
 					}
 				});
@@ -144,12 +144,23 @@
 			}
         });
     	$(".industry-win .selected span").on("click", "a", function(){
+			var tmp = $(this).text();
     		$(this).remove();
+			$(".detail a").each(function(){
+				if($(this).text() + "x" == tmp){
+					$(this).removeAttr("check");
+					return false; 
+				}
+			});
+			
 			cntInd--;
     	});
     			
     	$(".close-industry").click(function(){
-    		$("#industry").val($(".industry-win .selected span").text());
+			re = new RegExp("x", "g");
+			var txt = $(".industry-win .selected span").text().replace(re, " ");
+    		$("#industry").val(txt);
+			$("#industry").attr("title",txt);
         	hideindustry();
         });
 	});

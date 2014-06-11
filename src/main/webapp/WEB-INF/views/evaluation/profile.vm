@@ -282,7 +282,7 @@ $(document).ready(function(){
 								感兴趣的行业
 							</li>
 							<li class="middle">
-								<input type="text" name="${status.expression}" id="industry" />
+								<input title="" type="text" name="${status.expression}" id="industry" />
 							</li>
 							<li class="right">
 								(最多选择五项)
@@ -294,7 +294,7 @@ $(document).ready(function(){
 								想从事的岗位
 							</li>
 							<li class="middle">
-								<input type="text" name="${status.expression}" id="position" />
+								<input title="" type="text" name="${status.expression}" id="position" />
 							</li>
 							<li class="right">
 								(最多选择三项)
@@ -308,20 +308,13 @@ $(document).ready(function(){
 							</li>
 							<li>
 								<div class="dim7">
-								<input type="radio" name="salary" id="salary1" order="1">
-								<label for="salary1">1</label>
-								<input type="radio" name="salary" id="salary2" order="2">
-								<label for="salary2">2</label>
-								<input type="radio" name="salary" id="salary3" order="3">
-								<label for="salary3">3</label>
-								<input type="radio" name="salary" id="salary4" order="4">
-								<label for="salary4">4</label>
-								<input type="radio" name="salary" id="salary5" order="5">
-								<label for="salary5">5</label>
-								<input type="radio" name="salary" id="salary6" order="6">
-								<label for="salary6">6</label>
-								<input type="radio" name="salary" id="salary7" order="7">
-								<label for="salary7">7</label>
+								<a>1</a>
+								<a>2</a>
+								<a>3</a>
+								<a>4</a>
+								<a>5</a>
+								<a>6</a>
+								<a>7</a>
 								#springBind("form.user.salary")
 								<input type="hidden" name="${status.expression}"   id="salary" />
 								</div>
@@ -333,20 +326,13 @@ $(document).ready(function(){
 							</li>
 							<li>
 								<div class="dim7">
-								<input type="radio" name="welfare" id="welfare1" order="1">
-								<label for="welfare1">1</label>
-								<input type="radio" name="welfare" id="welfare2" order="2">
-								<label for="welfare2">2</label>
-								<input type="radio" name="welfare" id="welfare3" order="3">
-								<label for="welfare3">3</label>
-								<input type="radio" name="welfare" id="welfare4" order="4">
-								<label for="welfare4">4</label>
-								<input type="radio" name="welfare" id="welfare5" order="5">
-								<label for="welfare5">5</label>
-								<input type="radio" name="welfare" id="welfare6" order="6">
-								<label for="welfare6">6</label>
-								<input type="radio" name="welfare" id="welfare7" order="7">
-								<label for="welfare7">7</label>
+								<a>1</a>
+								<a>2</a>
+								<a>3</a>
+								<a>4</a>
+								<a>5</a>
+								<a>6</a>
+								<a>7</a>
 								#springBind("form.user.welfare")
 								<input type="hidden"  name="${status.expression}"   id="welfare" />
 								</div>
@@ -358,21 +344,13 @@ $(document).ready(function(){
 							</li>
 							<li>
 								<div class="dim7">
-								
-								<input type="radio" name="vacation" id="vacation1" order="1">
-								<label for="vacation1">1</label>
-								<input type="radio" name="vacation" id="vacation2" order="2">
-								<label for="vacation2">2</label>
-								<input type="radio" name="vacation" id="vacation3" order="3">
-								<label for="vacation3">3</label>
-								<input type="radio" name="vacation" id="vacation4" order="4">
-								<label for="vacation4">4</label>
-								<input type="radio" name="vacation" id="vacation5" order="5">
-								<label for="vacation5">5</label>
-								<input type="radio" name="vacation" id="vacation6" order="6">
-								<label for="vacation6">6</label>
-								<input type="radio" name="vacation" id="vacation7" order="7">
-								<label for="vacation7">7</label>
+								<a>1</a>
+								<a>2</a>
+								<a>3</a>
+								<a>4</a>
+								<a>5</a>
+								<a>6</a>
+								<a>7</a>
 								#springBind("form.user.vacation")
 								<input type="hidden" name="${status.expression}"    id="vacation" />
 								</div>
@@ -384,21 +362,13 @@ $(document).ready(function(){
 							</li>
 							<li>
 								<div class="dim7">
-								
-								<input type="radio" name="freedom" id="freedom1" order="1">
-								<label for="freedom1">1</label>
-								<input type="radio" name="freedom" id="freedom2" order="2">
-								<label for="freedom2">2</label>
-								<input type="radio" name="freedom" id="freedom3" order="3">
-								<label for="freedom3">3</label>
-								<input type="radio" name="freedom" id="freedom4" order="4">
-								<label for="freedom4">4</label>
-								<input type="radio" name="freedom" id="freedom5" order="5">
-								<label for="freedom5">5</label>
-								<input type="radio" name="freedom" id="freedom6" order="6">
-								<label for="freedom6">6</label>
-								<input type="radio" name="freedom" id="freedom7" order="7">
-								<label for="freedom7">7</label>
+								<a>1</a>
+								<a>2</a>
+								<a>3</a>
+								<a>4</a>
+								<a>5</a>
+								<a>6</a>
+								<a>7</a>
 								#springBind("form.user.freedom")
 								<input type="hidden"  name="${status.expression}"   id="freedom" />
 								</div>
@@ -410,21 +380,13 @@ $(document).ready(function(){
 							</li>
 							<li>
 								<div class="dim7">
-								
-								<input type="radio" name="burden" id="burden1" order="1">
-								<label for="burden1">1</label>
-								<input type="radio" name="burden" id="burden2" order="2">
-								<label for="burden2">2</label>
-								<input type="radio" name="burden" id="burden3" order="3">
-								<label for="burden3">3</label>
-								<input type="radio" name="burden" id="burden4" order="4">
-								<label for="burden4">4</label>
-								<input type="radio" name="burden" id="burden5" order="5">
-								<label for="burden5">5</label>
-								<input type="radio" name="burden" id="burden6" order="6">
-								<label for="burden6">6</label>
-								<input type="radio" name="burden" id="burden7" order="7">
-								<label for="burden7">7</label>
+								<a>1</a>
+								<a>2</a>
+								<a>3</a>
+								<a>4</a>
+								<a>5</a>
+								<a>6</a>
+								<a>7</a>
 								#springBind("form.user.burden")
 								<input type="hidden"  name="${status.expression}"   id="burden" />
 								</div>
@@ -436,21 +398,13 @@ $(document).ready(function(){
 							</li>
 							<li>
 								<div class="dim7">
-								
-								<input type="radio" name="development" id="development1" order="1">
-								<label for="development1">1</label>
-								<input type="radio" name="development" id="development2" order="2">
-								<label for="development2">2</label>
-								<input type="radio" name="development" id="development3" order="3">
-								<label for="development3">3</label>
-								<input type="radio" name="development" id="development4" order="4">
-								<label for="development4">4</label>
-								<input type="radio" name="development" id="development5" order="5">
-								<label for="development5">5</label>
-								<input type="radio" name="development" id="development6" order="6">
-								<label for="development6">6</label>
-								<input type="radio" name="development" id="development7" order="7">
-								<label for="development7">7</label>
+								<a>1</a>
+								<a>2</a>
+								<a>3</a>
+								<a>4</a>
+								<a>5</a>
+								<a>6</a>
+								<a>7</a>
 								#springBind("form.user.development")
 								<input type="hidden" name="${status.expression}"    id="development" />
 								</div>
@@ -462,21 +416,13 @@ $(document).ready(function(){
 							</li>
 							<li>
 								<div class="dim7">
-								
-								<input type="radio" name="training" id="training1" order="1">
-								<label for="training1">1</label>
-								<input type="radio" name="training" id="training2" order="2">
-								<label for="training2">2</label>
-								<input type="radio" name="training" id="training3" order="3">
-								<label for="training3">3</label>
-								<input type="radio" name="training" id="training4" order="4">
-								<label for="training4">4</label>
-								<input type="radio" name="training" id="training5" order="5">
-								<label for="training5">5</label>
-								<input type="radio" name="training" id="training6" order="6">
-								<label for="training6">6</label>
-								<input type="radio" name="training" id="training7" order="7">
-								<label for="training7">7</label>
+								<a>1</a>
+								<a>2</a>
+								<a>3</a>
+								<a>4</a>
+								<a>5</a>
+								<a>6</a>
+								<a>7</a>
 								#springBind("form.user.training")
 								<input type="hidden" name="${status.expression}"    id="training" />
 								</div>
@@ -488,21 +434,13 @@ $(document).ready(function(){
 							</li>
 							<li>
 								<div class="dim7">
-								
-								<input type="radio" name="wtrip" id="wtrip1" order="1">
-								<label for="wtrip1">1</label>
-								<input type="radio" name="wtrip" id="wtrip2" order="2">
-								<label for="wtrip2">2</label>
-								<input type="radio" name="wtrip" id="wtrip3" order="3">
-								<label for="wtrip3">3</label>
-								<input type="radio" name="wtrip" id="wtrip4" order="4">
-								<label for="wtrip4">4</label>
-								<input type="radio" name="wtrip" id="wtrip5" order="5">
-								<label for="wtrip5">5</label>
-								<input type="radio" name="wtrip" id="wtrip6" order="6">
-								<label for="wtrip6">6</label>
-								<input type="radio" name="wtrip" id="wtrip7" order="7">
-								<label for="wtrip7">7</label>
+								<a>1</a>
+								<a>2</a>
+								<a>3</a>
+								<a>4</a>
+								<a>5</a>
+								<a>6</a>
+								<a>7</a>
 								#springBind("form.user.wtrip")
 								<input type="hidden" name="${status.expression}"    id="wtrip"/>
 								</div>
@@ -514,21 +452,13 @@ $(document).ready(function(){
 							</li>
 							<li>
 								<div class="dim7">
-								
-								<input type="radio" name="atmosphere" id="atmosphere1" order="1">
-								<label for="atmosphere1">1</label>
-								<input type="radio" name="atmosphere" id="atmosphere2" order="2">
-								<label for="atmosphere2">2</label>
-								<input type="radio" name="atmosphere" id="atmosphere3" order="3">
-								<label for="atmosphere3">3</label>
-								<input type="radio" name="atmosphere" id="atmosphere4" order="4">
-								<label for="atmosphere4">4</label>
-								<input type="radio" name="atmosphere" id="atmosphere5" order="5">
-								<label for="atmosphere5">5</label>
-								<input type="radio" name="atmosphere" id="atmosphere6" order="6">
-								<label for="atmosphere6">6</label>
-								<input type="radio" name="atmosphere" id="atmosphere7" order="7">
-								<label for="atmosphere7">7</label>
+								<a>1</a>
+								<a>2</a>
+								<a>3</a>
+								<a>4</a>
+								<a>5</a>
+								<a>6</a>
+								<a>7</a>
 								#springBind("form.user.atmosphere")
 								<input type="hidden" name="${status.expression}"    id="atmosphere" />
 								</div>
@@ -540,21 +470,13 @@ $(document).ready(function(){
 							</li>
 							<li>
 								<div class="dim7">
-								
-								<input type="radio" name="brand" id="brand1" order="1">
-								<label for="brand1">1</label>
-								<input type="radio" name="brand" id="brand2" order="2">
-								<label for="brand2">2</label>
-								<input type="radio" name="brand" id="brand3" order="3">
-								<label for="brand3">3</label>
-								<input type="radio" name="brand" id="brand4" order="4">
-								<label for="brand4">4</label>
-								<input type="radio" name="brand" id="brand5" order="5">
-								<label for="brand5">5</label>
-								<input type="radio" name="brand" id="brand6" order="6">
-								<label for="brand6">6</label>
-								<input type="radio" name="brand" id="brand7" order="7">
-								<label for="brand7">7</label>
+								<a>1</a>
+								<a>2</a>
+								<a>3</a>
+								<a>4</a>
+								<a>5</a>
+								<a>6</a>
+								<a>7</a>
 								#springBind("form.user.brand")
 								<input type="hidden" name="${status.expression}"    id="brand" />
 								</div>
@@ -566,21 +488,13 @@ $(document).ready(function(){
 							</li>
 							<li>
 								<div class="dim7">
-								
-								<input type="radio" name="distance" id="distance1" order="1">
-								<label for="distance1">1</label>
-								<input type="radio" name="distance" id="distance2" order="2">
-								<label for="distance2">2</label>
-								<input type="radio" name="distance" id="distance3" order="3">
-								<label for="distance3">3</label>
-								<input type="radio" name="distance" id="distance4" order="4">
-								<label for="distance4">4</label>
-								<input type="radio" name="distance" id="distance5" order="5">
-								<label for="distance5">5</label>
-								<input type="radio" name="distance" id="distance6" order="6">
-								<label for="distance6">6</label>
-								<input type="radio" name="distance" id="distance7" order="7">
-								<label for="distance7">7</label>
+								<a>1</a>
+								<a>2</a>
+								<a>3</a>
+								<a>4</a>
+								<a>5</a>
+								<a>6</a>
+								<a>7</a>
 								#springBind("form.user.distance")
 								<input type="hidden"   name="${status.expression}"   id="distance" />
 								</div>
@@ -619,21 +533,13 @@ $(document).ready(function(){
 							</li>
 							<li>
 								<div class="dim7">
-								
-								<input type="radio" name="stateown" id="stateown1" order="1">
-								<label for="stateown1">1</label>
-								<input type="radio" name="stateown" id="stateown2" order="2">
-								<label for="stateown2">2</label>
-								<input type="radio" name="stateown" id="stateown3" order="3">
-								<label for="stateown3">3</label>
-								<input type="radio" name="stateown" id="stateown4" order="4">
-								<label for="stateown4">4</label>
-								<input type="radio" name="stateown" id="stateown5" order="5">
-								<label for="stateown5">5</label>
-								<input type="radio" name="stateown" id="stateown6" order="6">
-								<label for="stateown6">6</label>
-								<input type="radio" name="stateown" id="stateown7" order="7">
-								<label for="stateown7">7</label>
+								<a>1</a>
+								<a>2</a>
+								<a>3</a>
+								<a>4</a>
+								<a>5</a>
+								<a>6</a>
+								<a>7</a>
 								#springBind("form.user.stateown")
 								<input type="hidden"  name="${status.expression}"    id="stateown" />
 								</div>
@@ -645,21 +551,13 @@ $(document).ready(function(){
 							</li>
 							<li>
 								<div class="dim7">
-								
-								<input type="radio" name="institution" id="institution1" order="1">
-								<label for="institution1">1</label>
-								<input type="radio" name="institution" id="institution2" order="2">
-								<label for="institution2">2</label>
-								<input type="radio" name="institution" id="institution3" order="3">
-								<label for="institution3">3</label>
-								<input type="radio" name="institution" id="institution4" order="4">
-								<label for="institution4">4</label>
-								<input type="radio" name="institution" id="institution5" order="5">
-								<label for="institution5">5</label>
-								<input type="radio" name="institution" id="institution6" order="6">
-								<label for="institution6">6</label>
-								<input type="radio" name="institution" id="institution7" order="7">
-								<label for="institution7">7</label>
+								<a>1</a>
+								<a>2</a>
+								<a>3</a>
+								<a>4</a>
+								<a>5</a>
+								<a>6</a>
+								<a>7</a>
 								#springBind("form.user.institution")
 								<input type="hidden"  name="${status.expression}"    id="institution" />
 								</div>
@@ -671,21 +569,13 @@ $(document).ready(function(){
 							</li>
 							<li>
 								<div class="dim7">
-								
-								<input type="radio" name="administration" id="administration1" order="1">
-								<label for="administration1">1</label>
-								<input type="radio" name="administration" id="administration2" order="2">
-								<label for="administration2">2</label>
-								<input type="radio" name="administration" id="administration3" order="3">
-								<label for="administration3">3</label>
-								<input type="radio" name="administration" id="administration4" order="4">
-								<label for="administration4">4</label>
-								<input type="radio" name="administration" id="administration5" order="5">
-								<label for="administration5">5</label>
-								<input type="radio" name="administration" id="administration6" order="6">
-								<label for="administration6">6</label>
-								<input type="radio" name="administration" id="administration7" order="7">
-								<label for="administration7">7</label>
+								<a>1</a>
+								<a>2</a>
+								<a>3</a>
+								<a>4</a>
+								<a>5</a>
+								<a>6</a>
+								<a>7</a>
 								#springBind("form.user.administration")
 								<input type="hidden"  name="${status.expression}"    id="administration" />
 								</div>
@@ -697,21 +587,13 @@ $(document).ready(function(){
 							</li>
 							<li>
 								<div class="dim7">
-								
-								<input type="radio" name="foreig" id="foreig1" order="1">
-								<label for="foreig1">1</label>
-								<input type="radio" name="foreig" id="foreig2" order="2">
-								<label for="foreig2">2</label>
-								<input type="radio" name="foreig" id="foreig3" order="3">
-								<label for="foreig3">3</label>
-								<input type="radio" name="foreig" id="foreig4" order="4">
-								<label for="foreig4">4</label>
-								<input type="radio" name="foreig" id="foreig5" order="5">
-								<label for="foreig5">5</label>
-								<input type="radio" name="foreig" id="foreig6" order="6">
-								<label for="foreig6">6</label>
-								<input type="radio" name="foreig" id="foreig7" order="7">
-								<label for="foreig7">7</label>
+								<a>1</a>
+								<a>2</a>
+								<a>3</a>
+								<a>4</a>
+								<a>5</a>
+								<a>6</a>
+								<a>7</a>
 								#springBind("form.user.foreig")
 								<input type="hidden" name="${status.expression}"     id="foreig" />
 								</div>
@@ -723,21 +605,13 @@ $(document).ready(function(){
 							</li>
 							<li>
 								<div class="dim7">
-								
-								<input type="radio" name="privat" id="private1" order="1">
-								<label for="private1">1</label>
-								<input type="radio" name="privat" id="private2" order="2">
-								<label for="private2">2</label>
-								<input type="radio" name="privat" id="private3" order="3">
-								<label for="private3">3</label>
-								<input type="radio" name="privat" id="private4" order="4">
-								<label for="private4">4</label>
-								<input type="radio" name="privat" id="private5" order="5">
-								<label for="private5">5</label>
-								<input type="radio" name="privat" id="private6" order="6">
-								<label for="private6">6</label>
-								<input type="radio" name="privat" id="private7" order="7">
-								<label for="private7">7</label>
+								<a>1</a>
+								<a>2</a>
+								<a>3</a>
+								<a>4</a>
+								<a>5</a>
+								<a>6</a>
+								<a>7</a>
 								#springBind("form.user.privat")
 								<input type="hidden"  name="${status.expression}"    id="privat" />
 								</div>
@@ -749,21 +623,13 @@ $(document).ready(function(){
 							</li>
 							<li>
 								<div class="dim7">
-								
-								<input type="radio" name="startup" id="startup1" order="1">
-								<label for="startup1">1</label>
-								<input type="radio" name="startup" id="startup2" order="2">
-								<label for="startup2">2</label>
-								<input type="radio" name="startup" id="startup3" order="3">
-								<label for="startup3">3</label>
-								<input type="radio" name="startup" id="startup4" order="4">
-								<label for="startup4">4</label>
-								<input type="radio" name="startup" id="startup5" order="5">
-								<label for="startup5">5</label>
-								<input type="radio" name="startup" id="startup6" order="6">
-								<label for="startup6">6</label>
-								<input type="radio" name="startup" id="startup7" order="7">
-								<label for="startup7">7</label>
+								<a>1</a>
+								<a>2</a>
+								<a>3</a>
+								<a>4</a>
+								<a>5</a>
+								<a>6</a>
+								<a>7</a>
 								#springBind("form.user.startup")
 								<input type="hidden"  name="${status.expression}"    id="startup" />
 								</div>
@@ -775,21 +641,13 @@ $(document).ready(function(){
 							</li>
 							<li>
 								<div class="dim7">
-								
-								<input type="radio" name="ngo" id="ngo1" order="1">
-								<label for="ngo1">1</label>
-								<input type="radio" name="ngo" id="ngo2" order="2">
-								<label for="ngo2">2</label>
-								<input type="radio" name="ngo" id="ngo3" order="3">
-								<label for="ngo3">3</label>
-								<input type="radio" name="ngo" id="ngo4" order="4">
-								<label for="ngo4">4</label>
-								<input type="radio" name="ngo" id="ngo5" order="5">
-								<label for="ngo5">5</label>
-								<input type="radio" name="ngo" id="ngo6" order="6">
-								<label for="ngo6">6</label>
-								<input type="radio" name="ngo" id="ngo7" order="7">
-								<label for="ngo7">7</label>
+								<a>1</a>
+								<a>2</a>
+								<a>3</a>
+								<a>4</a>
+								<a>5</a>
+								<a>6</a>
+								<a>7</a>
 								#springBind("form.user.ngo")
 								<input type="hidden"  name="${status.expression}"    id="ngo" />
 								</div>
@@ -801,21 +659,13 @@ $(document).ready(function(){
 							</li>
 							<li>
 								<div class="dim7">
-								
-								<input type="radio" name="commonweal" id="commonweal1" order="1">
-								<label for="commonweal1">1</label>
-								<input type="radio" name="commonweal" id="commonweal2" order="2">
-								<label for="commonweal2">2</label>
-								<input type="radio" name="commonweal" id="commonweal3" order="3">
-								<label for="commonweal3">3</label>
-								<input type="radio" name="commonweal" id="commonweal4" order="4">
-								<label for="commonweal4">4</label>
-								<input type="radio" name="commonweal" id="commonweal5" order="5">
-								<label for="commonweal5">5</label>
-								<input type="radio" name="commonweal" id="commonweal6" order="6">
-								<label for="commonweal6">6</label>
-								<input type="radio" name="commonweal" id="commonweal7" order="7">
-								<label for="commonweal7">7</label>
+								<a>1</a>
+								<a>2</a>
+								<a>3</a>
+								<a>4</a>
+								<a>5</a>
+								<a>6</a>
+								<a>7</a>
 								#springBind("form.user.commonweal")
 								<input type="hidden"  name="${status.expression}"    id="commonweal" />
 								</div>
@@ -878,6 +728,13 @@ $(document).ready(function(){
 	$('input').on('ifChecked', function(event){
 		$("#"+$(this).attr("name")).val(parseInt($(this).attr("order")));
     });
+	$(".dim7 a").click(function(){
+		$(this).parent().children("a").each(function(){
+			$(this).removeAttr("style")
+		});
+		$(this).css("color","#d71a21").css("border", "1px solid #d71a21");
+		$(this).parent().children("input").val(parseInt($(this).text()));
+	});
 	$(".next").click(function(){
 		$("#form_profile").submit();
 	});

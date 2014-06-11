@@ -90,6 +90,8 @@ span.gender{margin-right:40px;}
 p.dim{color:#31628a;margin-bottom: 20px;}
 p.dim span{color:#999}
 .dim7 label{margin-right:5px;font-size: 14px;cursor:pointer;}
+.dim7 a{padding: 5px 11px;margin:0 5px;border:1px solid white;color:#999}
+.dim7 a:hover{border:1px solid #d71a21;color:#d71a21;}
 .sep{width:100%;border-bottom:1px solid #d2d2d2;margin-bottom: 20px;margin-top: 20px;}
 .profile-op{margin-top:50px;margin-bottom:50px;font-size: 22px;text-align:center;}
 .profile-op .next{display:inline-block;background-color:#31628a;color:white;;padding:15px 70px;}
@@ -123,9 +125,11 @@ ul.major-wrap li.detail a:hover{background-color:#47644e;color:white;}
 .industry-win-content{background-color:white;padding-bottom:5px;}
 .industry-win h2{background-color:#47644e;color:white;font-size:14px;padding:3px 10px;margin-bottom: 5px;}
 .industry-win h2 a{float:right;}
+.industry-win .selected{margin-bottom: 5px;}
 .industry-win .selected h5{color:#47644e;float:left;font-size:14px;margin-right:20px;}
-.industry-win .selected a{margin-left:5px;margin-right:5px;}
-.industry-win .selected a:hover{background-color:#47644e;color:white;}
+.industry-win .selected a{margin-left:5px;margin-right:5px;background-color: #47644e;color: white;padding: 0 6px;}
+.industry-win .selected a em{color:red;padding: 5px;}
+.industry-win .selected a:hover{background-color:#83BD91;color:white;}
 .industry-win .content{margin: 10px 30px;}
 .industry-win .content .answer-container h5{position:relative;font-size:14px;color:#707070}
 .addimg-s{position:absolute;right:0;background: url(../img/addimg-s.png) no-repeat 0 0;float: right;height: 20px;width: 20px;display: block;}
@@ -150,9 +154,11 @@ ul.industry-wrap li.detail a:hover{background-color:#47644e;color:white;}
 .position-win-content{background-color:white;padding-bottom:5px;}
 .position-win h2{background-color:#47644e;color:white;font-size:14px;padding:3px 10px;margin-bottom: 5px;}
 .position-win h2 a{float:right;}
+.position-win .selected{margin-bottom: 5px;}
 .position-win .selected h5{color:#47644e;float:left;font-size:14px;margin-right:20px;}
-.position-win .selected a{margin-left:5px;margin-right:5px;}
-.position-win .selected a:hover{background-color:#47644e;color:white;}
+.position-win .selected a{margin-left:5px;margin-right:5px;background-color: #47644e;color: white;padding: 0 6px;}
+.position-win .selected a em{color:red;padding: 5px;}
+.position-win .selected a:hover{background-color:#83BD91;color:white;}
 .position-win .content{margin: 10px 30px;}
 .position-win .content .answer-container h5{position:relative;font-size:14px;color:#707070}
 .addimg-s{position:absolute;right:0;background: url(../img/addimg-s.png) no-repeat 0 0;float: right;height: 20px;width: 20px;display: block;}
