@@ -28,6 +28,19 @@ a.common:hover{text-decoration:underline;color:#00c0ff}
 
 .body-wrapper {position: relative;min-height: 100%;}
 
+.intro-content-container{margin:0 auto;width:960px;}
+.intro-content-container p.head{font-size:18px;color:#6d6d6d;padding: 30px 170px;line-height: 30px;}
+.intro-content-container ul.notice{color:#33a74d;font-size:18px;padding: 0 230px;}
+.intro-content-container ul.notice li{margin-bottom:10px;}
+.intro-content-container ul.notice span.no1{background: url(../img/no1.png) no-repeat 0 0;text-indent: 45px;display: inline-block;line-height: 35px;}
+.intro-content-container ul.notice span.no2{background: url(../img/no2.png) no-repeat 0 0;text-indent: 45px;display: inline-block;line-height: 35px;}
+.intro-content-container ul.notice span.no3{background: url(../img/no3.png) no-repeat 0 0;text-indent: 45px;display: inline-block;line-height: 35px;}
+.intro-content-container .bot{text-align:center}
+.intro-content-container .bot p.sign{color:#6d6d6d;font-size:18px;line-height: 30px;padding-bottom:30px;border-bottom:1px solid #e5e5e5;margin: 40px 234px 20px;}
+.intro-content-container .bot h1{font-size:24px;color:#808080;font-weight:100}
+.intro-content-container .bot a{color:white;background-color:#28c065;font-size:24px;padding:10px 40px;border-radius:5px;margin: 20px;display:inline-block;}
+.intro-content-container .bot p.warn{color:#db0000;font-size:14px;}
+.intro-content-container img{width:960px;}
 /*main head*/
 .index-content-container{margin:0 auto;width:960px;}
 .main-content-container{margin:0 auto;width:960px;margin-bottom:200px;}

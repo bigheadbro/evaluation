@@ -72,12 +72,20 @@ public class CommonController extends BaseController{
 			user.setState(0);
 			commonService.insertUser(user);
 			account.setUserId(user.getId());
-			return new ModelAndView(new RedirectView("/evaluation/q1"));
+			return new ModelAndView(new RedirectView("/evaluation/introducer"));
 		}
 		else
 		{
 			return mv;
 		}
+	}
+	
+	@RequestMapping(value="/introducer")
+	public ModelAndView introducer(final HttpServletRequest request,final HttpServletResponse response)
+	{ 
+		ModelAndView mv = new ModelAndView("/evaluation/introducer");
+
+		return mv;
 	}
 	
 	@RequestMapping(value="/q1")
@@ -232,8 +240,11 @@ public class CommonController extends BaseController{
 		form.setQuestionid(8);
 		if(isDoSubmit(request))
 		{
-			DimensionEntity dim = commonService.getDim(8, 0, form.getNumber());
-			List<QuestionEntity> list = Util.calcDimensionScore(dim, account.getUserId(), form);
+			DimensionEntity dim1 = commonService.getDim(8, 0, 1);
+			DimensionEntity dim2 = commonService.getDim(8, 0, 2);
+			DimensionEntity dim3 = commonService.getDim(8, 0, 3);
+			DimensionEntity dim4 = commonService.getDim(8, 0, 4);
+			List<QuestionEntity> list = Util.calcDimensionScore(dim1,dim2,dim3,dim4, account.getUserId(), form);
 			commonService.insertQuestionList(list);
 			return new ModelAndView(new RedirectView("/evaluation/q9"));
 		}
@@ -254,8 +265,11 @@ public class CommonController extends BaseController{
 		form.setQuestionid(9);
 		if(isDoSubmit(request))
 		{
-			DimensionEntity dim = commonService.getDim(9, 0, form.getNumber());
-			List<QuestionEntity> list = Util.calcDimensionScore(dim, account.getUserId(), form);
+			DimensionEntity dim1 = commonService.getDim(9, 0, 1);
+			DimensionEntity dim2 = commonService.getDim(9, 0, 2);
+			DimensionEntity dim3 = commonService.getDim(9, 0, 3);
+			DimensionEntity dim4 = commonService.getDim(9, 0, 4);
+			List<QuestionEntity> list = Util.calcDimensionScore(dim1,dim2,dim3,dim4, account.getUserId(), form);
 			commonService.insertQuestionList(list);
 			return new ModelAndView(new RedirectView("/evaluation/q10"));
 		}
@@ -276,8 +290,11 @@ public class CommonController extends BaseController{
 		form.setQuestionid(10);
 		if(isDoSubmit(request))
 		{
-			DimensionEntity dim = commonService.getDim(10, 0, form.getNumber());
-			List<QuestionEntity> list = Util.calcDimensionScore(dim, account.getUserId(), form);
+			DimensionEntity dim1 = commonService.getDim(10, 0, 1);
+			DimensionEntity dim2 = commonService.getDim(10, 0, 2);
+			DimensionEntity dim3 = commonService.getDim(10, 0, 3);
+			DimensionEntity dim4 = commonService.getDim(10, 0, 4);
+			List<QuestionEntity> list = Util.calcDimensionScore(dim1,dim2,dim3,dim4, account.getUserId(), form);
 			commonService.insertQuestionList(list);
 			return new ModelAndView(new RedirectView("/evaluation/q11"));
 		}
@@ -298,8 +315,11 @@ public class CommonController extends BaseController{
 		form.setQuestionid(11);
 		if(isDoSubmit(request))
 		{
-			DimensionEntity dim = commonService.getDim(11, 0, form.getNumber());
-			List<QuestionEntity> list = Util.calcDimensionScore(dim, account.getUserId(), form);
+			DimensionEntity dim1 = commonService.getDim(11, 0, 1);
+			DimensionEntity dim2 = commonService.getDim(11, 0, 2);
+			DimensionEntity dim3 = commonService.getDim(11, 0, 3);
+			DimensionEntity dim4 = commonService.getDim(11, 0, 4);
+			List<QuestionEntity> list = Util.calcDimensionScore(dim1,dim2,dim3,dim4, account.getUserId(), form);
 			commonService.insertQuestionList(list);
 			return new ModelAndView(new RedirectView("/evaluation/q12"));
 		}
@@ -320,8 +340,11 @@ public class CommonController extends BaseController{
 		form.setQuestionid(12);
 		if(isDoSubmit(request))
 		{
-			DimensionEntity dim = commonService.getDim(12, 0, form.getNumber());
-			List<QuestionEntity> list = Util.calcDimensionScore(dim, account.getUserId(), form);
+			DimensionEntity dim1 = commonService.getDim(12, 0, 1);
+			DimensionEntity dim2 = commonService.getDim(12, 0, 2);
+			DimensionEntity dim3 = commonService.getDim(12, 0, 3);
+			DimensionEntity dim4 = commonService.getDim(12, 0, 4);
+			List<QuestionEntity> list = Util.calcDimensionScore(dim1,dim2,dim3,dim4, account.getUserId(), form);
 			commonService.insertQuestionList(list);
 			return new ModelAndView(new RedirectView("/evaluation/q13"));
 		}

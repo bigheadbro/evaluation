@@ -57,6 +57,7 @@
    		<mvc:interceptor>
    			<mvc:mapping path="/*" />
    			<mvc:mapping path="/profile" />
+   			<mvc:mapping path="/introducer" />
    			<mvc:mapping path="/q1" />
    			<mvc:mapping path="/q2" />
    			<mvc:mapping path="/q3" />

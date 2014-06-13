@@ -90,11 +90,11 @@ public class UserLoginInterceptor extends HandlerInterceptorAdapter {
 				}
 				throw new ModelAndViewDefiningException(new ModelAndView(new RedirectView("/evaluation/index")));
 			case 0:
-				if(StringUtil.isContains(uri, "q1"))
+				if(StringUtil.isContains(uri, "introducer") || StringUtil.isContains(uri, "q1"))
 				{
 					return true;
 				}
-				throw new ModelAndViewDefiningException(new ModelAndView(new RedirectView("/evaluation/q1")));
+				throw new ModelAndViewDefiningException(new ModelAndView(new RedirectView("/evaluation/introducer")));
 			case 1:
 				if(StringUtil.isContains(uri, "q2"))
 				{
