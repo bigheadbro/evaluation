@@ -27,9 +27,9 @@ public class Util {
 
 	public static boolean isMale(int gender) {
 		if (gender > 0)
-			return true;
-		else
 			return false;
+		else
+			return true;
 	}
 
 	public static void parseJob() {

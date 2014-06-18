@@ -44,6 +44,8 @@ $(function(){
 	$(".op").click(function(){
 		soundManager.pauseAll();
 	});
-	
+	$(".close-q15").click(function(){
+		soundManager.pauseAll();
+	});
 });
 </script>

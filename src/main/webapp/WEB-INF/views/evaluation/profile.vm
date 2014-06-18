@@ -4,11 +4,11 @@ $(document).ready(function(){
 	$( "#datepicker" ).datepicker({
       changeMonth: true,
       changeYear: true,
-	  yearRange: "1980:2000",
 	  monthNamesShort: ['一月','二月','三月','四月','五月','六月',
 		'七月','八月','九月','十月','十一月','十二月'],
 	dayNamesMin: ['周日','周一','周二','周三','周四','周五','周六'],
-	  dateFormat: "yy-mm-dd"
+	  dateFormat: "yy-mm-dd",
+	  defaultDate: "-22y"
     });
 	$('input').iCheck({
 		checkboxClass: 'icheckbox_square-green',
@@ -224,10 +224,14 @@ $(document).ready(function(){
 							<input type="hidden" name="${status.expression}"   id="sex" />
 							#elseif(${account.gender} == 1)
 								<li class="right">
+								#springBind("form.user.gender")
+							<input type="hidden" name="${status.expression}" value=1  id="sex" />
 								女
 								</li>
 							#else
 								<li class="right">
+									#springBind("form.user.gender")
+							<input type="hidden" name="${status.expression}" value=0 id="sex" />
 								男
 								</li>
 							#end	
