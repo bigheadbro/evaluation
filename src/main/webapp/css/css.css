@@ -231,7 +231,8 @@ opacity: .3;
 .end-cont .right{float:left;text-align:center;margin-left:20px;}
 .end-cont .right h1{color:#2d1f07;border-bottom:1px solid #999;border-bottom: 1px solid #999;font-size: 54px;font-weight: 100;padding: 0 60px 10px;letter-spacing: 5px;}
 .end-cont .right h3{color:#999999;padding-top: 10px;font-weight: 100;font-size:36px}
-
+.result{text-align:center;font-size:15px;margin: 70px auto;width: 664px;}
+.result table tr td{padding:10px;}
 #sortable { list-style-type: none; margin: 0; padding: 0; width:50%;margin-left:150px; }
 #sortable li { margin: 0 3px 3px 3px;padding: 5px;padding-left: 20px;font-size: 13px;height: 18px; }
 #sortable li span { position: absolute; margin-left: -1.3em; }

@@ -24,6 +24,7 @@ import com.psylife.common.Account;
 import com.psylife.common.Result;
 import com.psylife.entity.DimensionEntity;
 import com.psylife.entity.QuestionEntity;
+import com.psylife.entity.ScoreEntity;
 import com.psylife.entity.UserEntity;
 import com.psylife.form.QuestionForm;
 import com.psylife.form.UserForm;
@@ -1035,11 +1036,12 @@ public class CommonController extends BaseController{
 	}
 	
 	@RequestMapping(value="/end")
-	public ModelAndView end(final HttpServletRequest request,final HttpServletResponse response)
+	public ModelAndView end(final HttpServletRequest request,final HttpServletResponse response,@ModelAttribute("account")Account account)
 	{
 		
 		ModelAndView mv = new ModelAndView("/evaluation/end");
-
+		ScoreEntity score = commonService.getScore(account.getUserId());
+		mv.addObject("score",score);
 		return mv;
 	}
 }

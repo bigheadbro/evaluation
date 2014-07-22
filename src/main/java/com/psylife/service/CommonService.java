@@ -9,9 +9,11 @@ import org.springframework.stereotype.Service;
 
 import com.psylife.dao.DimensionDAO;
 import com.psylife.dao.QuestionDAO;
+import com.psylife.dao.ScoreDAO;
 import com.psylife.dao.UserDAO;
 import com.psylife.entity.DimensionEntity;
 import com.psylife.entity.QuestionEntity;
+import com.psylife.entity.ScoreEntity;
 import com.psylife.entity.UserEntity;
 
 
@@ -32,6 +34,10 @@ public class CommonService {
 	@Autowired
 	@Qualifier("userDAO")
 	private UserDAO userDAO;
+	
+	@Autowired
+	@Qualifier("scoreDAO")
+	private ScoreDAO scoreDAO;
 	
 	public DimensionEntity getDim(int qid, int choice, int number)
 	{
@@ -70,6 +76,11 @@ public class CommonService {
 	public void updateState(UserEntity user)
 	{
 		userDAO.updateStateById(user);
+	}
+	
+	public ScoreEntity getScore(int userid)
+	{
+		return scoreDAO.queryScoreByUserid(userid);
 	}
 	
 

@@ -6,6 +6,7 @@
 	  <typeAlias alias="UserEntity" type="com.psylife.entity.UserEntity" />
 		<typeAlias alias="QuestionEntity" type="com.psylife.entity.QuestionEntity" />
 		<typeAlias alias="DimensionEntity" type="com.psylife.entity.DimensionEntity" />
+		<typeAlias alias="ScoreEntity" type="com.psylife.entity.ScoreEntity" />
 	</typeAliases>
 
 	<mappers>
